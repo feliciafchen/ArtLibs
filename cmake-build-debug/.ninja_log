@@ -1,0 +1,8 @@
+# ninja log v5
+0	33	1698783415797482260	build.ninja	2a9e7c1c9324cea2
+0	402	1698783349097225641	CMakeFiles/TextInput.dir/main.cpp.o	7eb3a0b067c55106
+0	396	1698783349091280203	CMakeFiles/TextInput.dir/Fonts.cpp.o	9cef0f79208d173a
+0	409	1698783349104983738	CMakeFiles/TextInput.dir/Typing.cpp.o	9fd937634e7a2072
+0	389	1698783349081899111	CMakeFiles/TextInput.dir/Letter.cpp.o	986cf7ddb5475bfc
+0	417	1698783349112735253	CMakeFiles/TextInput.dir/MultiText.cpp.o	72f469d08599e38f
+417	451	1698783349148927918	TextInput	6d3b65a7cd2b183
