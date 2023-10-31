@@ -14,8 +14,9 @@ public:
     Box();
     Box(const sf::Vector2f& size);
 
-    void eventHandler(sf::RenderWindow& window, sf::Event event);
+    void addEventHandler(sf::RenderWindow& window, sf::Event event);
     void update();
+    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const;
 };
 
 

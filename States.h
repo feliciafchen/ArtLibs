@@ -12,7 +12,7 @@ private:
     std::map<ObjectState, bool> states;
 public:
     States();
-    bool checkState(ObjectState state);
+    bool checkState(ObjectState state) const;
     void enableState(ObjectState state);
     void disableState(ObjectState state);
     void toggleState(ObjectState state);

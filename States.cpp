@@ -5,16 +5,16 @@
 #include "States.h"
 
 States::States() {
-    for (auto i : states) {
-        i.second = false;
-    }
-//    for (int i = 0; i < LASTSTATE; ++i) {
-//        states[static_cast<ObjectState>(i)] = false;
+//    for (auto i : states) {
+//        i.second = false;
 //    }
+    for (int i = 0; i < LASTSTATE; ++i) {
+        states[static_cast<ObjectState>(i)] = false;
+    }
 }
 
-bool States::checkState(ObjectState state) {
-    return states[state];
+bool States::checkState(ObjectState state) const{
+    return states.at(state);
 }
 
 void States::enableState(ObjectState state) {
