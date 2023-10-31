@@ -25,7 +25,9 @@ add_executable(TextInput main.cpp
         Application.cpp
         Application.h
         GUIComponent.cpp
-        GUIComponent.h)
+        GUIComponent.h
+        MouseEvents.cpp
+        MouseEvents.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)
