@@ -5,11 +5,17 @@
 #ifndef TEXTINPUT_STATES_H
 #define TEXTINPUT_STATES_H
 #include "ObjectState.h"
-#include <SFML/Graphics.hpp>
 #include <map>
 
 class States {
+private:
     std::map<ObjectState, bool> states;
+public:
+    States();
+    bool checkState(ObjectState state);
+    void enableState(ObjectState state);
+    void disableState(ObjectState state);
+    void toggleState(ObjectState state);
 };
 
 
