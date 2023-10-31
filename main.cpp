@@ -1,8 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include "Typing.h"
+#include "States.h"
 
 int main() {
-    Typing typing;
+//    Typing typing;
+
+    States
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
@@ -15,12 +18,12 @@ int main() {
         {
             if(event.type == sf::Event::Closed)
                 window.close();
-            typing.addEventHandler(window, event);
+//            typing.addEventHandler(window, event);
 
         }
-        typing.update();
+//        typing.update();
         window.clear();
-        window.draw(typing);
+//        window.draw(typing);
         window.display();
     }
 }

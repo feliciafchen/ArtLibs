@@ -17,7 +17,15 @@ add_executable(TextInput main.cpp
         States.h
         ObjectState.h
         Snapshot.cpp
-        Snapshot.h)
+        Snapshot.h
+        Box.cpp
+        Box.h
+        SnapshotInterface.cpp
+        SnapshotInterface.h
+        Application.cpp
+        Application.h
+        GUIComponent.cpp
+        GUIComponent.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)
