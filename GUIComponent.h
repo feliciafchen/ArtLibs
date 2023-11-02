@@ -10,7 +10,7 @@
 class GUIComponent : public sf::Drawable{
 public:
     //from the sf::Drawable class
-//    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const = 0;
+    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const = 0;
 
 // from EventHandler
     virtual void addEventHandler(sf::RenderWindow& window, sf::Event event) = 0;

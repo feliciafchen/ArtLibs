@@ -1,14 +1,17 @@
 # ninja log v5
-7	277	1698786389745607915	CMakeFiles/TextInput.dir/main.cpp.o	7eb3a0b067c55106
-0	396	1698783349091280203	CMakeFiles/TextInput.dir/Fonts.cpp.o	9cef0f79208d173a
-8	37	1698786230265278350	CMakeFiles/TextInput.dir/Snapshot.cpp.o	a7c6a2265bfee837
-0	33	1698787318993430201	build.ninja	2a9e7c1c9324cea2
+7	426	1698961028124053127	CMakeFiles/TextInput.dir/main.cpp.o	7eb3a0b067c55106
+0	33	1698961950914505166	build.ninja	2a9e7c1c9324cea2
 0	409	1698783349104983738	CMakeFiles/TextInput.dir/Typing.cpp.o	9fd937634e7a2072
 0	389	1698783349081899111	CMakeFiles/TextInput.dir/Letter.cpp.o	986cf7ddb5475bfc
-7	313	1698786451140756251	CMakeFiles/TextInput.dir/Application.cpp.o	a182502a5b1f37f3
-36	357	1698786230584190604	CMakeFiles/TextInput.dir/GUIComponent.cpp.o	ad5c52d6ce3fc352
-313	347	1698786451176811418	TextInput	36400a02620c1e7f
+8	37	1698786230265278350	CMakeFiles/TextInput.dir/Snapshot.cpp.o	a7c6a2265bfee837
+0	396	1698783349091280203	CMakeFiles/TextInput.dir/Fonts.cpp.o	9cef0f79208d173a
+8	385	1698961028082786526	CMakeFiles/TextInput.dir/GUIComponent.cpp.o	ad5c52d6ce3fc352
+8	427	1698961028124898963	CMakeFiles/TextInput.dir/Application.cpp.o	a182502a5b1f37f3
+427	465	1698961028165455562	TextInput	1ad7e37cbe0a38a3
 8	197	1698786291839410647	CMakeFiles/TextInput.dir/States.cpp.o	e11f265e95c3bfdf
+8	341	1698961028035662281	CMakeFiles/TextInput.dir/History.cpp.o	ec239813d1d4cd06
 0	417	1698783349112735253	CMakeFiles/TextInput.dir/MultiText.cpp.o	72f469d08599e38f
-7	272	1698786396123631247	CMakeFiles/TextInput.dir/Box.cpp.o	cfb218ef073fa753
+8	409	1698961028106463733	CMakeFiles/TextInput.dir/Box.cpp.o	cfb218ef073fa753
 8	36	1698786230265100058	CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o	d05adcf19f41a27a
+8	258	1698788664679655001	CMakeFiles/TextInput.dir/MouseEvents.cpp.o	617c12ca120ba
+9	361	1698961028055763392	CMakeFiles/TextInput.dir/TextInput.cpp.o	f7073ab3641594d6
