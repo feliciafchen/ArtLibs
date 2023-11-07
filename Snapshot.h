@@ -4,14 +4,15 @@
 
 #ifndef TEXTINPUT_SNAPSHOT_H
 #define TEXTINPUT_SNAPSHOT_H
-#include <SFML/Graphics.hpp>
+#include <iostream>
 
 class Snapshot {
 private:
-    sf::String data;
+    std::string data;
 public:
-    const sf::String &getData() const;
-    void setData(const sf::String &data);
+    Snapshot();
+    const std::string &getData() const;
+    void setData(const std::string &data);
 };
 
 #endif //TEXTINPUT_SNAPSHOT_H

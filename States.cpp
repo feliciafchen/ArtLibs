@@ -5,9 +5,6 @@
 #include "States.h"
 
 States::States() {
-//    for (auto i : states) {
-//        i.second = false;
-//    }
     for (int i = 0; i < LASTSTATE; ++i) {
         states[static_cast<ObjectState>(i)] = false;
     }
