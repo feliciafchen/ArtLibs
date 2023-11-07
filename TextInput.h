@@ -5,14 +5,28 @@
 #ifndef TEXTINPUT_TEXTINPUT_H
 #define TEXTINPUT_TEXTINPUT_H
 #include "GUIComponent.h"
-class TextInput : public GUIComponent{
+#include "Typing.h"
+#include "TextBox.h"
+#include "Cursor.h"
+#include "Label.h"
+
+class TextInput : public GUIComponent {
 private:
-    sf::RectangleShape box;
-    sf::RectangleShape cursor;
-    
+    TextBox textbox;
+    Typing typing;
+    Cursor cursor;
+    Label label;
+    sf::Vector2f position;
 public:
-    void setLabel(sf::String label);
-    void setLabelSize(sf::Vector2f);
+    TextInput();
+    TextInput(const std::string& label, float labelSize, const sf::Vector2f& position);
+    void setLabel(const std::string& label);
+    void setLabelSize(float size);
+    void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
+    void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
+    void update() override;
+    Snapshot &getSnapshot() override;
+    void applySnapshot(const Snapshot &snapshot) override;
 };
 
 #endif //TEXTINPUT_TEXTINPUT_H

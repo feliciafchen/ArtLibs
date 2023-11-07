@@ -35,7 +35,13 @@ add_executable(TextInput main.cpp
         Snapshot.cpp
         EventHandler.h
         KeyShortcuts.h
-        KeyShortcuts.cpp)
+        KeyShortcuts.cpp
+        TextBox.h
+        TextBox.cpp
+        Cursor.cpp
+        Cursor.h
+        Label.cpp
+        Label.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)
