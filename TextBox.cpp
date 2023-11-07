@@ -23,9 +23,23 @@ void TextBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 }
 
 void TextBox::addEventHandler(sf::RenderWindow &window, sf::Event event) {
+    if(MouseEvents<sf::RectangleShape>::hovered(box,window))
+        enableState(HOVERED);
+    if(MouseEvents<sf::RectangleShape>::mouseClicked(box,window))
+        enableState(CLICKED);
+    if(MouseEvents<sf::RectangleShape>::mouseClicked(box,window, event))
+        disableState(CLICKED);
 }
 
 void TextBox::update() {
+    if(checkState(CLICKED)){
+        box.setOutlineColor(sf::Color::Blue);
+        box.setOutlineThickness(2);
+    }
+    else{
+        box.setOutlineColor(sf::Color::Black);
+        box.setOutlineThickness(1);
+    }
 }
 
 Snapshot &TextBox::getSnapshot() {

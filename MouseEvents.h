@@ -19,7 +19,7 @@ public:
     static bool mouseClicked(T& object, sf::RenderWindow& window);
 
     // returns true if the mouse clicks anywhere in the window
-    static bool mouseClicked(sf::RenderWindow& window, sf::Event event);
+    static bool mouseClicked(T &object, sf::RenderWindow& window, sf::Event event);
 
     // returns true if the mouse has been double clicked
     static bool mouseDoubleClicked();

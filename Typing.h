@@ -9,8 +9,9 @@
 #include "MultiText.h"
 #include "Cursor.h"
 #include "GUIComponent.h"
+#include "MouseEvents.h"
 
-class Typing : public sf::Drawable{
+class Typing : public sf::Drawable, public States{
 private:
     MultiText text;
     Cursor cursor;
@@ -24,7 +25,7 @@ public:
     void setFont(const sf::Font& font);
     void addEventHandler(sf::RenderWindow& window, sf::Event event);
     void update();
-    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const;
+    void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
 };
 
 

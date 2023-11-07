@@ -49,6 +49,8 @@ void Typing::update() {
 
 void Typing::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(text, states);
+    if(!cursor.checkState(HIDDEN))
+        window.draw(cursor, states);
 }
 
 void Typing::setFont(const sf::Font &font) {

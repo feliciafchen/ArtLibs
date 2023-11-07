@@ -24,9 +24,10 @@ bool MouseEvents<T>::mouseClicked(T &object, sf::RenderWindow &window) {
 }
 
 template<class T>
-bool MouseEvents<T>::mouseClicked(sf::RenderWindow &window, sf::Event event) {
+bool MouseEvents<T>::mouseClicked(T &object, sf::RenderWindow &window, sf::Event event) {
     countClicks(event);
-    return event.type == sf::Mouse::isButtonPressed(sf::Mouse::Left);
+
+    return !hovered(object, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left);
 }
 
 template<class T>

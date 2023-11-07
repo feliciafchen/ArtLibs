@@ -20,4 +20,9 @@ Letter::Letter(char letter, sf::Color color, unsigned int size, sf::Vector2f pos
     setCharacterSize(size);
     setFillColor(color);
     setPosition(position);
+    this->position = position;
+}
+
+const sf::Vector2f &Letter::getPosition() const {
+    return position;
 }

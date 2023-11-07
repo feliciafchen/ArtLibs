@@ -31,7 +31,8 @@ void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     textbox.addEventHandler(window, event);
-    typing.addEventHandler(window, event);
+    if(textbox.checkState(CLICKED))
+        typing.addEventHandler(window, event);
 }
 
 void TextInput::update() {

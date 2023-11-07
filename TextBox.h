@@ -7,6 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include "Typing.h"
 #include "GUIComponent.h"
+#include "MouseEvents.h"
 
 class TextBox : public GUIComponent{
 private:
