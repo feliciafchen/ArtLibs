@@ -5,6 +5,7 @@
 #ifndef TEXTINPUT_HISTORY_H
 #define TEXTINPUT_HISTORY_H
 #include "HistoryNode.h"
+#include "KeyShortcuts.h"
 #include <stack>
 
 class History {

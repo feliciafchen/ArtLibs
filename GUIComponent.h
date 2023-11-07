@@ -10,16 +10,12 @@
 
 class GUIComponent : public EventHandler,
         public States, public SnapshotInterface, public sf::Drawable, public sf::Transformable{
-//from the sf::Drawable class
-    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const = 0;
-
-// from EventHandler
-    virtual void addEventHandler(sf::RenderWindow& window, sf::Event event) = 0;
-    virtual void update() = 0;
-
-//from SnapshotInterface
-    virtual Snapshot& getSnapshot() = 0;
-    virtual void applySnapshot(const Snapshot& snapshot) = 0;
+public:
+    void draw(sf::RenderTarget& window, sf::RenderStates states) const override = 0;
+    void addEventHandler(sf::RenderWindow& window, sf::Event event) override = 0;
+    void update() override = 0;
+    Snapshot& getSnapshot() override = 0;
+    void applySnapshot(const Snapshot& snapshot) override = 0;
 };
 
 
