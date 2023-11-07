@@ -9,29 +9,23 @@ TextBox::TextBox()
 
 }
 
-TextBox::TextBox(sf::Vector2f position, sf::Vector2f dimensions, sf::Color fillColor, sf::Color borderColor,
-                 float borderThickness) {
+TextBox::TextBox(sf::Vector2f position, float length, unsigned int textSize, sf::Color fillColor, sf::Color textColor,
+                 sf::Color borderColor, float borderThickness) {
     box.setPosition(position);
-    box.setSize(dimensions);
+    box.setSize({length, static_cast<float>(textSize + textSize/3)});
     box.setFillColor(fillColor);
     box.setOutlineThickness(borderThickness);
     box.setOutlineColor(borderColor);
 }
 
-TextBox::TextBox(sf::RectangleShape box) {
-
-}
-
 void TextBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    target.draw(box, states);
+    target.draw(box);
 }
 
 void TextBox::addEventHandler(sf::RenderWindow &window, sf::Event event) {
-    GUIComponent::addEventHandler(window, event);
 }
 
 void TextBox::update() {
-    GUIComponent::update();
 }
 
 Snapshot &TextBox::getSnapshot() {

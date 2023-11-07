@@ -5,21 +5,17 @@
 #ifndef TEXTINPUT_TEXTBOX_H
 #define TEXTINPUT_TEXTBOX_H
 #include <SFML/Graphics.hpp>
-#include "Cursor.h"
 #include "Typing.h"
 #include "GUIComponent.h"
 
 class TextBox : public GUIComponent{
 private:
     sf::RectangleShape box;
-    Typing typing;
-    Cursor cursor;
 public:
     TextBox();
-    TextBox(sf::Vector2f position, sf::Vector2f dimensions,
-            sf::Color fillColor, sf::Color borderColor,
+    TextBox(sf::Vector2f position, float length, unsigned int textSize,
+            sf::Color fillColor, sf::Color textColor, sf::Color borderColor,
             float borderThickness);
-    TextBox(sf::RectangleShape box);
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;
     Snapshot &getSnapshot() override;

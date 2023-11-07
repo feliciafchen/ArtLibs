@@ -2,8 +2,8 @@
 // Created by Felicia Chen on 10/19/23.
 //
 
-#ifndef SFMLTYPING_FONTS_H
-#define SFMLTYPING_FONTS_H
+#ifndef TEXTINPUT_FONTS_H
+#define TEXTINPUT_FONTS_H
 #include <SFML/Graphics.hpp>
 #include <map>
 #include "FontEnum.h"
@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif //SFMLTYPING_FONTS_H
+#endif //TEXTINPUT_FONTS_H

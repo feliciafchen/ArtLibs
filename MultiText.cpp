@@ -3,8 +3,7 @@
 //
 
 #include "MultiText.h"
-MultiText::MultiText() {
-    MultiText("", Fonts::getFont(FREE_SANS), sf::Color::White, 24);
+MultiText::MultiText() : MultiText("", Fonts::getFont(FREE_SANS), sf::Color::Black, 24){
 }
 
 MultiText::MultiText(const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
@@ -48,7 +47,6 @@ void MultiText::setPosition(const sf::Vector2f &position) {
         }
     }
 }
-
 
 
 void MultiText::setSize(unsigned int size) {

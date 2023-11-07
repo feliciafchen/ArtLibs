@@ -5,7 +5,7 @@
 #include "Typing.h"
 
 Typing::Typing()
-: Typing("", Fonts::getFont(OPEN_SANS), sf::Color::White, 50)
+        : Typing("", Fonts::getFont(OPEN_SANS), sf::Color::Black, 50)
 {
 }
 

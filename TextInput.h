@@ -12,12 +12,12 @@ class TextInput : public GUIComponent {
 private:
     TextBox textbox;
     Label label;
+    Typing typing;
     sf::Vector2f getBoxPosition();
 public:
     TextInput();
     TextInput(const std::string& label, unsigned int labelSize, sf::Vector2f position,
-              float length,
-              sf::Color labelColor, sf::Color fillColor, sf::Color borderColor,
+              float length, sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
               float borderThickness);
     void setLabel(const std::string& label);
     void setLabelSize(unsigned int size);

@@ -5,32 +5,38 @@
 #include "TextInput.h"
 
 TextInput::TextInput()
-: TextInput("First Name:", 20, {40,50}, 200, sf::Color::Black, sf::Color::Transparent, sf::Color::Black, 1)
+: TextInput("First Name:", 20, {40,50}, 200, sf::Color::Black, sf::Color::Black, sf::Color::Transparent, sf::Color::Black, 1)
 {
 
 }
 
 TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vector2f position, float boxLength,
-                     sf::Color labelColor, sf::Color fillColor, sf::Color borderColor,
+                     sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
                      float borderThickness) {
     setPosition(position);
     auto l = Label(label, labelSize, labelColor, position);
     this->label = l;
-    auto t = TextBox(getBoxPosition(), {boxLength, static_cast<float>(labelSize + labelSize/3)}, fillColor, borderColor, borderThickness);
+    auto t = TextBox(getBoxPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);
     textbox = t;
+    Typing type("",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);
+    typing = type;
+    typing.setPosition(position);
 }
 
 void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(label);
-    textbox.draw(window, states);
+    window.draw(textbox);
+    window.draw(typing);
 }
 
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     textbox.addEventHandler(window, event);
+    typing.addEventHandler(window, event);
 }
 
 void TextInput::update() {
     textbox.update();
+    typing.update();
 }
 
 Snapshot &TextInput::getSnapshot() {

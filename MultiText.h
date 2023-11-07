@@ -2,8 +2,13 @@
 // Created by Felicia Chen on 10/17/23.
 //
 
-#ifndef SFMLTYPING_MULTITEXT_H
-#define SFMLTYPING_MULTITEXT_H
+#ifndef TEXTINPUT_MULTITEXT_H
+#define TEXTINPUT_MULTITEXT_H
+#include <SFML/Graphics.hpp>
+#include <list>
+#include "Letter.h"
+#include "Fonts.h"
+
 #include <SFML/Graphics.hpp>
 #include <list>
 #include "Letter.h"
@@ -37,4 +42,4 @@ public:
 };
 
 
-#endif //SFMLTYPING_MULTITEXT_H
+#endif //TEXTINPUT_MULTITEXT_H

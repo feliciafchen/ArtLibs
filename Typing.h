@@ -2,15 +2,18 @@
 // Created by Felicia Chen on 10/14/23.
 //
 
-#ifndef SFMLTYPING_TYPING_H
-#define SFMLTYPING_TYPING_H
+#ifndef TEXTINPUT_TYPING_H
+#define TEXTINPUT_TYPING_H
 #include <SFML/Graphics.hpp>
 #include "Fonts.h"
 #include "MultiText.h"
+#include "Cursor.h"
+#include "GUIComponent.h"
 
-class Typing : public sf::Drawable {
+class Typing : public sf::Drawable{
 private:
     MultiText text;
+    Cursor cursor;
 public:
     Typing();
     Typing(const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);
@@ -25,4 +28,4 @@ public:
 };
 
 
-#endif //SFMLTYPING_TYPING_H
+#endif //TEXTINPUT_TYPING_H
