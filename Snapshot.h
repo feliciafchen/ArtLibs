@@ -11,7 +11,7 @@ private:
     std::string data;
 public:
     Snapshot();
-    Snapshot(const std::string data);
+    explicit Snapshot(std::string data);
     const std::string &getData() const;
     void setData(const std::string &data);
 };

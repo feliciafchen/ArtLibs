@@ -57,3 +57,7 @@ void Typing::setFont(const sf::Font &font) {
 sf::Vector2f Typing::getLastPosition() {
     return text.getLastPosition();
 }
+
+std::string Typing::getString() {
+    return text.getString();
+}

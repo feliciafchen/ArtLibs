@@ -13,8 +13,6 @@
 class MultiText : public sf::Drawable {
 private:
     std::list<Letter> multiText;
-    sf::Text placeholder;
-    Cursor cursor;
     sf::Vector2f firstPos;
 public:
     typedef std::list<Letter>::iterator iterator;
@@ -37,6 +35,7 @@ public:
     void setSize(unsigned int size);
     void setFont(const sf::Font& font);
     void update();
+    std::string getString();
 
     virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const;
 };

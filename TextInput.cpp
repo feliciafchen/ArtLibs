@@ -29,15 +29,26 @@ void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(label);
     window.draw(textbox);
     window.draw(typing);
-    window.draw(cursor);
+    if(!cursor.checkState(HIDDEN))
+        window.draw(cursor);
 }
 
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
+    if(KeyShortcuts::isUndo()){
+        applySnapshot(History::topHistory().snapshot);
+        History::popHistory();
+    }
+    if(KeyShortcuts::isSave()){
+        HistoryNode n = *new HistoryNode;
+        n.snapshot = Snapshot(typing.getString());
+        n.component = this;
+        History::pushHistory(n);
+    }
     textbox.addEventHandler(window, event);
     if(textbox.checkState(CLICKED)){
         typing.addEventHandler(window, event);
-        cursor.addEventHandler(window, event);
     }
+    cursor.addEventHandler(window, event);
 }
 
 void TextInput::update() {
@@ -54,7 +65,7 @@ Snapshot &TextInput::getSnapshot() {
 }
 
 void TextInput::applySnapshot(const Snapshot &snapshot) {
-    textbox.applySnapshot(snapshot);
+    typing.setString(snapshot.getData());
 }
 
 void TextInput::setLabel(const std::string& label) {

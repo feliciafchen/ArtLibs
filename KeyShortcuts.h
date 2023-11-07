@@ -9,6 +9,8 @@
 class KeyShortcuts {
 public:
     static bool isUndo();
+
+    static bool isSave();
 };
 
 

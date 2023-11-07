@@ -31,12 +31,14 @@ void Cursor::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 }
 
 void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    if(!checkState(HIDDEN))
-        target.draw(cursor, states);
+    target.draw(cursor, states);
 }
 
 void Cursor::update() {
-
+//    if(!checkState(HIDDEN))
+//        cursor.setFillColor(color);
+//    else
+//        cursor.setFillColor(sf::Color::White);
 }
 
 void Cursor::setPosition(sf::Vector2f pos) {

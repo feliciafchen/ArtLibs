@@ -21,8 +21,13 @@ Letter::Letter(char letter, sf::Color color, unsigned int size, sf::Vector2f pos
     setFillColor(color);
     setPosition(position);
     this->position = position;
+    this->letter = letter;
 }
 
 const sf::Vector2f &Letter::getPosition() const {
     return position;
+}
+
+char Letter::getChar() const {
+    return letter;
 }

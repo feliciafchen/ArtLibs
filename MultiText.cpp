@@ -14,17 +14,12 @@ MultiText::MultiText(sf::Vector2f position, const std::string &text, const sf::F
     setFont(font);
     setFillColor(color);
     setSize(size);
-
-    placeholder.setPosition(position);
-    placeholder.setString(text);
-    placeholder.setFont(font);
-    placeholder.setFillColor(color);
-    placeholder.setCharacterSize(size);
 }
 
 void MultiText::setString(const std::string &text) {
+    while(!multiText.empty())
+        multiText.pop_back();
     push(text);
-    placeholder.setString(text);
 }
 
 sf::String MultiText::getText() {
@@ -114,8 +109,16 @@ sf::Vector2f MultiText::getLastPosition() {
         sf::Glyph g = iter->getFont()->getGlyph((*iter).getString()[0], (*iter).getCharacterSize(), false);
         pos.x += g.advance;
 
-        std::cout << pos.x;
         return pos;
     }
     return firstPos;
+}
+
+std::string MultiText::getString() {
+    std::string string = "";
+    auto iter = multiText.begin();
+    for (; iter != multiText.end(); ++iter) {
+        string.push_back((*iter).getChar());
+    }
+    return string;
 }

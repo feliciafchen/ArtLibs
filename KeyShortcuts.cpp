@@ -8,7 +8,14 @@
 bool KeyShortcuts::isUndo() {
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) && sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
     {
-        std::cout << "undo";
+        return true;
+    }
+    return false;
+}
+
+bool KeyShortcuts::isSave() {
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) && sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+    {
         return true;
     }
     return false;

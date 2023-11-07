@@ -3,12 +3,14 @@
 //
 #include "Snapshot.h"
 
+#include <utility>
+
 Snapshot::Snapshot() {
 
 }
 
-Snapshot::Snapshot(const std::string data)
-: data(data)
+Snapshot::Snapshot(std::string data)
+: data(std::move(data))
 {
 
 }

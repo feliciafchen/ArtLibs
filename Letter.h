@@ -10,10 +10,12 @@
 class Letter : public sf::Text {
 private:
     sf::Vector2f position;
+    char letter;
 public:
     Letter();
     Letter(char letter, sf::Vector2f position);
     Letter(char letter, sf::Color color, unsigned int size, sf::Vector2f position);
     const sf::Vector2f &getPosition() const;
+    char getChar() const;
 };
 #endif //TEXTINPUT_LETTER_H
