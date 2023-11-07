@@ -20,6 +20,7 @@ public:
     void setString(const std::string& text);
     void setFillColor(const sf::Color& color);
     void setPosition(const sf::Vector2f& position);
+    sf::Vector2f getLastPosition();
     void setSize(unsigned int size);
     void setFont(const sf::Font& font);
     void addEventHandler(sf::RenderWindow& window, sf::Event event);

@@ -39,4 +39,8 @@ void Cursor::update() {
 
 }
 
+void Cursor::setPosition(sf::Vector2f pos) {
+    cursor.setPosition(pos);
+}
+
 

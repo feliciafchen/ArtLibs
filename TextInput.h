@@ -27,6 +27,7 @@ public:
     void update() override;
     Snapshot &getSnapshot() override;
     void applySnapshot(const Snapshot &snapshot) override;
+    void updateCursorPosition();
 };
 
 #endif //TEXTINPUT_TEXTINPUT_H

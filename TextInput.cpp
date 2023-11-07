@@ -46,7 +46,7 @@ void TextInput::update() {
     }
     textbox.update();
     typing.update();
-    cursor.update();
+    cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
 }
 
 Snapshot &TextInput::getSnapshot() {

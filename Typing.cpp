@@ -53,3 +53,7 @@ void Typing::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 void Typing::setFont(const sf::Font &font) {
     text.setFont(font);
 }
+
+sf::Vector2f Typing::getLastPosition() {
+    return text.getLastPosition();
+}

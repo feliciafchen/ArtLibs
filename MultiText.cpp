@@ -3,6 +3,7 @@
 //
 
 #include "MultiText.h"
+#include "iostream"
 MultiText::MultiText() : MultiText({100,100}, "", Fonts::getFont(FREE_SANS), sf::Color::Black, 24){
 }
 
@@ -13,10 +14,17 @@ MultiText::MultiText(sf::Vector2f position, const std::string &text, const sf::F
     setFont(font);
     setFillColor(color);
     setSize(size);
+
+    placeholder.setPosition(position);
+    placeholder.setString(text);
+    placeholder.setFont(font);
+    placeholder.setFillColor(color);
+    placeholder.setCharacterSize(size);
 }
 
 void MultiText::setString(const std::string &text) {
     push(text);
+    placeholder.setString(text);
 }
 
 sf::String MultiText::getText() {
@@ -37,18 +45,6 @@ void MultiText::setFillColor(const sf::Color &color) {
 
 void MultiText::setPosition(const sf::Vector2f &position) {
     firstPos = position;
-    if(!multiText.empty()){
-        auto iter = multiText.begin();
-
-        sf::Vector2f tempPos = position;
-        sf::Glyph g;
-
-        for (; iter != multiText.end(); ++iter) {
-            (*iter).setPosition(tempPos);
-            g = (*iter).getFont()->getGlyph((*iter).getString()[0], (*iter).getCharacterSize(), false);
-            tempPos.x += g.advance;
-        }
-    }
 }
 
 
@@ -74,12 +70,12 @@ void MultiText::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 }
 
 void MultiText::push(char c) {
-    multiText.push_back(Letter(c, firstPos));
+    multiText.emplace_back(c, getLastPosition());
 }
 
 void MultiText::push(const std::string &s) {
     for (int i = 0; i < s.size(); ++i) {
-        multiText.push_back(Letter(s[i], firstPos));
+        multiText.emplace_back(s[i], getLastPosition());
     }
 }
 
@@ -109,4 +105,17 @@ void MultiText::update() {
 void MultiText::pop() {
     if(!multiText.empty())
         multiText.pop_back();
+}
+
+sf::Vector2f MultiText::getLastPosition() {
+    if (!multiText.empty()) {
+        auto iter = multiText.rbegin();
+        sf::Vector2f pos = iter->getPosition();
+        sf::Glyph g = iter->getFont()->getGlyph((*iter).getString()[0], (*iter).getCharacterSize(), false);
+        pos.x += g.advance;
+
+        std::cout << pos.x;
+        return pos;
+    }
+    return firstPos;
 }

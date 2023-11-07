@@ -8,15 +8,13 @@
 #include <list>
 #include "Letter.h"
 #include "Fonts.h"
-
-#include <SFML/Graphics.hpp>
-#include <list>
-#include "Letter.h"
-#include "Fonts.h"
+#include "Cursor.h"
 
 class MultiText : public sf::Drawable {
 private:
     std::list<Letter> multiText;
+    sf::Text placeholder;
+    Cursor cursor;
     sf::Vector2f firstPos;
 public:
     typedef std::list<Letter>::iterator iterator;
@@ -35,6 +33,7 @@ public:
     sf::String getText();
     void setFillColor(const sf::Color& color);
     void setPosition(const sf::Vector2f& position);
+    sf::Vector2f getLastPosition();
     void setSize(unsigned int size);
     void setFont(const sf::Font& font);
     void update();

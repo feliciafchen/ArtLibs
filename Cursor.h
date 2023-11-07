@@ -9,7 +9,7 @@
 #include "States.h"
 #include "Fonts.h"
 
-class Cursor : public States, public EventHandler, public sf::Drawable{
+class Cursor : public sf::Text, public States, public EventHandler{
 private:
     sf::Text cursor;
     sf::Clock clock;
@@ -17,6 +17,7 @@ private:
 public:
     Cursor();
     Cursor(unsigned int size, sf::Color color, sf::Vector2f position);
+    void setPosition(sf::Vector2f);
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     void update() override;
