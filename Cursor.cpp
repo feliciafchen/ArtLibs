@@ -3,7 +3,7 @@
 //
 
 #include "Cursor.h"
-
+#include "iostream"
 Cursor::Cursor()
 : Cursor(20, sf::Color::Black, {100,100})
 {
@@ -11,25 +11,32 @@ Cursor::Cursor()
 }
 
 Cursor::Cursor(unsigned int size, sf::Color color, sf::Vector2f position) {
-    setFont(Fonts::getFont(FREE_SANS));
-    setCharacterSize(size);
-    setFillColor(color);
-    setPosition(position);
-    setString('|');
+    clock.restart();
+    cursor.setFont(Fonts::getFont(FREE_SANS));
+    cursor.setCharacterSize(size);
+    cursor.setFillColor(color);
+    this->color = color;
+    cursor.setPosition(position);
+    cursor.setString("|");
+    enableState(HIDDEN);
 }
 
-void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-
-}
 
 void Cursor::addEventHandler(sf::RenderWindow &window, sf::Event event) {
-    if(clock.getElapsedTime() >= sf::milliseconds(500))
+    if(clock.getElapsedTime().asMilliseconds() > 500)
     {
         toggleState(HIDDEN);
         clock.restart();
     }
 }
 
+void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states) const {
+    if(!checkState(HIDDEN))
+        target.draw(cursor, states);
+}
+
 void Cursor::update() {
 
 }
+
+

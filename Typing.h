@@ -14,7 +14,6 @@
 class Typing : public sf::Drawable, public States{
 private:
     MultiText text;
-    Cursor cursor;
 public:
     Typing();
     Typing(sf::Vector2f,const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);

@@ -5,8 +5,7 @@
 #include "Typing.h"
 
 Typing::Typing()
-{
-}
+= default;
 
 Typing::Typing(sf::Vector2f position, const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
     this->text.setPosition(position);
@@ -49,8 +48,6 @@ void Typing::update() {
 
 void Typing::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(text, states);
-    if(!cursor.checkState(HIDDEN))
-        window.draw(cursor, states);
 }
 
 void Typing::setFont(const sf::Font &font) {

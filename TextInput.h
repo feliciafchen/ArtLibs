@@ -13,6 +13,7 @@ private:
     TextBox textbox;
     Label label;
     Typing typing;
+    Cursor cursor;
     sf::Vector2f getBoxPosition();
 public:
     TextInput();

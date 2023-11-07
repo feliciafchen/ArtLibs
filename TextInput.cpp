@@ -21,23 +21,32 @@ TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vecto
     Typing type(getBoxPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);
     typing = type;
     typing.setPosition(getBoxPosition());
+    Cursor c(labelSize,textColor,getBoxPosition());
+    cursor = c;
 }
 
 void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(label);
     window.draw(textbox);
     window.draw(typing);
+    window.draw(cursor);
 }
 
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     textbox.addEventHandler(window, event);
-    if(textbox.checkState(CLICKED))
+    if(textbox.checkState(CLICKED)){
         typing.addEventHandler(window, event);
+        cursor.addEventHandler(window, event);
+    }
 }
 
 void TextInput::update() {
+    if(!textbox.checkState(CLICKED)){
+        cursor.enableState(HIDDEN);
+    }
     textbox.update();
     typing.update();
+    cursor.update();
 }
 
 Snapshot &TextInput::getSnapshot() {

@@ -9,15 +9,16 @@
 #include "States.h"
 #include "Fonts.h"
 
-class Cursor : public sf::Text, public States, public EventHandler{
+class Cursor : public States, public EventHandler, public sf::Drawable{
 private:
+    sf::Text cursor;
     sf::Clock clock;
-    int counter = 0;
+    sf::Color color;
 public:
     Cursor();
     Cursor(unsigned int size, sf::Color color, sf::Vector2f position);
-    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     void update() override;
 };
 
