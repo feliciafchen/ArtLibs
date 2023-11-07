@@ -17,11 +17,12 @@
 class MultiText : public sf::Drawable {
 private:
     std::list<Letter> multiText;
+    sf::Vector2f firstPos;
 public:
     typedef std::list<Letter>::iterator iterator;
 
     MultiText();
-    MultiText(const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);
+    MultiText(sf::Vector2f position, const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);
 
     void push(char c);
     void push(const std::string& s);

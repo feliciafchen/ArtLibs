@@ -3,10 +3,12 @@
 //
 
 #include "MultiText.h"
-MultiText::MultiText() : MultiText("", Fonts::getFont(FREE_SANS), sf::Color::Black, 24){
+MultiText::MultiText() : MultiText({100,100}, "", Fonts::getFont(FREE_SANS), sf::Color::Black, 24){
 }
 
-MultiText::MultiText(const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
+MultiText::MultiText(sf::Vector2f position, const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
+    this->firstPos = position;
+    setPosition(position);
     setString(text);
     setFont(font);
     setFillColor(color);
@@ -34,6 +36,7 @@ void MultiText::setFillColor(const sf::Color &color) {
 }
 
 void MultiText::setPosition(const sf::Vector2f &position) {
+    firstPos = position;
     if(!multiText.empty()){
         auto iter = multiText.begin();
 
@@ -71,12 +74,12 @@ void MultiText::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 }
 
 void MultiText::push(char c) {
-    multiText.push_back(Letter(c));
+    multiText.push_back(Letter(c, firstPos));
 }
 
 void MultiText::push(const std::string &s) {
     for (int i = 0; i < s.size(); ++i) {
-        multiText.push_back(Letter(s[i]));
+        multiText.push_back(Letter(s[i], firstPos));
     }
 }
 

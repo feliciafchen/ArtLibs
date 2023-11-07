@@ -5,11 +5,11 @@
 #include "Typing.h"
 
 Typing::Typing()
-        : Typing("", Fonts::getFont(OPEN_SANS), sf::Color::Black, 50)
 {
 }
 
-Typing::Typing(const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
+Typing::Typing(sf::Vector2f position, const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
+    this->text.setPosition(position);
     this->text.setString(text);
     this->text.setFont(font);
     this->text.setFillColor(color);

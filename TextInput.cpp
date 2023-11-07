@@ -18,9 +18,9 @@ TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vecto
     this->label = l;
     auto t = TextBox(getBoxPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);
     textbox = t;
-    Typing type("",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);
+    Typing type(getBoxPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);
     typing = type;
-    typing.setPosition(position);
+    typing.setPosition(getBoxPosition());
 }
 
 void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {

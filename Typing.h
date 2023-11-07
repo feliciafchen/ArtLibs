@@ -16,7 +16,7 @@ private:
     Cursor cursor;
 public:
     Typing();
-    Typing(const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);
+    Typing(sf::Vector2f,const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);
     void setString(const std::string& text);
     void setFillColor(const sf::Color& color);
     void setPosition(const sf::Vector2f& position);
