@@ -32,7 +32,10 @@ add_executable(TextInput main.cpp
         HistoryNode.h
         TextInput.cpp
         TextInput.h
-        Snapshot.cpp)
+        Snapshot.cpp
+        EventHandler.h
+        KeyShortcuts.h
+        KeyShortcuts.cpp)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)

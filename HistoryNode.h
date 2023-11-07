@@ -8,7 +8,7 @@
 #include "GUIComponent.h"
 struct HistoryNode
 {
-//    Snapshot snapshot;
+    Snapshot snapshot;
     GUIComponent* component;
 };
 

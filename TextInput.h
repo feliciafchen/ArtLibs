@@ -6,6 +6,10 @@
 #define TEXTINPUT_TEXTINPUT_H
 #include "GUIComponent.h"
 class TextInput : public GUIComponent{
+private:
+    sf::RectangleShape box;
+    sf::RectangleShape cursor;
+    
 public:
     void setLabel(sf::String label);
     void setLabelSize(sf::Vector2f);

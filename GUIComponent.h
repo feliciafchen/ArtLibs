@@ -4,12 +4,13 @@
 
 #ifndef TEXTINPUT_GUICOMPONENT_H
 #define TEXTINPUT_GUICOMPONENT_H
-#include <SFML/Graphics.hpp>
-#include "Snapshot.h"
+#include "EventHandler.h"
+#include "SnapshotInterface.h"
+#include "States.h"
 
-class GUIComponent : public sf::Drawable{
-public:
-    //from the sf::Drawable class
+class GUIComponent : public EventHandler,
+        public States, public SnapshotInterface, public sf::Drawable, public sf::Transformable{
+//from the sf::Drawable class
     virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const = 0;
 
 // from EventHandler
@@ -17,8 +18,8 @@ public:
     virtual void update() = 0;
 
 //from SnapshotInterface
-//    virtual Snapshot& getSnapshot() = 0;
-//    virtual void applySnapshot(const Snapshot& snapshot) = 0;
+    virtual Snapshot& getSnapshot() = 0;
+    virtual void applySnapshot(const Snapshot& snapshot) = 0;
 };
 
 
