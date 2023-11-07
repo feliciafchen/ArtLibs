@@ -10,7 +10,7 @@
 
 class History {
 private:
-    static std::stack<HistoryNode> stack;
+    inline static std::stack<HistoryNode> stack;
 public:
     static void pushHistory(const HistoryNode& snapshot);
     static HistoryNode& topHistory();

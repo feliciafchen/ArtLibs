@@ -7,16 +7,17 @@
 #include "States.h"
 #include "GUIComponent.h"
 
-class Box : public GUIComponent, public States {
+class Box : public GUIComponent {
 private:
     sf::RectangleShape box;
 public:
     Box();
-    Box(const sf::Vector2f& size);
-
-    void addEventHandler(sf::RenderWindow& window, sf::Event event);
-    void update();
-    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const;
+    explicit Box(const sf::Vector2f& size);
+    void addEventHandler(sf::RenderWindow& window, sf::Event event) override;
+    void update() override;
+    void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
+    Snapshot& getSnapshot() override;
+    void applySnapshot(const Snapshot &snapshot) override;
 };
 
 

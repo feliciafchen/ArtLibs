@@ -26,7 +26,7 @@ void Application::run() {
         for(auto g : components)
             g->update();
 
-        window.clear();
+        window.clear(sf::Color::White);
         for (auto g: components)
             window.draw(*g);
         window.display();

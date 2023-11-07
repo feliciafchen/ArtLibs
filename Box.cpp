@@ -3,6 +3,7 @@
 //
 
 #include "Box.h"
+#include "HistoryNode.h"
 
 Box::Box() : Box({50, 50}){
 
@@ -31,4 +32,13 @@ void Box::update() {
 void Box::draw(sf::RenderTarget &window, sf::RenderStates states) const{
     if(!checkState(HIDDEN))
         window.draw(box);
+}
+
+Snapshot& Box::getSnapshot() {
+    auto n = Snapshot("hi");
+    return n;
+}
+
+void Box::applySnapshot(const Snapshot &snapshot) {
+
 }

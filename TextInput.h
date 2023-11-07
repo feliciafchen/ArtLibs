@@ -5,23 +5,22 @@
 #ifndef TEXTINPUT_TEXTINPUT_H
 #define TEXTINPUT_TEXTINPUT_H
 #include "GUIComponent.h"
-#include "Typing.h"
 #include "TextBox.h"
-#include "Cursor.h"
 #include "Label.h"
 
 class TextInput : public GUIComponent {
 private:
     TextBox textbox;
-    Typing typing;
-    Cursor cursor;
     Label label;
-    sf::Vector2f position;
+    sf::Vector2f getBoxPosition();
 public:
     TextInput();
-    TextInput(const std::string& label, float labelSize, const sf::Vector2f& position);
+    TextInput(const std::string& label, unsigned int labelSize, sf::Vector2f position,
+              float length,
+              sf::Color labelColor, sf::Color fillColor, sf::Color borderColor,
+              float borderThickness);
     void setLabel(const std::string& label);
-    void setLabelSize(float size);
+    void setLabelSize(unsigned int size);
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;
