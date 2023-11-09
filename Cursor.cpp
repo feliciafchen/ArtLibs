@@ -23,11 +23,6 @@ Cursor::Cursor(unsigned int size, sf::Color color, sf::Vector2f position) {
 
 
 void Cursor::addEventHandler(sf::RenderWindow &window, sf::Event event) {
-    if(clock.getElapsedTime().asMilliseconds() > 500)
-    {
-        toggleState(HIDDEN);
-        clock.restart();
-    }
 }
 
 void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states) const {
@@ -35,7 +30,11 @@ void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 }
 
 void Cursor::update() {
-
+    if(clock.getElapsedTime().asMilliseconds() > 500)
+    {
+        toggleState(HIDDEN);
+        clock.restart();
+    }
 }
 
 void Cursor::setPosition(sf::Vector2f pos) {

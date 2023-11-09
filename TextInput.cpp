@@ -18,7 +18,7 @@ TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vecto
     textbox = TextBox(getBoxPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);;
     typing = Typing(getBoxPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
     typing.setPosition(getBoxPosition());
-    cursor = Cursor(labelSize,textColor,getBoxPosition());;
+    cursor = Cursor(labelSize,textColor,getBoxPosition());
 }
 
 void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
@@ -30,9 +30,8 @@ void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 }
 
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
-    if(!textbox.checkState(CLICKED)){
+    if(!textbox.checkState(CLICKED))
         cursor.enableState(HIDDEN);
-    }
     if(KeyShortcuts::isUndo()){
         applySnapshot(History::topHistory().snapshot);
         History::popHistory();
@@ -46,16 +45,20 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     textbox.addEventHandler(window, event);
     if(textbox.checkState(CLICKED)){
         typing.addEventHandler(window, event);
+        cursor.addEventHandler(window, event);
     }
-    cursor.addEventHandler(window, event);
 }
 
 void TextInput::update() {
     textbox.update();
     typing.update();
     typing.setPosition({textbox.getPosition().x, textbox.getPosition().y});
-    cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
-    cursor.update();
+    if(!typing.getString().empty())
+        cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
+    else
+        cursor.setPosition(getBoxPosition());
+    if(textbox.checkState(CLICKED))
+        cursor.update();
 }
 
 Snapshot &TextInput::getSnapshot() {
