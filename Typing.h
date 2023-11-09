@@ -10,6 +10,7 @@
 #include "Cursor.h"
 #include "GUIComponent.h"
 #include "MouseEvents.h"
+#include "History.h"
 
 class Typing : public sf::Drawable, public States{
 private:

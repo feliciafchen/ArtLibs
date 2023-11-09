@@ -39,6 +39,10 @@ void Typing::addEventHandler(sf::RenderWindow &window, sf::Event event) {
             else
                 text.push(static_cast<char>(event.text.unicode));
         }
+        HistoryNode n = *new HistoryNode;
+        n.snapshot = Snapshot(getString());
+        n.component = reinterpret_cast<GUIComponent *>(this);
+        History::pushHistory(n);
     }
 }
 

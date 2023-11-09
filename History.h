@@ -16,6 +16,7 @@ public:
     static HistoryNode& topHistory();
     static void popHistory();
     static void addEventHandler(sf::RenderWindow& window, sf::Event event);
+    static bool empty();
 };
 
 

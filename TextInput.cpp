@@ -32,7 +32,7 @@ void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     if(!textbox.checkState(CLICKED))
         cursor.enableState(HIDDEN);
-    if(KeyShortcuts::isUndo()){
+    if(KeyShortcuts::isUndo() && !History::empty()){
         applySnapshot(History::topHistory().snapshot);
         History::popHistory();
     }

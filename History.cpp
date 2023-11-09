@@ -23,3 +23,7 @@ void History::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         topHistory().component -> applySnapshot(topHistory().snapshot);
     }
 }
+
+bool History::empty() {
+    return stack.empty();
+}
