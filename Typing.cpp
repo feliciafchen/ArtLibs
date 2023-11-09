@@ -13,6 +13,7 @@ Typing::Typing(sf::Vector2f position, const std::string &text, const sf::Font &f
     this->text.setFont(font);
     this->text.setFillColor(color);
     this->text.setSize(size);
+    takeSnapshot();
 }
 
 void Typing::setString(const std::string &text) {
@@ -39,10 +40,7 @@ void Typing::addEventHandler(sf::RenderWindow &window, sf::Event event) {
             else
                 text.push(static_cast<char>(event.text.unicode));
         }
-        HistoryNode n = *new HistoryNode;
-        n.snapshot = Snapshot(getString());
-        n.component = reinterpret_cast<GUIComponent *>(this);
-        History::pushHistory(n);
+        takeSnapshot();
     }
 }
 
@@ -64,4 +62,11 @@ sf::Vector2f Typing::getLastPosition() {
 
 std::string Typing::getString() {
     return text.getString();
+}
+
+void Typing::takeSnapshot() {
+    HistoryNode n = *new HistoryNode;
+    n.snapshot = Snapshot(getString());
+    n.component = reinterpret_cast<GUIComponent *>(this);
+    History::pushHistory(n);
 }
