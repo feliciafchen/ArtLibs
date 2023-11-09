@@ -8,7 +8,6 @@ MultiText::MultiText() : MultiText({100,100}, "", Fonts::getFont(FREE_SANS), sf:
 }
 
 MultiText::MultiText(sf::Vector2f position, const std::string &text, const sf::Font &font, const sf::Color &color, unsigned int size) {
-    this->firstPos = position;
     setPosition(position);
     setString(text);
     setFont(font);
@@ -22,15 +21,6 @@ void MultiText::setString(const std::string &text) {
     push(text);
 }
 
-sf::String MultiText::getText() {
-    sf::String string = "";
-    auto iter = multiText.begin();
-    for (; iter != multiText.end(); ++iter) {
-        string += (*iter).getString();
-    }
-    return string;
-}
-
 void MultiText::setFillColor(const sf::Color &color) {
     auto iter = multiText.begin();
     for (; iter != multiText.end(); ++iter) {
@@ -39,7 +29,11 @@ void MultiText::setFillColor(const sf::Color &color) {
 }
 
 void MultiText::setPosition(const sf::Vector2f &position) {
-    firstPos = position;
+    this->position = position;
+    if(!multiText.empty()){
+        multiText.begin()->setPosition(position);
+    }
+    update();
 }
 
 
@@ -65,7 +59,8 @@ void MultiText::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 }
 
 void MultiText::push(char c) {
-    multiText.emplace_back(c, getLastPosition());
+    Letter l(c, getLastPosition());
+    multiText.emplace_back(l);
 }
 
 void MultiText::push(const std::string &s) {
@@ -111,14 +106,13 @@ sf::Vector2f MultiText::getLastPosition() {
 
         return pos;
     }
-    return firstPos;
 }
 
 std::string MultiText::getString() {
-    std::string string = "";
+    std::string string;
     auto iter = multiText.begin();
     for (; iter != multiText.end(); ++iter) {
-        string.push_back((*iter).getChar());
+        string += ((*iter).getLetter());
     }
     return string;
 }

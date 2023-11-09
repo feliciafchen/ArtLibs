@@ -35,10 +35,7 @@ void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 }
 
 void Cursor::update() {
-//    if(!checkState(HIDDEN))
-//        cursor.setFillColor(color);
-//    else
-//        cursor.setFillColor(sf::Color::White);
+
 }
 
 void Cursor::setPosition(sf::Vector2f pos) {

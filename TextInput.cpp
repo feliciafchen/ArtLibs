@@ -14,15 +14,11 @@ TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vecto
                      sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
                      float borderThickness) {
     setPosition(position);
-    auto l = Label(label, labelSize, labelColor, position);
-    this->label = l;
-    auto t = TextBox(getBoxPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);
-    textbox = t;
-    Typing type(getBoxPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);
-    typing = type;
+    this->label = Label(label, labelSize, labelColor, position);;
+    textbox = TextBox(getBoxPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);;
+    typing = Typing(getBoxPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
     typing.setPosition(getBoxPosition());
-    Cursor c(labelSize,textColor,getBoxPosition());
-    cursor = c;
+    cursor = Cursor(labelSize,textColor,getBoxPosition());;
 }
 
 void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
@@ -34,6 +30,9 @@ void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 }
 
 void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
+    if(!textbox.checkState(CLICKED)){
+        cursor.enableState(HIDDEN);
+    }
     if(KeyShortcuts::isUndo()){
         applySnapshot(History::topHistory().snapshot);
         History::popHistory();
@@ -52,12 +51,11 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 }
 
 void TextInput::update() {
-    if(!textbox.checkState(CLICKED)){
-        cursor.enableState(HIDDEN);
-    }
     textbox.update();
     typing.update();
+    typing.setPosition({textbox.getPosition().x, textbox.getPosition().y});
     cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
+    cursor.update();
 }
 
 Snapshot &TextInput::getSnapshot() {

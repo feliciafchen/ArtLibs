@@ -15,19 +15,14 @@ Letter::Letter(char letter, sf::Vector2f position)
 
 Letter::Letter(char letter, sf::Color color, unsigned int size, sf::Vector2f position)
 {
+    this->letter = letter;
     setFont(Fonts::getFont(FREE_SANS));
     setString(std::string(1,letter));
     setCharacterSize(size);
     setFillColor(color);
     setPosition(position);
-    this->position = position;
-    this->letter = letter;
 }
 
-const sf::Vector2f &Letter::getPosition() const {
-    return position;
-}
-
-char Letter::getChar() const {
+std::string& Letter::getLetter(){
     return letter;
 }

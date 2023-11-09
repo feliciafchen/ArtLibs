@@ -13,7 +13,7 @@
 class MultiText : public sf::Drawable {
 private:
     std::list<Letter> multiText;
-    sf::Vector2f firstPos;
+    sf::Vector2f position;
 public:
     typedef std::list<Letter>::iterator iterator;
 
@@ -28,7 +28,6 @@ public:
     iterator end();
 
     void setString(const std::string& text);
-    sf::String getText();
     void setFillColor(const sf::Color& color);
     void setPosition(const sf::Vector2f& position);
     sf::Vector2f getLastPosition();

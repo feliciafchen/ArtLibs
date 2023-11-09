@@ -9,13 +9,11 @@
 
 class Letter : public sf::Text {
 private:
-    sf::Vector2f position;
-    char letter;
+    std::string letter = "";
 public:
     Letter();
     Letter(char letter, sf::Vector2f position);
     Letter(char letter, sf::Color color, unsigned int size, sf::Vector2f position);
-    const sf::Vector2f &getPosition() const;
-    char getChar() const;
+    std::string& getLetter();
 };
 #endif //TEXTINPUT_LETTER_H

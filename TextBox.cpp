@@ -11,6 +11,7 @@ TextBox::TextBox()
 
 TextBox::TextBox(sf::Vector2f position, float length, unsigned int textSize, sf::Color fillColor, sf::Color textColor,
                  sf::Color borderColor, float borderThickness) {
+    this->position = position;
     box.setPosition(position);
     box.setSize({length, static_cast<float>(textSize + textSize/3)});
     box.setFillColor(fillColor);
@@ -48,4 +49,8 @@ Snapshot &TextBox::getSnapshot() {
 
 void TextBox::applySnapshot(const Snapshot &snapshot) {
     GUIComponent::applySnapshot(snapshot);
+}
+
+sf::Vector2f &TextBox::getPosition() {
+    return position;
 }

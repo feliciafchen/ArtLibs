@@ -12,6 +12,7 @@
 class TextBox : public GUIComponent{
 private:
     sf::RectangleShape box;
+    sf::Vector2f position;
 public:
     TextBox();
     TextBox(sf::Vector2f position, float length, unsigned int textSize,
@@ -22,6 +23,7 @@ public:
     Snapshot &getSnapshot() override;
     void applySnapshot(const Snapshot &snapshot) override;
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+    sf::Vector2f& getPosition();
 };
 
 
