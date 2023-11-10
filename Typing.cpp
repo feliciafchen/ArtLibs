@@ -70,3 +70,7 @@ void Typing::takeSnapshot() {
     n.component = reinterpret_cast<GUIComponent *>(this);
     History::pushHistory(n);
 }
+
+sf::Vector2f Typing::getFirstPosition() {
+    return text.getFirstPosition();
+}

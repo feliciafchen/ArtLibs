@@ -54,3 +54,7 @@ void TextBox::applySnapshot(const Snapshot &snapshot) {
 sf::Vector2f &TextBox::getPosition() {
     return position;
 }
+
+bool TextBox::contains(sf::Vector2f position) {
+    return box.getGlobalBounds().contains(position);
+}

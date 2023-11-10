@@ -35,7 +35,7 @@ public:
     void setFont(const sf::Font& font);
     void update();
     std::string getString();
-
+    sf::Vector2f getFirstPosition();
     virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const;
 };
 

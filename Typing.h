@@ -23,6 +23,7 @@ public:
     void setFillColor(const sf::Color& color);
     void setPosition(const sf::Vector2f& position);
     sf::Vector2f getLastPosition();
+    sf::Vector2f getFirstPosition();
     void setSize(unsigned int size);
     void setFont(const sf::Font& font);
     void addEventHandler(sf::RenderWindow& window, sf::Event event);

@@ -43,7 +43,7 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         History::pushHistory(n);
     }
     textbox.addEventHandler(window, event);
-    if(textbox.checkState(CLICKED)){
+    if(textbox.checkState(CLICKED) && textbox.contains(cursor.getPosition())){
         typing.addEventHandler(window, event);
         cursor.addEventHandler(window, event);
     }
@@ -52,11 +52,11 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 void TextInput::update() {
     textbox.update();
     typing.update();
-    typing.setPosition({textbox.getPosition().x, textbox.getPosition().y});
+    typing.setPosition({getBoxPosition().x, getBoxPosition().y});
     if(!typing.getString().empty())
         cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
     else
-        cursor.setPosition(getBoxPosition());
+        cursor.setPosition({getBoxPosition().x+1, getBoxPosition().y-1});
     if(textbox.checkState(CLICKED))
         cursor.update();
 }

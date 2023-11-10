@@ -116,3 +116,7 @@ std::string MultiText::getString() {
     }
     return string;
 }
+
+sf::Vector2f MultiText::getFirstPosition() {
+    return position;
+}
