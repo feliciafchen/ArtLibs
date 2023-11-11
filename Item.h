@@ -8,6 +8,7 @@
 #include "EventHandler.h"
 #include "States.h"
 #include "Fonts.h"
+#include "MouseEvents.h"
 
 class Item : public EventHandler, public States, public sf::Drawable{
 private:
@@ -21,6 +22,7 @@ public:
     void setFillColor(sf::Color);
     void setOutlineColor(sf::Color);
     void setTextSize(unsigned int);
+    void setTextColor(sf::Color);
     void setOutlineThickness(float);
     void setPosition(sf::Vector2f pos);
     const sf::Text &getName() const;

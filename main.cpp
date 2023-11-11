@@ -8,6 +8,7 @@ int main() {
     item.setOutlineColor(sf::Color::White);
     item.setOutlineThickness(1);
     item.setBoxSize({250,50});
+    item.setTextColor(sf::Color::White);
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");

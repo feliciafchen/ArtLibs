@@ -27,11 +27,24 @@ void Item::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 }
 
 void Item::addEventHandler(sf::RenderWindow &window, sf::Event event) {
-
+    if(MouseEvents<sf::RectangleShape>::hovered(box, window))
+        enableState(HOVERED);
+    else
+        disableState(HOVERED);
+    if(MouseEvents<sf::RectangleShape>::mouseClicked(box,window))
+        enableState(CLICKED);
 }
 
 void Item::update() {
     centerName();
+    if(checkState(HOVERED)){
+        setFillColor(sf::Color::Blue);
+        text.setScale({1.1,1.1});
+    }
+    else{
+        setFillColor(sf::Color::Transparent);
+        text.setScale({1,1});
+    }
 }
 
 const sf::Text &Item::getName() const {
@@ -65,4 +78,8 @@ void Item::setTextSize(unsigned int size) {
 
 void Item::setOutlineThickness(float thickness) {
     box.setOutlineThickness(thickness);
+}
+
+void Item::setTextColor(sf::Color color) {
+    text.setFillColor(color);
 }
