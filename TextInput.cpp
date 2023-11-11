@@ -43,7 +43,7 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         History::pushHistory(n);
     }
     textbox.addEventHandler(window, event);
-    if(textbox.checkState(CLICKED) && textbox.contains(cursor.getPosition())){
+    if(textbox.checkState(CLICKED)){
         typing.addEventHandler(window, event);
         cursor.addEventHandler(window, event);
     }
