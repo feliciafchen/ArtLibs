@@ -41,7 +41,15 @@ add_executable(TextInput main.cpp
         Cursor.cpp
         Cursor.h
         Label.cpp
-        Label.h)
+        Label.h
+        DropdownMenu.cpp
+        DropdownMenu.h
+        InputBox.cpp
+        InputBox.h
+        ItemList.cpp
+        ItemList.h
+        Item.cpp
+        Item.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)

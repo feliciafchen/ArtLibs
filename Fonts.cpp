@@ -9,7 +9,7 @@ void Fonts::loadFont(fontEnum font) {
 }
 
 std::string Fonts::getFontPath(fontEnum font) {
-    std::string f[] = {"fonts/FreeSans.ttf", "fonts/OpenSans.ttf", "fonts/Roboto.ttf"};
+    std::string f[] = {"fonts/FreeSans.ttf", "fonts/OpenSans.ttf", "fonts/Roboto.ttf", "fonts/Minecraft.ttf"};
     return f[font];
 }
 

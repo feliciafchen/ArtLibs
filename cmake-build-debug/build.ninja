@@ -175,6 +175,34 @@ build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_De
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
+build CMakeFiles/TextInput.dir/DropdownMenu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/DropdownMenu.cpp || cmake_object_order_depends_target_TextInput
+  DEP_FILE = CMakeFiles/TextInput.dir/DropdownMenu.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+
+build CMakeFiles/TextInput.dir/InputBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/InputBox.cpp || cmake_object_order_depends_target_TextInput
+  DEP_FILE = CMakeFiles/TextInput.dir/InputBox.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+
+build CMakeFiles/TextInput.dir/ItemList.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/ItemList.cpp || cmake_object_order_depends_target_TextInput
+  DEP_FILE = CMakeFiles/TextInput.dir/ItemList.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+
+build CMakeFiles/TextInput.dir/Item.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Item.cpp || cmake_object_order_depends_target_TextInput
+  DEP_FILE = CMakeFiles/TextInput.dir/Item.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TextInput
@@ -183,7 +211,7 @@ build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_De
 #############################################
 # Link the executable TextInput
 
-build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o | /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o CMakeFiles/TextInput.dir/DropdownMenu.cpp.o CMakeFiles/TextInput.dir/InputBox.cpp.o CMakeFiles/TextInput.dir/ItemList.cpp.o CMakeFiles/TextInput.dir/Item.cpp.o | /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   OBJECT_DIR = CMakeFiles/TextInput.dir
