@@ -1,10 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include "Application.h"
-#include "ItemList.h"
+#include "DropdownMenu.h"
 
 int main() {
     std::vector<std::string> items{"hi", "there", "world"};
-    ItemList item(items,25);
+    DropdownMenu item(items,25);
     item.setBoxSize({250,50});
     item.setFillColor(sf::Color::Black);
     item.setOutlineColor(sf::Color::White);

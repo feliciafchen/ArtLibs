@@ -4,65 +4,75 @@
 
 #include "InputBox.h"
 
-InputBox::InputBox()
-        : InputBox("", {0,0}, 10)
-{
-
-}
-InputBox::InputBox(const std::string& text, sf::Vector2f position, unsigned int size) {
-    this->text.setString(text);
-    this->text.setFont(Fonts::getFont(MINECRAFT));
-    this->text.setCharacterSize(size);
-    box.setPosition(position);
-}
-
-void InputBox::centerName() {
-    text.setPosition({static_cast<float>(box.getPosition().x + (box.getGlobalBounds().width/2 - text.getGlobalBounds().width/2)),
-                      static_cast<float>(box.getPosition().y + (box.getGlobalBounds().height/2 - text.getGlobalBounds().height/1.25))});
-}
-
-void InputBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    target.draw(box);
-    target.draw(text);
-}
-
-void InputBox::addEventHandler(sf::RenderWindow &window, sf::Event event) {
+InputBox::InputBox() {
 
 }
 
-void InputBox::update() {
-    centerName();
-}
-
-const sf::Text &InputBox::getName() const {
-    return text;
-}
-
-void InputBox::setName(const std::string& name) {
-    text.setString(name);
-}
-
-void InputBox::setPosition(sf::Vector2f pos) {
-    box.setPosition(pos);
-    centerName();
+InputBox::InputBox(const Item& item) : item(item){
 }
 
 void InputBox::setBoxSize(sf::Vector2f size) {
-    box.setSize(size);
+    item.setBoxSize(size);
 }
 
-void InputBox::setFillColor(sf::Color color) {
-    box.setFillColor(color);
+void InputBox::setFillColor(sf::Color c) {
+    item.setFillColor(c);
 }
 
-void InputBox::setOutlineColor(sf::Color color) {
-    box.setOutlineColor(color);
+void InputBox::setOutlineColor(sf::Color c) {
+    item.setOutlineColor(c);
 }
 
-void InputBox::setTextSize(unsigned int size) {
-    text.setCharacterSize(size);
+void InputBox::setTextSize(unsigned int s) {
+    item.setTextSize(s);
 }
 
-void InputBox::setOutlineThickness(float thickness) {
-    box.setOutlineThickness(thickness);
+void InputBox::setOutlineThickness(float f) {
+    item.setOutlineThickness(f);
+}
+
+void InputBox::setPosition(sf::Vector2f pos) {
+    item.setPosition(pos);
+}
+
+const sf::Text &InputBox::getName() const {
+    return item.getName();
+}
+
+void InputBox::setName(const std::string &name) {
+    item.setName(name);
+}
+
+void InputBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
+    target.draw(item);
+}
+
+const Item &InputBox::getItem() const {
+    return item;
+}
+
+void InputBox::setItem(const Item &item) {
+    this->item = item;
+}
+
+void InputBox::addEventHandler(sf::RenderWindow &window, sf::Event event) {
+    item.addEventHandler(window, event);
+    if(item.checkState(CLICKED))
+        enableState(CLICKED);
+}
+
+void InputBox::update() {
+    item.centerName();
+}
+
+const sf::Vector2f &InputBox::getPosition() {
+    return item.getPosition();
+}
+
+void InputBox::setTextColor(sf::Color c) {
+    item.setTextColor(c);
+}
+
+const sf::FloatRect &InputBox::getGlobalBounds() {
+    return item.getGlobalBounds();
 }

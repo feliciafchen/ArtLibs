@@ -5,25 +5,27 @@
 #ifndef TEXTINPUT_INPUTBOX_H
 #define TEXTINPUT_INPUTBOX_H
 #include <SFML/Graphics.hpp>
-#include "EventHandler.h"
 #include "States.h"
-#include "Fonts.h"
+#include "Item.h"
 
-class InputBox : public EventHandler, public States, public sf::Drawable{
+class InputBox : public sf::Drawable, public States, public EventHandler{
 private:
-    sf::RectangleShape box;
-    sf::Text text;
-    void centerName();
+    Item item;
 public:
     InputBox();
-    InputBox(const std::string& text, sf::Vector2f position, unsigned int size);
+    explicit InputBox(const Item& item);
     void setBoxSize(sf::Vector2f);
     void setFillColor(sf::Color);
     void setOutlineColor(sf::Color);
     void setTextSize(unsigned int);
+    void setTextColor(sf::Color c);
     void setOutlineThickness(float);
     void setPosition(sf::Vector2f pos);
+    const sf::Vector2f& getPosition();
+    const sf::FloatRect& getGlobalBounds();
     const sf::Text &getName() const;
+    const Item& getItem() const;
+    void setItem(const Item& item);
     void setName(const std::string &name);
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;

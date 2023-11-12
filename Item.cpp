@@ -30,7 +30,7 @@ void Item::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         enableState(HOVERED);
     else
         disableState(HOVERED);
-    if(MouseEvents<sf::RectangleShape>::mouseClicked(box,window))
+    if(MouseEvents<sf::RectangleShape>::mouseClicked(box, window))
         enableState(CLICKED);
 }
 
@@ -92,6 +92,6 @@ const sf::Vector2f &Item::getPosition() {
     return box.getPosition();
 }
 
-sf::FloatRect Item::getGlobalBounds() const {
+const sf::FloatRect Item::getGlobalBounds(){
     return box.getGlobalBounds();
 }

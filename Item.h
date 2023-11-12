@@ -14,13 +14,13 @@ class Item : public EventHandler, public States, public sf::Drawable{
 private:
     sf::RectangleShape box;
     sf::Text text;
-    void centerName();
 public:
     Item();
     Item(const std::string& text, unsigned int size);
+    void centerName();
     std::string& getText() const;
     void setBoxSize(sf::Vector2f);
-    sf::FloatRect getGlobalBounds() const;
+    const sf::FloatRect getGlobalBounds();
     void setFillColor(sf::Color);
     void setOutlineColor(sf::Color);
     void setTextSize(unsigned int);

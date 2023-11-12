@@ -10,7 +10,7 @@
 class ItemList : public sf::Drawable, public EventHandler, public States {
 private:
     std::vector<Item> list;
-    Item selected;
+    std::string selected;
     void updatePositions();
 public:
     ItemList();
@@ -24,7 +24,7 @@ public:
     void setPosition(sf::Vector2f pos);
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;
-    const Item &getSelected() const;
+    const std::string&getSelected() const;
     void setSelected(const Item &selected);
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };

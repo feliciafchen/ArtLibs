@@ -14,12 +14,12 @@ ItemList::ItemList(const std::vector<std::string>& words, unsigned int size) {
     }
 }
 
-const Item &ItemList::getSelected() const {
+const std::string &ItemList::getSelected() const {
     return selected;
 }
 
 void ItemList::setSelected(const Item &selected) {
-    ItemList::selected = selected;
+    ItemList::selected = selected.getText();
 }
 
 void ItemList::draw(sf::RenderTarget &target, sf::RenderStates states) const {
@@ -91,6 +91,7 @@ void ItemList::update() {
         if(i.checkState(CLICKED)){
             setSelected(i);
             enableState(HIDDEN);
+            enableState(CLICKED);
             i.disableState(CLICKED);
         }
     }
