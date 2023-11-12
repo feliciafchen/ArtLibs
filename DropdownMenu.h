@@ -8,6 +8,8 @@
 #include "ItemList.h"
 #include "InputBox.h"
 #include "GUIComponent.h"
+#include "KeyShortcuts.h"
+#include "History.h"
 
 class DropdownMenu : public GUIComponent {
 private:
@@ -17,6 +19,7 @@ private:
 public:
     DropdownMenu();
     DropdownMenu(const std::vector<std::string>& words, unsigned int);
+    void takeSnapshot();
     void setBoxSize(sf::Vector2f);
     void setFillColor(sf::Color);
     void setOutlineColor(sf::Color);

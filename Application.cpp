@@ -11,7 +11,7 @@ void Application::addComponent(GUIComponent &component) {
 
 void Application::run() {
 
-    sf::RenderWindow window({720, 420}, "TextInput");
+    sf::RenderWindow window({720, 420}, "Dropdown Menu");
     window.setFramerateLimit(60);
 
     while(window.isOpen()){
@@ -26,7 +26,7 @@ void Application::run() {
         for(auto g : components)
             g->update();
 
-        window.clear(sf::Color::White);
+        window.clear();
         for (auto g: components)
             window.draw(*g);
         window.display();

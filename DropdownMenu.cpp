@@ -11,6 +11,7 @@ DropdownMenu::DropdownMenu() {
 DropdownMenu::DropdownMenu(const std::vector<std::string> &words, unsigned int s) {
     list = ItemList(words,s);
     inputBox = InputBox(Item(" ",s));
+    takeSnapshot();
 }
 
 void DropdownMenu::setBoxSize(sf::Vector2f s) {
@@ -67,6 +68,11 @@ void DropdownMenu::draw(sf::RenderTarget &target, sf::RenderStates states) const
 void DropdownMenu::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     inputBox.addEventHandler(window,event);
     list.addEventHandler(window,event);
+    if(KeyShortcuts::isUndo() && !History::empty()){
+        std::cout << "undo";
+        applySnapshot(History::topHistory().snapshot);
+        History::popHistory();
+    }
     if(inputBox.checkState(CLICKED)){
         list.toggleState(HIDDEN);
         inputBox.disableState(CLICKED);
@@ -78,6 +84,7 @@ void DropdownMenu::update() {
     list.update();
     inputBox.update();
     if(list.checkState(CLICKED)){
+        takeSnapshot();
         inputBox.setName(list.getSelected());
         inputBox.disableState(CLICKED);
         list.disableState(CLICKED);
@@ -90,9 +97,18 @@ void DropdownMenu::updatePositions() {
 }
 
 Snapshot &DropdownMenu::getSnapshot() {
-    return GUIComponent::getSnapshot();
+    Snapshot s(inputBox.getItem().getText());
+    return s;
 }
 
 void DropdownMenu::applySnapshot(const Snapshot &snapshot) {
-    GUIComponent::applySnapshot(snapshot);
+    inputBox.setName(snapshot.getData());
+}
+
+void DropdownMenu::takeSnapshot() {
+    HistoryNode n = *new HistoryNode;
+    n.snapshot = Snapshot(list.getSelected());
+    n.component = this;
+    History::pushHistory(n);
+    std::cout << n.snapshot.getData();
 }

@@ -15,6 +15,7 @@ ItemList::ItemList(const std::vector<std::string>& words, unsigned int size) {
     for(auto &i : list){
         i.disableState(CLICKED);
     }
+    enableState(HIDDEN);
 }
 
 const std::string &ItemList::getSelected() const {
