@@ -13,8 +13,10 @@ private:
     Item selected;
 public:
     ItemList();
+    ItemList(std::vector<std::string> words);
     const Item &getSelected() const;
     void setSelected(const Item &selected);
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };
 
 

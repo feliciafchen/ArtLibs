@@ -1,9 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include "Application.h"
-#include "Item.h"
+#include "ItemList.h"
 
 int main() {
-    Item item("HELLO",{5,5},25);
+    Item item("HELLO",25);
     item.setFillColor(sf::Color::Black);
     item.setOutlineColor(sf::Color::White);
     item.setOutlineThickness(1);

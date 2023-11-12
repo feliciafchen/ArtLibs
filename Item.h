@@ -17,7 +17,8 @@ private:
     void centerName();
 public:
     Item();
-    Item(const std::string& text, sf::Vector2f position, unsigned int size);
+    Item(const std::string& text, unsigned int size);
+    std::string& getText() const;
     void setBoxSize(sf::Vector2f);
     void setFillColor(sf::Color);
     void setOutlineColor(sf::Color);

@@ -5,15 +5,14 @@
 #include "Item.h"
 
 Item::Item()
-: Item("", {0,0}, 10)
+: Item("", 10)
 {
 
 }
-Item::Item(const std::string& text, sf::Vector2f position, unsigned int size) {
+Item::Item(const std::string& text, unsigned int size) {
     this->text.setString(text);
-    this->text.setFont(Fonts::getFont(MINECRAFT));
+    this->text.setFont(Fonts::getFont(FREE_SANS));
     this->text.setCharacterSize(size);
-    box.setPosition(position);
 }
 
 void Item::centerName() {
@@ -39,11 +38,11 @@ void Item::update() {
     centerName();
     if(checkState(HOVERED)){
         setFillColor(sf::Color::Blue);
-        text.setScale({1.1,1.1});
+        text.setStyle(sf::Text::Bold);
     }
     else{
         setFillColor(sf::Color::Transparent);
-        text.setScale({1,1});
+        text.setStyle(sf::Text::Regular);
     }
 }
 
@@ -82,4 +81,9 @@ void Item::setOutlineThickness(float thickness) {
 
 void Item::setTextColor(sf::Color color) {
     text.setFillColor(color);
+}
+
+std::string &Item::getText() const {
+    std::string string = text.getString();
+    return string;
 }
