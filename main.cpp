@@ -3,12 +3,14 @@
 #include "ItemList.h"
 
 int main() {
-    Item item("HELLO",25);
+    std::vector<std::string> items{"hi", "there", "world"};
+    ItemList item(items,25);
+    item.setBoxSize({250,50});
     item.setFillColor(sf::Color::Black);
     item.setOutlineColor(sf::Color::White);
     item.setOutlineThickness(1);
-    item.setBoxSize({250,50});
     item.setTextColor(sf::Color::White);
+    item.setPosition({100,100});
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
@@ -22,7 +24,6 @@ int main() {
             if(event.type == sf::Event::Closed)
                 window.close();
             item.addEventHandler(window, event);
-
         }
         item.update();
         window.clear();

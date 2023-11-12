@@ -87,3 +87,11 @@ std::string &Item::getText() const {
     std::string string = text.getString();
     return string;
 }
+
+const sf::Vector2f &Item::getPosition() {
+    return box.getPosition();
+}
+
+sf::FloatRect Item::getGlobalBounds() const {
+    return box.getGlobalBounds();
+}
