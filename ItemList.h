@@ -6,6 +6,7 @@
 #define TEXTINPUT_ITEMLIST_H
 #include "Item.h"
 #include <list>
+#include "iostream"
 
 class ItemList : public sf::Drawable, public EventHandler, public States {
 private:

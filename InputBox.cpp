@@ -9,6 +9,7 @@ InputBox::InputBox() {
 }
 
 InputBox::InputBox(const Item& item) : item(item){
+    disableState(CLICKED);
 }
 
 void InputBox::setBoxSize(sf::Vector2f size) {
@@ -57,8 +58,10 @@ void InputBox::setItem(const Item &item) {
 
 void InputBox::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     item.addEventHandler(window, event);
-    if(item.checkState(CLICKED))
+    if(item.checkState(CLICKED)){
         enableState(CLICKED);
+        item.disableState(CLICKED);
+    }
 }
 
 void InputBox::update() {

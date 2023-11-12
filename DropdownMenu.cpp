@@ -65,8 +65,9 @@ void DropdownMenu::draw(sf::RenderTarget &target, sf::RenderStates states) const
         target.draw(inputBox);
 }
 void DropdownMenu::addEventHandler(sf::RenderWindow &window, sf::Event event) {
-    if(MouseEvents<InputBox>::mouseClicked(inputBox, window)){
+    if(inputBox.checkState(CLICKED)){
         list.toggleState(HIDDEN);
+        inputBox.disableState(CLICKED);
     }
     inputBox.addEventHandler(window,event);
     list.addEventHandler(window,event);

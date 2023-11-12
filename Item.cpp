@@ -13,6 +13,7 @@ Item::Item(const std::string& text, unsigned int size) {
     this->text.setString(text);
     this->text.setFont(Fonts::getFont(FREE_SANS));
     this->text.setCharacterSize(size);
+    disableState(CLICKED);
 }
 
 void Item::centerName() {

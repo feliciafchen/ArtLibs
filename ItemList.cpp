@@ -12,6 +12,9 @@ ItemList::ItemList(const std::vector<std::string>& words, unsigned int size) {
     for(const auto& w : words){
         list.emplace_back(w, size);
     }
+    for(auto &i : list){
+        i.disableState(CLICKED);
+    }
 }
 
 const std::string &ItemList::getSelected() const {
@@ -23,8 +26,6 @@ void ItemList::setSelected(const Item &selected) {
 }
 
 void ItemList::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    if(checkState(HIDDEN))
-        return;
     for(const auto& i : list){
         target.draw(i);
     }
@@ -87,12 +88,11 @@ void ItemList::update() {
     for(auto &i : list)
         i.update();
     updatePositions();
-    for(auto i : list){
+    for(auto &i : list){
         if(i.checkState(CLICKED)){
-            setSelected(i);
-            enableState(HIDDEN);
-            enableState(CLICKED);
             i.disableState(CLICKED);
+            setSelected(i);
+            enableState(CLICKED);
         }
     }
 }
