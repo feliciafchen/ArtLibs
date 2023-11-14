@@ -23,6 +23,8 @@ public:
     void setTextColor(sf::Color);
     void setOutlineThickness(float);
     void setPosition(sf::Vector2f pos);
+    const sf::Vector2f& getPosition();
+    sf::FloatRect getButtonGlobalBounds();
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;

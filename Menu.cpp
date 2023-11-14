@@ -5,12 +5,19 @@
 #include "Menu.h"
 
 Menu::Menu(){
-
+    std::vector<std::string> options = {"Item 1", "Item 2", "Item 3"};
+    Menu("Menu 1", options, 25);
 }
 
 Menu::Menu(const std::string& title, const std::vector<std::string> &words, unsigned int s) {
     list = ItemList(words,s);
     button = Item(title,s);
+    setBoxSize({200,50});
+    setFillColor(sf::Color::Transparent);
+    setOutlineColor(sf::Color::White);
+    setOutlineThickness(1);
+    setTextColor(sf::Color::White);
+    setPosition({100,100});
 }
 
 void Menu::setBoxSize(sf::Vector2f s) {
@@ -80,4 +87,12 @@ void Menu::update() {
 
 void Menu::updatePositions() {
     list.setPosition({button.getPosition().x, button.getPosition().y + button.getGlobalBounds().height});
+}
+
+const sf::Vector2f &Menu::getPosition() {
+    return button.getPosition();
+}
+
+sf::FloatRect Menu::getButtonGlobalBounds() {
+    return button.getGlobalBounds();
 }

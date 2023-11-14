@@ -3,16 +3,19 @@
 #include "DropdownMenu.h"
 #include "TextInput.h"
 #include "Menu.h"
-
+#include "MenuBar.h"
 int main() {
     std::vector<std::string> options = {"Item 1", "Item 2", "Item 3"};
     Menu menu("Menu 1", options, 25);
-    menu.setBoxSize({200,50});
-    menu.setFillColor(sf::Color::Transparent);
-    menu.setOutlineColor(sf::Color::White);
-    menu.setOutlineThickness(1);
-    menu.setTextColor(sf::Color::White);
-    menu.setPosition({100,100});
+    Menu menu2("Menu 2", options, 25);
+    Menu menu3("Menu 3", options, 25);
+    std::vector<Menu> menus;
+    menus.push_back(menu);
+    menus.push_back(menu2);
+    menus.push_back(menu3);
+
+    MenuBar menuBar(menus);
+    menuBar.setPosition({2,2});
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
@@ -25,12 +28,11 @@ int main() {
         {
             if(event.type == sf::Event::Closed)
                 window.close();
-            menu.addEventHandler(window, event);
-
+            menuBar.addEventHandler(window, event);
         }
-        menu.update();
+        menuBar.update();
         window.clear();
-        window.draw(menu);
+        window.draw(menuBar);
         window.display();
     }
 
