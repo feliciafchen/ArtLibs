@@ -53,7 +53,15 @@ add_executable(TextInput main.cpp
         Menu.cpp
         Menu.h
         MenuBar.cpp
-        MenuBar.h)
+        MenuBar.h
+        FileItem.cpp
+        FileItem.h
+        FileNode.h
+        FileTree.cpp
+        FileTree.h
+        Images.cpp
+        Images.h
+        ImageEnum.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)

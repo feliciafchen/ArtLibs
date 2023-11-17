@@ -93,6 +93,10 @@ const sf::Vector2f &Item::getPosition() {
     return box.getPosition();
 }
 
-const sf::FloatRect Item::getGlobalBounds(){
+sf::FloatRect Item::getGlobalBounds() const {
     return box.getGlobalBounds();
+}
+
+const sf::Vector2f & Item::getBoxSize() const {
+    return box.getSize();
 }

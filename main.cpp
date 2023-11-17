@@ -4,18 +4,10 @@
 #include "TextInput.h"
 #include "Menu.h"
 #include "MenuBar.h"
+#include "FileItem.h"
+#include "ImageEnum.h"
 int main() {
-    std::vector<std::string> options = {"Item 1", "Item 2", "Item 3"};
-    Menu menu("Menu 1", options, 25);
-    Menu menu2("Menu 2", options, 25);
-    Menu menu3("Menu 3", options, 25);
-    std::vector<Menu> menus;
-    menus.push_back(menu);
-    menus.push_back(menu2);
-    menus.push_back(menu3);
-
-    MenuBar menuBar(menus);
-    menuBar.setPosition({2,2});
+    FileItem fileItem(FILE_ICON, "File 1", {200, 200}, {0, 0});
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
@@ -28,11 +20,11 @@ int main() {
         {
             if(event.type == sf::Event::Closed)
                 window.close();
-            menuBar.addEventHandler(window, event);
+            fileItem.addEventHandler(window, event);
         }
-        menuBar.update();
+        fileItem.update();
         window.clear();
-        window.draw(menuBar);
+        window.draw(fileItem);
         window.display();
     }
 

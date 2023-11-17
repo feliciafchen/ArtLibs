@@ -20,7 +20,8 @@ public:
     void centerName();
     std::string& getText() const;
     void setBoxSize(sf::Vector2f);
-    const sf::FloatRect getGlobalBounds();
+    const sf::Vector2f & getBoxSize() const;
+    sf::FloatRect getGlobalBounds() const;
     void setFillColor(sf::Color);
     void setOutlineColor(sf::Color);
     void setTextSize(unsigned int);
