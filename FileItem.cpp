@@ -13,12 +13,13 @@ FileItem::FileItem(imageEnum icon, std::string text, sf::Vector2f size, sf::Vect
     setIcon(icon);
     setName(text);
     setBoxSize(size);
+    setTextSize(size.y/1.5);
     setPosition(position);
 }
 
 void FileItem::draw(sf::RenderTarget &window, sf::RenderStates states) const {
-    window.draw(icon, states);
     Item::draw(window, states);
+    window.draw(icon, states);
 }
 
 void FileItem::addEventHandler(sf::RenderWindow &window, sf::Event event) {
@@ -38,10 +39,33 @@ sf::Vector2f FileItem::getPosition() const {
 }
 
 void FileItem::setPosition(sf::Vector2f pos) {
-    icon.setPosition(pos);
-    Item::setPosition({pos.x + icon.getGlobalBounds().width, pos.y});
+    Item::box.setPosition(pos);
+    icon.setPosition({pos.x+padding, pos.y+padding});
+    Item::text.setPosition({pos.x + icon.getGlobalBounds().width + padding*2, pos.y});
 }
 
 void FileItem::setIcon(imageEnum icon) {
     this->icon.setTexture(Images::getImage(icon));
+    this->icon.setScale({0.075,0.075});
+}
+
+void FileItem::update() {
+    centerNameY();
+    centerIconY();
+    if(checkState(CLICKED)){
+        setFillColor(sf::Color::Blue);
+        text.setStyle(sf::Text::Bold);
+    }
+    else{
+        setFillColor(sf::Color::Transparent);
+        text.setStyle(sf::Text::Regular);
+    }
+}
+
+void FileItem::centerIconY() {
+    icon.setPosition({icon.getPosition().x, Item::box.getPosition().y + box.getGlobalBounds().height/2 - icon.getGlobalBounds().height/2});
+}
+
+void FileItem::centerNameY() {
+    Item::text.setPosition({Item::text.getPosition().x, Item::box.getPosition().y + box.getGlobalBounds().height/2 - icon.getGlobalBounds().height/2});
 }

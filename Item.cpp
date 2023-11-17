@@ -32,7 +32,7 @@ void Item::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     else
         disableState(HOVERED);
     if(MouseEvents<sf::RectangleShape>::mouseClicked(box, window))
-        enableState(CLICKED);
+        toggleState(CLICKED);
 }
 
 void Item::update() {

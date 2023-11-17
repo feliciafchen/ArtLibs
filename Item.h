@@ -11,9 +11,9 @@
 #include "MouseEvents.h"
 
 class Item : public EventHandler, public States, public sf::Drawable{
-private:
-    sf::RectangleShape box;
+protected:
     sf::Text text;
+    sf::RectangleShape box;
 public:
     Item();
     Item(const std::string& text, unsigned int size);

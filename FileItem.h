@@ -31,10 +31,14 @@ public:
     //uses an enum to change the icon to a folder or file
     void setIcon(imageEnum icon);
 
+    void update();
+
 private:
     //this is the folder or file icon
     sf::Sprite icon;
     float padding = 5;
+    void centerIconY();
+    void centerNameY();
 };
 
 
