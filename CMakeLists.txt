@@ -61,7 +61,8 @@ add_executable(TextInput main.cpp
         FileTree.h
         Images.cpp
         Images.h
-        ImageEnum.h)
+        ImageEnum.h
+        FileNode.cpp)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)

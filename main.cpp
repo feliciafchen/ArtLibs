@@ -6,8 +6,9 @@
 #include "MenuBar.h"
 #include "FileItem.h"
 #include "ImageEnum.h"
+#include "FileNode.h"
 int main() {
-    FileItem fileItem(FILE_ICON, "File 1", {200, 50}, {100, 100});
+    FileNode fileItem(FILE_ICON, "File 1", {200, 50}, {100, 100});
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
