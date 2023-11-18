@@ -18,27 +18,29 @@ private:
 
     //traverses the tree ad adds the evenhandlers for each of the nodes
     void traverse(FileNode* &root, sf::RenderWindow& window, sf::Event event);
+    void traverseUpdate(FileNode* &root);
+
     sf::Vector2f initPosition = {0, 0};
 public:
     //constructors
     FileTree();
 
     //this is the public version of push
-    void push(std::string parent, std::string item = "NULL");
+    void push(std::string parent, std::string item = nullptr);
 
     //draws the root node of the tree
-    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const;
+    void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
 
     //does nothing now
-    virtual void applySnapshot(const Snapshot& snapshot);
+    void applySnapshot(const Snapshot& snapshot) override;
 
     //calls the traverse function to add the event handlers to each node
-    virtual void addEventHandler(sf::RenderWindow& window, sf::Event event);
+    void addEventHandler(sf::RenderWindow& window, sf::Event event) override;
 
     //does nothing now
     virtual void update();
     //does nothing now
-    virtual Snapshot& getSnapshot();
+    Snapshot& getSnapshot() override;
     //does nothing now
     virtual sf::FloatRect getGlobalBounds();
 };

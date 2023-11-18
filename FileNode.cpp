@@ -5,14 +5,15 @@
 
 void FileNode::toggleChlidren() {
     for(auto& i : children){
-        i.second->toggleState(HIDDEN);
+        i->toggleState(HIDDEN);
     }
 }
 
 void FileNode::reposition() const {
-    sf::Vector2f pos = children.cbegin()->second->getPosition();
-    for(auto& i : children){
-        i.second->setPosition({pos.x + 10, pos.y});
+    if(isLeaf())
+        return;
+    for (int i = 0; i < children.size(); ++i) {
+        children[i]->setPosition({data.getPosition().x + 20, data.getPosition().y + getGlobalBounds().height * (i+1)});
     }
 }
 
@@ -28,8 +29,8 @@ void FileNode::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     if(!checkState(HIDDEN)){
         window.draw(data);
         for (auto& i : children) {
-            if(!i.second->checkState(HIDDEN))
-                window.draw(*i.second, states);
+            if(!i->checkState(HIDDEN))
+                window.draw(*i, states);
         }
     }
 }
@@ -40,27 +41,30 @@ void FileNode::applySnapshot(const Snapshot &snapshot) {
 
 void FileNode::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     for(auto& i : children)
-        i.second->addEventHandler(window, event);
+        i->addEventHandler(window, event);
     data.addEventHandler(window, event);
+    if(MouseEvents<FileItem>::mouseClicked(data, window)){
+        toggleChlidren();
+    }
 }
 
 void FileNode::update() {
+    reposition();
     data.update();
-    if(checkState(CLICKED))
-        toggleChlidren();
+    for(auto& i : children)
+        i->update();
 }
 
 Snapshot &FileNode::getSnapshot() {
     return GUIComponent::getSnapshot();
 }
 
-sf::FloatRect FileNode::getGlobalBounds() {
-    return sf::FloatRect();
+sf::FloatRect FileNode::getGlobalBounds() const {
+    return data.getGlobalBounds();
 }
 
 bool FileNode::isLeaf() const {
-    if(children.empty())
-        return true;
+    return children.empty();
 }
 
 FileItem &FileNode::getData() {
@@ -71,14 +75,16 @@ void FileNode::setData(const FileItem &data) {
     this->data = data;
 }
 
-std::map<std::string, FileNode *> &FileNode::getChildren() {
+std::vector<FileNode *> &FileNode::getChildren() {
     return children;
 }
 
-FileNode::iterator FileNode::begin() {
-    return children.begin();
+void FileNode::addChild(FileNode *node) {
+    node->enableState(HIDDEN);
+    children.push_back(node);
+    reposition();
 }
 
-FileNode::iterator FileNode::end() {
-    return children.end();
+void FileNode::setPosition(const sf::Vector2f &pos) {
+    data.setPosition(pos);
 }

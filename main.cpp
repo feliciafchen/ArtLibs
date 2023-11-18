@@ -7,8 +7,14 @@
 #include "FileItem.h"
 #include "ImageEnum.h"
 #include "FileNode.h"
+#include "FileTree.h"
+
 int main() {
-    FileNode fileItem(FILE_ICON, "File 1", {200, 50}, {100, 100});
+    FileNode child2(FILE_ICON, "child2", {200, 50}, {100, 100});
+    FileNode child(FILE_ICON, "child", {200, 50}, {100, 100});
+    FileNode tree(FILE_ICON, "File 1", {200, 50}, {100, 100});
+    tree.addChild(&child);
+    tree.addChild(&child2);
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
@@ -21,11 +27,11 @@ int main() {
         {
             if(event.type == sf::Event::Closed)
                 window.close();
-            fileItem.addEventHandler(window, event);
+            tree.addEventHandler(window, event);
         }
-        fileItem.update();
+        tree.update();
         window.clear();
-        window.draw(fileItem);
+        window.draw(tree);
         window.display();
     }
 

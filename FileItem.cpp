@@ -14,6 +14,7 @@ FileItem::FileItem(imageEnum icon, std::string text, sf::Vector2f size, sf::Vect
     setName(text);
     setBoxSize(size);
     setTextSize(size.y/1.5);
+    setFillColor(sf::Color::Transparent);
     setPosition(position);
 }
 
@@ -63,9 +64,9 @@ void FileItem::update() {
 }
 
 void FileItem::centerIconY() {
-    icon.setPosition({icon.getPosition().x, Item::box.getPosition().y + box.getGlobalBounds().height/2 - icon.getGlobalBounds().height/2});
+    icon.setPosition({icon.getPosition().x, box.getPosition().y + box.getGlobalBounds().height/2 - icon.getGlobalBounds().height/2});
 }
 
 void FileItem::centerNameY() {
-    Item::text.setPosition({Item::text.getPosition().x, Item::box.getPosition().y + box.getGlobalBounds().height/2 - icon.getGlobalBounds().height/2});
+    text.setPosition({text.getPosition().x, box.getPosition().y+5});
 }
