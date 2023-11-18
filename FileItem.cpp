@@ -47,7 +47,10 @@ void FileItem::setPosition(sf::Vector2f pos) {
 
 void FileItem::setIcon(imageEnum icon) {
     this->icon.setTexture(Images::getImage(icon));
-    this->icon.setScale({0.075,0.075});
+    if(icon == FILE_ICON)
+        this->icon.setScale({0.075,0.075});
+    if(icon == FOLDER_ICON)
+        this->icon.setScale({0.035,0.045});
 }
 
 void FileItem::update() {

@@ -12,9 +12,11 @@
 int main() {
     FileNode child2(FILE_ICON, "child2", {200, 50}, {100, 100});
     FileNode child(FILE_ICON, "child", {200, 50}, {100, 100});
-    FileNode tree(FILE_ICON, "File 1", {200, 50}, {100, 100});
-    tree.addChild(&child);
-    tree.addChild(&child2);
+    FileNode tree(FOLDER_ICON, "File 1", {200, 50}, {100, 100});
+    FileNode tree2(FILE_ICON, "File 1", {200, 50}, {100, 100});
+    tree2.addChild(&child);
+    tree2.addChild(&child2);
+    tree.addChild(&tree2);
 
     sf::VideoMode videoMode(1400, 900, 32);
     sf::RenderWindow window(videoMode, "Typing");
