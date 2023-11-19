@@ -29,8 +29,9 @@ void FileNode::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     if(!checkState(HIDDEN)){
         window.draw(data);
         for (auto& i : children) {
-            if(!i->checkState(HIDDEN))
+            if(!i->checkState(HIDDEN)){
                 window.draw(*i, states);
+            }
         }
     }
 }
@@ -45,6 +46,7 @@ void FileNode::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     data.addEventHandler(window, event);
     if(MouseEvents<FileItem>::mouseClicked(data, window)){
         toggleChlidren();
+        reposition();
     }
 }
 

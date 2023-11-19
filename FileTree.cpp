@@ -9,20 +9,14 @@ void FileTree::push(FileNode *&root, std::string parent, std::string item) {
         root = new FileNode(FOLDER_ICON, parent, {200, 50}, {50,50});
         return;
     }
+    if(root->getData().getText() == parent){
+        FileNode node(FILE_ICON, item, {200, 50}, {50,50});
+        root->addChild(&node);
+        return;
+    }
     else{
-        if(root->getData().getText() == parent){
-            root->getData().setIcon(FOLDER_ICON);
-            FileNode node(FILE_ICON, item, {200, 50}, {50,50});
-            root->getChildren().push_back(&node);
-            return;
-        }
-        else{
-            for(auto& i : root->getChildren()){
-                if(i->getData().getText() == parent){
-                    push(i, parent, item);
-                    return;
-                }
-            }
+        for(auto& i : root->getChildren()){
+            push(i, parent, item);
         }
     }
 }

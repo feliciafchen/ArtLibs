@@ -9,6 +9,7 @@
 #include "States.h"
 #include "Fonts.h"
 #include "MouseEvents.h"
+#include "iostream"
 
 class Item : public EventHandler, public States, public sf::Drawable{
 protected:

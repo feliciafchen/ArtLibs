@@ -35,7 +35,7 @@ public:
     // when the node's data (FileItem) is clicked on
     virtual void addEventHandler(sf::RenderWindow& window, sf::Event event);
     //does nothing now
-    virtual void update();
+    void update() override;
     //does nothing now
     virtual Snapshot& getSnapshot();
     //does nothing now

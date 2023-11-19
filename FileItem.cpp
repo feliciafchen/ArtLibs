@@ -12,6 +12,7 @@ FileItem::FileItem() {
 FileItem::FileItem(imageEnum icon, std::string text, sf::Vector2f size, sf::Vector2f position) {
     setIcon(icon);
     setName(text);
+    this->name = text;
     setBoxSize(size);
     setTextSize(size.y/1.5);
     setFillColor(sf::Color::Transparent);
@@ -72,4 +73,8 @@ void FileItem::centerIconY() {
 
 void FileItem::centerNameY() {
     text.setPosition({text.getPosition().x, box.getPosition().y+5});
+}
+
+std::string &FileItem::getText() {
+    return name;
 }

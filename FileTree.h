@@ -14,7 +14,7 @@ private:
 
     //finds the parent and add the item to the parent.
     // If the parent isn't found, a new parent is created
-    void push(FileNode*& root, std::string parent, std::string item);
+    void push(FileNode*& root, std::string parent, std::string item = "");
 
     //traverses the tree ad adds the evenhandlers for each of the nodes
     void traverse(FileNode* &root, sf::RenderWindow& window, sf::Event event);
@@ -26,7 +26,7 @@ public:
     FileTree();
 
     //this is the public version of push
-    void push(std::string parent, std::string item = nullptr);
+    void push(std::string parent, std::string item = "");
 
     //draws the root node of the tree
     void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
@@ -38,7 +38,7 @@ public:
     void addEventHandler(sf::RenderWindow& window, sf::Event event) override;
 
     //does nothing now
-    virtual void update();
+    void update() override;
     //does nothing now
     Snapshot& getSnapshot() override;
     //does nothing now

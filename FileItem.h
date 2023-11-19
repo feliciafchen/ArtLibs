@@ -10,11 +10,13 @@
 
 class FileItem : public Item
 {
+private:
+    std::string name;
 public:
     //Constructors
     FileItem();
     FileItem(imageEnum icon, std::string text, sf::Vector2f size, sf::Vector2f position);
-
+    std::string& getText();
     //GUIComponent pure virtual functions, refer to the TextInput Project for Info
     virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
     //I use this function to highlight the item when clicked, and unhighlight when something

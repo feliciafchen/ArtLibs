@@ -10,10 +10,16 @@
 #include "FileTree.h"
 
 int main() {
-    FileNode child2(FILE_ICON, "child2", {200, 50}, {100, 100});
-    FileNode child(FILE_ICON, "child", {200, 50}, {100, 100});
-    FileNode tree(FOLDER_ICON, "File 1", {200, 50}, {100, 100});
-    FileNode tree2(FILE_ICON, "File 1", {200, 50}, {100, 100});
+    FileNode child5(FILE_ICON, "file4", {200, 50}, {100, 100});
+    FileNode child4(FILE_ICON, "file3", {200, 50}, {100, 100});
+    FileNode child3(FILE_ICON, "file2", {200, 50}, {100, 100});
+    FileNode child2(FOLDER_ICON, "folder2", {200, 50}, {100, 100});
+    child2.addChild(&child3);
+    child2.addChild(&child4);
+    child2.addChild(&child5);
+    FileNode child(FILE_ICON, "file1", {200, 50}, {100, 100});
+    FileNode tree(FOLDER_ICON, "folder1", {200, 50}, {100, 100});
+    FileNode tree2(FOLDER_ICON, "folder2", {200, 50}, {100, 100});
     tree2.addChild(&child);
     tree2.addChild(&child2);
     tree.addChild(&tree2);
