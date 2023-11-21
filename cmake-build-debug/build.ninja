@@ -55,8 +55,13 @@ build CMakeFiles/TextInput.dir/main.cpp.o: CXX_COMPILER__TextInput_unscanned_Deb
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
+
+build CMakeFiles/TextInput.dir/API.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/API.cpp || cmake_object_order_depends_target_TextInput
+  DEP_FILE = CMakeFiles/TextInput.dir/API.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
 build CMakeFiles/TextInput.dir/Fonts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Fonts.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Fonts.cpp.o.d
@@ -64,8 +69,6 @@ build CMakeFiles/TextInput.dir/Fonts.cpp.o: CXX_COMPILER__TextInput_unscanned_De
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Letter.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Letter.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Letter.cpp.o.d
@@ -73,8 +76,6 @@ build CMakeFiles/TextInput.dir/Letter.cpp.o: CXX_COMPILER__TextInput_unscanned_D
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/MultiText.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/MultiText.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/MultiText.cpp.o.d
@@ -82,8 +83,6 @@ build CMakeFiles/TextInput.dir/MultiText.cpp.o: CXX_COMPILER__TextInput_unscanne
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Typing.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Typing.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Typing.cpp.o.d
@@ -91,8 +90,6 @@ build CMakeFiles/TextInput.dir/Typing.cpp.o: CXX_COMPILER__TextInput_unscanned_D
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/States.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/States.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/States.cpp.o.d
@@ -100,8 +97,6 @@ build CMakeFiles/TextInput.dir/States.cpp.o: CXX_COMPILER__TextInput_unscanned_D
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Box.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Box.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Box.cpp.o.d
@@ -109,8 +104,6 @@ build CMakeFiles/TextInput.dir/Box.cpp.o: CXX_COMPILER__TextInput_unscanned_Debu
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/SnapshotInterface.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o.d
@@ -118,8 +111,6 @@ build CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o: CXX_COMPILER__TextInput_
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Application.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Application.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Application.cpp.o.d
@@ -127,8 +118,6 @@ build CMakeFiles/TextInput.dir/Application.cpp.o: CXX_COMPILER__TextInput_unscan
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/GUIComponent.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/GUIComponent.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/GUIComponent.cpp.o.d
@@ -136,8 +125,6 @@ build CMakeFiles/TextInput.dir/GUIComponent.cpp.o: CXX_COMPILER__TextInput_unsca
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/MouseEvents.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/MouseEvents.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/MouseEvents.cpp.o.d
@@ -145,8 +132,6 @@ build CMakeFiles/TextInput.dir/MouseEvents.cpp.o: CXX_COMPILER__TextInput_unscan
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/History.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/History.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/History.cpp.o.d
@@ -154,8 +139,6 @@ build CMakeFiles/TextInput.dir/History.cpp.o: CXX_COMPILER__TextInput_unscanned_
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/TextInput.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/TextInput.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/TextInput.cpp.o.d
@@ -163,8 +146,6 @@ build CMakeFiles/TextInput.dir/TextInput.cpp.o: CXX_COMPILER__TextInput_unscanne
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Snapshot.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Snapshot.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Snapshot.cpp.o.d
@@ -172,8 +153,6 @@ build CMakeFiles/TextInput.dir/Snapshot.cpp.o: CXX_COMPILER__TextInput_unscanned
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/KeyShortcuts.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o.d
@@ -181,8 +160,6 @@ build CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o: CXX_COMPILER__TextInput_unsca
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/TextBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/TextBox.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/TextBox.cpp.o.d
@@ -190,8 +167,6 @@ build CMakeFiles/TextInput.dir/TextBox.cpp.o: CXX_COMPILER__TextInput_unscanned_
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Cursor.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Cursor.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Cursor.cpp.o.d
@@ -199,8 +174,6 @@ build CMakeFiles/TextInput.dir/Cursor.cpp.o: CXX_COMPILER__TextInput_unscanned_D
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Label.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Label.cpp.o.d
@@ -208,8 +181,6 @@ build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_De
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/DropdownMenu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/DropdownMenu.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/DropdownMenu.cpp.o.d
@@ -217,8 +188,6 @@ build CMakeFiles/TextInput.dir/DropdownMenu.cpp.o: CXX_COMPILER__TextInput_unsca
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/InputBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/InputBox.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/InputBox.cpp.o.d
@@ -226,8 +195,6 @@ build CMakeFiles/TextInput.dir/InputBox.cpp.o: CXX_COMPILER__TextInput_unscanned
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/ItemList.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/ItemList.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/ItemList.cpp.o.d
@@ -235,8 +202,6 @@ build CMakeFiles/TextInput.dir/ItemList.cpp.o: CXX_COMPILER__TextInput_unscanned
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Item.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Item.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Item.cpp.o.d
@@ -244,8 +209,6 @@ build CMakeFiles/TextInput.dir/Item.cpp.o: CXX_COMPILER__TextInput_unscanned_Deb
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Menu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Menu.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Menu.cpp.o.d
@@ -253,8 +216,6 @@ build CMakeFiles/TextInput.dir/Menu.cpp.o: CXX_COMPILER__TextInput_unscanned_Deb
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/MenuBar.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/MenuBar.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/MenuBar.cpp.o.d
@@ -262,8 +223,6 @@ build CMakeFiles/TextInput.dir/MenuBar.cpp.o: CXX_COMPILER__TextInput_unscanned_
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/FileItem.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/FileItem.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/FileItem.cpp.o.d
@@ -271,8 +230,6 @@ build CMakeFiles/TextInput.dir/FileItem.cpp.o: CXX_COMPILER__TextInput_unscanned
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/FileTree.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/FileTree.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/FileTree.cpp.o.d
@@ -280,8 +237,6 @@ build CMakeFiles/TextInput.dir/FileTree.cpp.o: CXX_COMPILER__TextInput_unscanned
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/Images.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Images.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Images.cpp.o.d
@@ -289,8 +244,6 @@ build CMakeFiles/TextInput.dir/Images.cpp.o: CXX_COMPILER__TextInput_unscanned_D
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/FileNode.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/FileNode.cpp.o.d
@@ -298,8 +251,6 @@ build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
-  TARGET_PDB = TextInput.pdb
 
 
 # =============================================================================
@@ -309,15 +260,14 @@ build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned
 #############################################
 # Link the executable TextInput
 
-build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o CMakeFiles/TextInput.dir/DropdownMenu.cpp.o CMakeFiles/TextInput.dir/InputBox.cpp.o CMakeFiles/TextInput.dir/ItemList.cpp.o CMakeFiles/TextInput.dir/Item.cpp.o CMakeFiles/TextInput.dir/Menu.cpp.o CMakeFiles/TextInput.dir/MenuBar.cpp.o CMakeFiles/TextInput.dir/FileItem.cpp.o CMakeFiles/TextInput.dir/FileTree.cpp.o CMakeFiles/TextInput.dir/Images.cpp.o CMakeFiles/TextInput.dir/FileNode.cpp.o | /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/API.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o CMakeFiles/TextInput.dir/DropdownMenu.cpp.o CMakeFiles/TextInput.dir/InputBox.cpp.o CMakeFiles/TextInput.dir/ItemList.cpp.o CMakeFiles/TextInput.dir/Item.cpp.o CMakeFiles/TextInput.dir/Menu.cpp.o CMakeFiles/TextInput.dir/MenuBar.cpp.o CMakeFiles/TextInput.dir/FileItem.cpp.o CMakeFiles/TextInput.dir/FileTree.cpp.o CMakeFiles/TextInput.dir/Images.cpp.o CMakeFiles/TextInput.dir/FileNode.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   OBJECT_DIR = CMakeFiles/TextInput.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/TextInput.dir/
   TARGET_FILE = TextInput
-  TARGET_PDB = TextInput.pdb
+  TARGET_PDB = TextInput.dbg
 
 
 #############################################
@@ -362,14 +312,14 @@ build all: phony TextInput
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Users/feliciachen/CLionProjects/Fall23/TextInput/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/feliciachen/CLionProjects/Fall23/TextInput/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Users/feliciachen/CLionProjects/Fall23/TextInput/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/feliciachen/CLionProjects/Fall23/TextInput/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

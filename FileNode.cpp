@@ -3,10 +3,8 @@
 //
 #include "FileNode.h"
 
-void FileNode::toggleChlidren() {
-    for(auto& i : children){
-        i->toggleState(HIDDEN);
-    }
+void FileNode::toggleChildren() {
+    toggleState(CHILDREN_SHOWING);
 }
 
 void FileNode::reposition() const {
@@ -28,8 +26,9 @@ FileNode::FileNode(imageEnum icon, std::string text, sf::Vector2f size, sf::Vect
 void FileNode::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     if(!checkState(HIDDEN)){
         window.draw(data);
-        for (auto& i : children) {
-            if(!i->checkState(HIDDEN)){
+        if(checkState(CHILDREN_SHOWING))
+        {
+            for (auto& i : children) {
                 window.draw(*i, states);
             }
         }
@@ -45,7 +44,7 @@ void FileNode::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         i->addEventHandler(window, event);
     data.addEventHandler(window, event);
     if(MouseEvents<FileItem>::mouseClicked(data, window)){
-        toggleChlidren();
+        toggleChildren();
         reposition();
     }
 }
@@ -62,7 +61,13 @@ Snapshot &FileNode::getSnapshot() {
 }
 
 sf::FloatRect FileNode::getGlobalBounds() const {
-    return data.getGlobalBounds();
+    sf::FloatRect globalBounds = data.getGlobalBounds();
+    if(checkState(CHILDREN_SHOWING))
+        return globalBounds;
+    for(auto& i: children){
+        globalBounds.height += i->getGlobalBounds().height;
+    }
+    return globalBounds;
 }
 
 bool FileNode::isLeaf() const {

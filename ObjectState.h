@@ -11,6 +11,7 @@ enum ObjectState {
     HIDDEN,
     HIGHLIGHTED,
     DISABLED,
+    CHILDREN_SHOWING,
     ///This should always be the last state
     LASTSTATE
 };
