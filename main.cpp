@@ -12,7 +12,7 @@
 int main() {
 
     FileTree tree;
-    tree.push("directory1/file1");
+    tree.push("directory1");
     tree.push("directory1/file2");
 
     sf::VideoMode videoMode(1400, 900, 32);

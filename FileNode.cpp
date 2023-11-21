@@ -87,7 +87,6 @@ std::vector<FileNode *> &FileNode::getChildren() {
 }
 
 void FileNode::addChild(FileNode *node) {
-    node->enableState(HIDDEN);
     children.push_back(node);
     reposition();
 }
