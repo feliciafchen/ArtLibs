@@ -4,6 +4,8 @@ project(TextInput)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(TextInput main.cpp
+        API.cpp
+        API.h
         FontEnum.h
         Fonts.h
         Fonts.cpp
@@ -66,5 +68,8 @@ add_executable(TextInput main.cpp
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)
+find_package(nlohmann_json 3.2.0 REQUIRED)
+find_package(CURL REQUIRED)
+target_link_libraries(TEST CURL::libcurl)
 include_directories(${SFML_INCLUDE_DIRS})
 target_link_libraries(TextInput sfml-system sfml-window sfml-network sfml-graphics sfml-audio)
