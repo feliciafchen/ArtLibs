@@ -1,3 +1,3 @@
-/Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/CMakeFiles/TextInput.dir
+/Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/CMakeFiles/Artify.dir
 /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/CMakeFiles/rebuild_cache.dir

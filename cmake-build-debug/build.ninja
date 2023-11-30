@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: TextInput
+# Project: Artify
 # Configurations: Debug
 # =============================================================================
 
@@ -41,268 +41,268 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target TextInput
+# Object build statements for EXECUTABLE target Artify
 
 
 #############################################
-# Order-only phony target for TextInput
+# Order-only phony target for Artify
 
-build cmake_object_order_depends_target_TextInput: phony || CMakeFiles/TextInput.dir
+build cmake_object_order_depends_target_Artify: phony || CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/main.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/main.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/main.cpp.o.d
+build CMakeFiles/Artify.dir/main.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/main.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/API.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/API.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/API.cpp.o.d
+build CMakeFiles/Artify.dir/API.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/API.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/API.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Fonts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Fonts.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Fonts.cpp.o.d
+build CMakeFiles/Artify.dir/Fonts.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Fonts.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Fonts.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Letter.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Letter.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Letter.cpp.o.d
+build CMakeFiles/Artify.dir/Letter.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Letter.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Letter.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/MultiText.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MultiText.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/MultiText.cpp.o.d
+build CMakeFiles/Artify.dir/MultiText.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MultiText.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/MultiText.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Typing.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Typing.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Typing.cpp.o.d
+build CMakeFiles/Artify.dir/Typing.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Typing.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Typing.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/States.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/States.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/States.cpp.o.d
+build CMakeFiles/Artify.dir/States.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/States.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/States.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Box.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Box.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Box.cpp.o.d
+build CMakeFiles/Artify.dir/Box.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Box.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Box.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/SnapshotInterface.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o.d
+build CMakeFiles/Artify.dir/SnapshotInterface.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/SnapshotInterface.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/SnapshotInterface.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Application.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Application.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Application.cpp.o.d
+build CMakeFiles/Artify.dir/Application.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Application.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Application.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/GUIComponent.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/GUIComponent.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/GUIComponent.cpp.o.d
+build CMakeFiles/Artify.dir/GUIComponent.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/GUIComponent.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/GUIComponent.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/MouseEvents.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MouseEvents.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/MouseEvents.cpp.o.d
+build CMakeFiles/Artify.dir/MouseEvents.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MouseEvents.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/MouseEvents.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/History.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/History.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/History.cpp.o.d
+build CMakeFiles/Artify.dir/History.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/History.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/History.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/TextInput.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/TextInput.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/TextInput.cpp.o.d
+build CMakeFiles/Artify.dir/TextInput.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/TextInput.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/TextInput.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Snapshot.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Snapshot.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Snapshot.cpp.o.d
+build CMakeFiles/Artify.dir/Snapshot.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Snapshot.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Snapshot.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/KeyShortcuts.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o.d
+build CMakeFiles/Artify.dir/KeyShortcuts.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/KeyShortcuts.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/KeyShortcuts.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/TextBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/TextBox.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/TextBox.cpp.o.d
+build CMakeFiles/Artify.dir/TextBox.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/TextBox.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/TextBox.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Cursor.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Cursor.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Cursor.cpp.o.d
+build CMakeFiles/Artify.dir/Cursor.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Cursor.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Cursor.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Label.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Label.cpp.o.d
+build CMakeFiles/Artify.dir/Label.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Label.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Label.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/DropdownMenu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/DropdownMenu.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/DropdownMenu.cpp.o.d
+build CMakeFiles/Artify.dir/DropdownMenu.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/DropdownMenu.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/DropdownMenu.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/InputBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/InputBox.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/InputBox.cpp.o.d
+build CMakeFiles/Artify.dir/InputBox.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/InputBox.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/InputBox.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/ItemList.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/ItemList.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/ItemList.cpp.o.d
+build CMakeFiles/Artify.dir/ItemList.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/ItemList.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/ItemList.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Item.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Item.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Item.cpp.o.d
+build CMakeFiles/Artify.dir/Item.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Item.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Item.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Menu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Menu.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Menu.cpp.o.d
+build CMakeFiles/Artify.dir/Menu.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Menu.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Menu.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/MenuBar.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MenuBar.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/MenuBar.cpp.o.d
+build CMakeFiles/Artify.dir/MenuBar.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MenuBar.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/MenuBar.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/FileItem.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileItem.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/FileItem.cpp.o.d
+build CMakeFiles/Artify.dir/FileItem.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileItem.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/FileItem.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/FileTree.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileTree.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/FileTree.cpp.o.d
+build CMakeFiles/Artify.dir/FileTree.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileTree.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/FileTree.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Images.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Images.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Images.cpp.o.d
+build CMakeFiles/Artify.dir/Images.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Images.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Images.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileNode.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/FileNode.cpp.o.d
+build CMakeFiles/Artify.dir/FileNode.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileNode.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/FileNode.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Artify.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Artify.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Artify.cpp.o.d
+build CMakeFiles/Artify.dir/Artify.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Artify.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Artify.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Logo.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Logo.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Logo.cpp.o.d
+build CMakeFiles/Artify.dir/Logo.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Logo.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Logo.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/Files.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Files.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/Files.cpp.o.d
+build CMakeFiles/Artify.dir/Files.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Files.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Files.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/PromptScreen.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/PromptScreen.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/PromptScreen.cpp.o.d
+build CMakeFiles/Artify.dir/PromptScreen.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/PromptScreen.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/PromptScreen.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
-build CMakeFiles/TextInput.dir/EditScreen.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/EditScreen.cpp || cmake_object_order_depends_target_TextInput
-  DEP_FILE = CMakeFiles/TextInput.dir/EditScreen.cpp.o.d
+build CMakeFiles/Artify.dir/EditScreen.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/EditScreen.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/EditScreen.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/TextInput.dir
-  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TextInput
+# Link build statements for EXECUTABLE target Artify
 
 
 #############################################
-# Link the executable TextInput
+# Link the executable Artify
 
-build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/API.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o CMakeFiles/TextInput.dir/DropdownMenu.cpp.o CMakeFiles/TextInput.dir/InputBox.cpp.o CMakeFiles/TextInput.dir/ItemList.cpp.o CMakeFiles/TextInput.dir/Item.cpp.o CMakeFiles/TextInput.dir/Menu.cpp.o CMakeFiles/TextInput.dir/MenuBar.cpp.o CMakeFiles/TextInput.dir/FileItem.cpp.o CMakeFiles/TextInput.dir/FileTree.cpp.o CMakeFiles/TextInput.dir/Images.cpp.o CMakeFiles/TextInput.dir/FileNode.cpp.o CMakeFiles/TextInput.dir/Artify.cpp.o CMakeFiles/TextInput.dir/Logo.cpp.o CMakeFiles/TextInput.dir/Files.cpp.o CMakeFiles/TextInput.dir/PromptScreen.cpp.o CMakeFiles/TextInput.dir/EditScreen.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+build Artify: CXX_EXECUTABLE_LINKER__Artify_Debug CMakeFiles/Artify.dir/main.cpp.o CMakeFiles/Artify.dir/API.cpp.o CMakeFiles/Artify.dir/Fonts.cpp.o CMakeFiles/Artify.dir/Letter.cpp.o CMakeFiles/Artify.dir/MultiText.cpp.o CMakeFiles/Artify.dir/Typing.cpp.o CMakeFiles/Artify.dir/States.cpp.o CMakeFiles/Artify.dir/Box.cpp.o CMakeFiles/Artify.dir/SnapshotInterface.cpp.o CMakeFiles/Artify.dir/Application.cpp.o CMakeFiles/Artify.dir/GUIComponent.cpp.o CMakeFiles/Artify.dir/MouseEvents.cpp.o CMakeFiles/Artify.dir/History.cpp.o CMakeFiles/Artify.dir/TextInput.cpp.o CMakeFiles/Artify.dir/Snapshot.cpp.o CMakeFiles/Artify.dir/KeyShortcuts.cpp.o CMakeFiles/Artify.dir/TextBox.cpp.o CMakeFiles/Artify.dir/Cursor.cpp.o CMakeFiles/Artify.dir/Label.cpp.o CMakeFiles/Artify.dir/DropdownMenu.cpp.o CMakeFiles/Artify.dir/InputBox.cpp.o CMakeFiles/Artify.dir/ItemList.cpp.o CMakeFiles/Artify.dir/Item.cpp.o CMakeFiles/Artify.dir/Menu.cpp.o CMakeFiles/Artify.dir/MenuBar.cpp.o CMakeFiles/Artify.dir/FileItem.cpp.o CMakeFiles/Artify.dir/FileTree.cpp.o CMakeFiles/Artify.dir/Images.cpp.o CMakeFiles/Artify.dir/FileNode.cpp.o CMakeFiles/Artify.dir/Artify.cpp.o CMakeFiles/Artify.dir/Logo.cpp.o CMakeFiles/Artify.dir/Files.cpp.o CMakeFiles/Artify.dir/PromptScreen.cpp.o CMakeFiles/Artify.dir/EditScreen.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
-  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_DIR = CMakeFiles/Artify.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = TextInput
-  TARGET_PDB = TextInput.dbg
+  TARGET_FILE = Artify
+  TARGET_PDB = Artify.dbg
 
 
 #############################################
@@ -338,7 +338,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug
 
-build all: phony TextInput
+build all: phony Artify
 
 # =============================================================================
 # Built-in targets

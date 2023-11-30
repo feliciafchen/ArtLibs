@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.26)
-project(TextInput)
+project(Artify)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(TextInput main.cpp
+add_executable(Artify main.cpp
         API.cpp
         API.h
         FontEnum.h
@@ -80,6 +80,6 @@ include_directories(/usr/local/include)
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)
 find_package(nlohmann_json 3.2.0 REQUIRED)
 find_package(CURL REQUIRED)
-target_link_libraries(TextInput CURL::libcurl)
+target_link_libraries(Artify CURL::libcurl)
 include_directories(${SFML_INCLUDE_DIRS})
-target_link_libraries(TextInput sfml-system sfml-window sfml-network sfml-graphics sfml-audio)
+target_link_libraries(Artify sfml-system sfml-window sfml-network sfml-graphics sfml-audio)
