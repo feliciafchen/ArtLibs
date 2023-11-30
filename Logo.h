@@ -10,6 +10,8 @@
 class Logo : public sf::Sprite {
 public:
     Logo();
+    void enablePromptState();
+    void enableEditState();
 };
 
 

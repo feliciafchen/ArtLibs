@@ -6,5 +6,15 @@
 
 Logo::Logo() {
     setTexture(Images::getImage(ARTIFY_LOGO));
-    setPosition(250, 250);
+    enablePromptState();
+}
+
+void Logo::enablePromptState() {
+    setScale(.4,.4);
+    setPosition(1325/2 - getGlobalBounds().width/2,745/3 - getGlobalBounds().height/3);
+}
+
+void Logo::enableEditState() {
+    setScale(.3,.3);
+    setPosition(1325/2 - getGlobalBounds().width/2,50);
 }

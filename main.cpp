@@ -21,7 +21,7 @@ int main() {
             sprite.setScale(.25,.25);
             sprite.setPosition(250,250);
 
-            sf::RenderWindow window(sf::VideoMode(texture.getSize().x, texture.getSize().y), "SFML Image from File");
+            sf::RenderWindow window(sf::VideoMode(1325, 745), "Artify");
             while (window.isOpen()) {
                 sf::Event event;
                 while (window.pollEvent(event)) {
@@ -30,8 +30,9 @@ int main() {
                     }
                 }
 
-                window.clear();
+                window.clear(sf::Color::White);
                 window.draw(logo);
+                window.draw(sprite);
                 window.display();
             }
         } else {
