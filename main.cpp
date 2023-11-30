@@ -4,6 +4,7 @@
 #include "API.h"
 #include "Artify.h"
 #include "Logo.h"
+#include "DropdownMenu.h"
 
 int main() {
 
@@ -12,6 +13,11 @@ int main() {
     std::string filePath = "images/artified.png";
 
     Logo logo;
+    std::vector<std::string> words = {"watercolor", "painting", "sketch"};
+    DropdownMenu menu(words,25);
+    menu.setPosition({100,100});
+    menu.setFillColor(sf::Color::Black);
+    menu.setOutlineColor(sf::Color::Black);
 
     if (API::DownloadImageToFile(imageUrl, filePath)) {
         sf::Texture texture;
@@ -28,11 +34,13 @@ int main() {
                     if (event.type == sf::Event::Closed) {
                         window.close();
                     }
+                    menu.addEventHandler(window, event);
                 }
+                menu.update();
 
                 window.clear(sf::Color::White);
-                window.draw(logo);
-                window.draw(sprite);
+//                window.draw(logo);
+                window.draw(menu);
                 window.display();
             }
         } else {

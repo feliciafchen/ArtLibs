@@ -11,7 +11,7 @@ Item::Item()
 }
 Item::Item(const std::string& text, unsigned int size) {
     this->text.setString(text);
-    this->text.setFont(Fonts::getFont(FREE_SANS));
+    this->text.setFont(Fonts::getFont(KIRANG_HAERANG));
     this->text.setCharacterSize(size);
     disableState(CLICKED);
 }

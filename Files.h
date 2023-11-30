@@ -4,10 +4,12 @@
 
 #ifndef TEXTINPUT_FILES_H
 #define TEXTINPUT_FILES_H
+#include <SFML/Graphics.hpp>
+#include "DropdownMenu.h"
 
-
-class Files {
-
+class Files : public sf::Drawable {
+private:
+    DropdownMenu menu;
 };
 
 
