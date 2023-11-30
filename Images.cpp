@@ -9,7 +9,7 @@ void Images::loadImage(imageEnum image) {
 }
 
 std::string Images::getImagePath(imageEnum img) {
-    std::string f[] = {"images/file.png", "images/folder.png", "images/"};
+    std::string f[] = {"images/file.png", "images/folder.png", "images/artifylogo.png", "images/artified.png"};
     return f[img];
 }
 
