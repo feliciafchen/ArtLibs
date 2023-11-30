@@ -13,7 +13,7 @@
 class Artify : public GUIComponent {
 private:
     Logo logo;
-//    Files myArt;
+    Files myArt;
     PromptScreen promptScreen;
     EditScreen editScreen;
 public:

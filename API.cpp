@@ -65,7 +65,7 @@ const std::string API::getImage(const std::string &prompt) {
 
         // Set the request body
         std::string requestBody = R"({
-            "model": "dall-e-2",
+            "model": "dall-e-3",
             "prompt": ")" + prompt + R"(",
             "n": 1,
             "size": "1024x1024"

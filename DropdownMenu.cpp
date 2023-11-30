@@ -10,7 +10,7 @@ DropdownMenu::DropdownMenu() {
 
 DropdownMenu::DropdownMenu(const std::vector<std::string> &words, unsigned int s) {
     list = ItemList(words,s);
-    inputBox = InputBox(Item(" ",s));
+    inputBox = InputBox(Item("select",s));
     takeSnapshot();
 }
 
