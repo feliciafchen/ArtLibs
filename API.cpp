@@ -7,13 +7,47 @@
 
 using json = nlohmann::json;
 
-size_t API::WriteCallback(void *contents, size_t size, size_t nmemb, std::string *output) {
+size_t API::WriteCallbackURL(void *contents, size_t size, size_t nmemb, std::string *output) {
     size_t totalSize = size * nmemb;
     output->append((char*)contents, totalSize);
     return totalSize;
 }
 
-std::string API::getImage(const std::string &prompt) {
+size_t API::WriteCallback(void* contents, size_t size, size_t nmemb, FILE* file) {
+    return fwrite(contents, size, nmemb, file);
+}
+
+// Function to download an image from a URL and save it to a file
+bool API::DownloadImageToFile(const std::string& url, const std::string& filePath) {
+    CURL* curl = curl_easy_init();
+    FILE* file = fopen(filePath.c_str(), "wb");
+
+    if (curl && file) {
+        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, file);
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);  // Follow redirects
+
+        CURLcode res = curl_easy_perform(curl);
+        fclose(file);
+        curl_easy_cleanup(curl);
+
+        if (res != CURLE_OK) {
+            std::cerr << "Failed to download image: " << curl_easy_strerror(res) << std::endl;
+            return false;
+        }
+
+        return true;
+    } else {
+        std::cerr << "Failed to initialize libcurl or open file for writing." << std::endl;
+        if (file) {
+            fclose(file);
+        }
+        return false;
+    }
+}
+
+const std::string API::getImage(const std::string &prompt) {
     CURL* curl;
     CURLcode res;
 
@@ -41,7 +75,7 @@ std::string API::getImage(const std::string &prompt) {
 
         // Set the callback function to handle the response
         std::string response;
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallbackURL);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
 
         res = curl_easy_perform(curl);
@@ -69,58 +103,4 @@ std::string API::getImage(const std::string &prompt) {
             std::cerr << "Error parsing JSON: " << e.what() << std::endl;
         }
     }
-}
-
-std::string API::getSong(const std::string &prompt) {
-    std::string song;
-    CURL* curl;
-    CURLcode res;
-
-    // Initialize cURL
-    curl_global_init(CURL_GLOBAL_DEFAULT);
-    curl = curl_easy_init();
-
-    if (curl) {
-        // Set the API endpoint
-        curl_easy_setopt(curl, CURLOPT_URL, "https://api.openai.com/v1/chat/completions");
-
-        // Set the authorization header with your API key
-        struct curl_slist* headers = NULL;
-        headers = curl_slist_append(headers, "Authorization: Bearer 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");
-        headers = curl_slist_append(headers, "Content-Type: application/json");
-        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
-
-        json messages = {
-                { "role", "user" },
-                { "content", prompt }
-        };
-
-        const std::string data = R"({"messages": [)" + messages.dump() + R"(], "model": "gpt-4"})";
-        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data.c_str());
-
-        // Set the callback function to handle the response
-        std::string response;
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
-
-        // Perform the HTTP request
-        res = curl_easy_perform(curl);
-
-        // Check for errors
-        if (res != CURLE_OK) {
-            std::cerr << "curl_easy_perform() failed: " << curl_easy_strerror(res) << std::endl;
-        } else {
-            // Parse the JSON response
-            json jsonResponse = json::parse(response);
-            song = jsonResponse["choices"][0]["message"]["content"];
-        }
-
-        // Cleanup
-        curl_easy_cleanup(curl);
-        curl_slist_free_all(headers);
-    }
-
-    // Cleanup cURL
-    curl_global_cleanup();
-    return song;
 }

@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-build-debug/
+cmake_ninja_workdir = /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target TextInput
 
@@ -49,204 +49,211 @@ cmake_ninja_workdir = /Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-bu
 
 build cmake_object_order_depends_target_TextInput: phony || CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/main.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/main.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/main.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/main.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/API.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/API.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/API.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/API.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/API.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Fonts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Fonts.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Fonts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Fonts.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Fonts.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Letter.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Letter.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Letter.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Letter.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Letter.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/MultiText.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/MultiText.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/MultiText.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MultiText.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/MultiText.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Typing.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Typing.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Typing.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Typing.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Typing.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/States.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/States.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/States.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/States.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/States.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Box.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Box.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Box.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Box.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Box.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/SnapshotInterface.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/SnapshotInterface.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Application.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Application.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Application.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Application.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Application.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/GUIComponent.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/GUIComponent.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/GUIComponent.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/GUIComponent.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/GUIComponent.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/MouseEvents.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/MouseEvents.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/MouseEvents.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MouseEvents.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/MouseEvents.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/History.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/History.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/History.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/History.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/History.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/TextInput.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/TextInput.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/TextInput.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/TextInput.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/TextInput.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Snapshot.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Snapshot.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Snapshot.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Snapshot.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Snapshot.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/KeyShortcuts.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/KeyShortcuts.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/TextBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/TextBox.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/TextBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/TextBox.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/TextBox.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Cursor.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Cursor.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Cursor.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Cursor.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Cursor.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Label.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Label.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Label.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Label.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/DropdownMenu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/DropdownMenu.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/DropdownMenu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/DropdownMenu.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/DropdownMenu.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/InputBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/InputBox.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/InputBox.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/InputBox.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/InputBox.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/ItemList.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/ItemList.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/ItemList.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/ItemList.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/ItemList.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Item.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Item.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Item.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Item.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Item.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Menu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Menu.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Menu.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Menu.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Menu.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/MenuBar.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/MenuBar.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/MenuBar.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/MenuBar.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/MenuBar.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/FileItem.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/FileItem.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/FileItem.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileItem.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/FileItem.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/FileTree.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/FileTree.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/FileTree.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileTree.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/FileTree.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/Images.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/Images.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/Images.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Images.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/Images.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
   OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
 
-build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/TextInput/FileNode.cpp || cmake_object_order_depends_target_TextInput
+build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/FileNode.cpp || cmake_object_order_depends_target_TextInput
   DEP_FILE = CMakeFiles/TextInput.dir/FileNode.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TextInput.dir
+  OBJECT_FILE_DIR = CMakeFiles/TextInput.dir
+
+build CMakeFiles/TextInput.dir/Artify.cpp.o: CXX_COMPILER__TextInput_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Artify.cpp || cmake_object_order_depends_target_TextInput
+  DEP_FILE = CMakeFiles/TextInput.dir/Artify.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/TextInput.dir
@@ -260,7 +267,7 @@ build CMakeFiles/TextInput.dir/FileNode.cpp.o: CXX_COMPILER__TextInput_unscanned
 #############################################
 # Link the executable TextInput
 
-build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/API.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o CMakeFiles/TextInput.dir/DropdownMenu.cpp.o CMakeFiles/TextInput.dir/InputBox.cpp.o CMakeFiles/TextInput.dir/ItemList.cpp.o CMakeFiles/TextInput.dir/Item.cpp.o CMakeFiles/TextInput.dir/Menu.cpp.o CMakeFiles/TextInput.dir/MenuBar.cpp.o CMakeFiles/TextInput.dir/FileItem.cpp.o CMakeFiles/TextInput.dir/FileTree.cpp.o CMakeFiles/TextInput.dir/Images.cpp.o CMakeFiles/TextInput.dir/FileNode.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir/main.cpp.o CMakeFiles/TextInput.dir/API.cpp.o CMakeFiles/TextInput.dir/Fonts.cpp.o CMakeFiles/TextInput.dir/Letter.cpp.o CMakeFiles/TextInput.dir/MultiText.cpp.o CMakeFiles/TextInput.dir/Typing.cpp.o CMakeFiles/TextInput.dir/States.cpp.o CMakeFiles/TextInput.dir/Box.cpp.o CMakeFiles/TextInput.dir/SnapshotInterface.cpp.o CMakeFiles/TextInput.dir/Application.cpp.o CMakeFiles/TextInput.dir/GUIComponent.cpp.o CMakeFiles/TextInput.dir/MouseEvents.cpp.o CMakeFiles/TextInput.dir/History.cpp.o CMakeFiles/TextInput.dir/TextInput.cpp.o CMakeFiles/TextInput.dir/Snapshot.cpp.o CMakeFiles/TextInput.dir/KeyShortcuts.cpp.o CMakeFiles/TextInput.dir/TextBox.cpp.o CMakeFiles/TextInput.dir/Cursor.cpp.o CMakeFiles/TextInput.dir/Label.cpp.o CMakeFiles/TextInput.dir/DropdownMenu.cpp.o CMakeFiles/TextInput.dir/InputBox.cpp.o CMakeFiles/TextInput.dir/ItemList.cpp.o CMakeFiles/TextInput.dir/Item.cpp.o CMakeFiles/TextInput.dir/Menu.cpp.o CMakeFiles/TextInput.dir/MenuBar.cpp.o CMakeFiles/TextInput.dir/FileItem.cpp.o CMakeFiles/TextInput.dir/FileTree.cpp.o CMakeFiles/TextInput.dir/Images.cpp.o CMakeFiles/TextInput.dir/FileNode.cpp.o CMakeFiles/TextInput.dir/Artify.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   OBJECT_DIR = CMakeFiles/TextInput.dir
@@ -274,7 +281,7 @@ build TextInput: CXX_EXECUTABLE_LINKER__TextInput_Debug CMakeFiles/TextInput.dir
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -285,7 +292,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/feliciachen/CLionProjects/Fall23/TextInput -B/Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-build-debug
+  COMMAND = cd /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/feliciachen/CLionProjects/Fall23/Artify -B/Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -301,7 +308,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-build-debug
+# Folder: /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug
 
 build all: phony TextInput
 
@@ -312,14 +319,14 @@ build all: phony TextInput
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/feliciachen/CLionProjects/Fall23/TextInput/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/feliciachen/CLionProjects/Fall23/Artify/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/feliciachen/CLionProjects/Fall23/TextInput/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/feliciachen/CLionProjects/Fall23/Artify/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

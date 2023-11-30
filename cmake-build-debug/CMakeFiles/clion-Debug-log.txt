@@ -1,10 +1,5 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/feliciachen/CLionProjects/Fall23/TextInput -B /Users/feliciachen/CLionProjects/Fall23/TextInput/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/feliciachen/CLionProjects/Fall23/Artify -B /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug
 -- Found SFML 2.6.0 in /opt/homebrew/lib/cmake/SFML
--- Found nlohmann_json: /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.11.2", minimum required is "3.2.0") 
--- Found CURL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd (found version "8.1.2")  
-CMake Error at CMakeLists.txt:73 (target_link_libraries):
-  Cannot specify link libraries for target "TEST" which is not built by this
-  project.
-
-
--- Configuring incomplete, errors occurred!
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug

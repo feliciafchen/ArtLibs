@@ -6,7 +6,7 @@
 #define TEXTINPUT_IMAGEENUM_H
 
 enum imageEnum {
-    FILE_ICON, FOLDER_ICON
+    FILE_ICON, FOLDER_ICON, ARTIFY,
 };
 
 #endif //TEXTINPUT_IMAGEENUM_H

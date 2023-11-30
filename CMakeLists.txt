@@ -64,7 +64,9 @@ add_executable(TextInput main.cpp
         Images.cpp
         Images.h
         ImageEnum.h
-        FileNode.cpp)
+        FileNode.cpp
+        Artify.cpp
+        Artify.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)

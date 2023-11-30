@@ -10,8 +10,10 @@ void FileNode::toggleChildren() {
 void FileNode::reposition() const {
     if(isLeaf())
         return;
-    for (int i = 0; i < children.size(); ++i) {
-        children[i]->setPosition({data.getPosition().x + 20, data.getPosition().y + getGlobalBounds().height * (i+1)});
+    sf::Vector2f dataPos = data.getPosition();
+    children[0]->setPosition({dataPos.x + 20, dataPos.y + data.getGlobalBounds().height});
+    for (int i = 1; i < children.size(); ++i) {
+        children[i]->setPosition({data.getPosition().x + 20, children[i-1]->getGlobalBounds().height * (i+1)});
     }
 }
 
@@ -50,10 +52,10 @@ void FileNode::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 }
 
 void FileNode::update() {
-    reposition();
-    data.update();
     for(auto& i : children)
         i->update();
+    reposition();
+    data.update();
 }
 
 Snapshot &FileNode::getSnapshot() {
@@ -62,7 +64,7 @@ Snapshot &FileNode::getSnapshot() {
 
 sf::FloatRect FileNode::getGlobalBounds() const {
     sf::FloatRect globalBounds = data.getGlobalBounds();
-    if(checkState(CHILDREN_SHOWING))
+    if(!checkState(CHILDREN_SHOWING))
         return globalBounds;
     for(auto& i: children){
         globalBounds.height += i->getGlobalBounds().height;
