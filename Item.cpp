@@ -41,7 +41,8 @@ void Item::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 void Item::update() {
     centerName();
     if(checkState(HOVERED)){
-        setFillColor(sf::Color::Blue);
+        sf::Color gray(217,217,217);
+        setFillColor(gray);
         text.setStyle(sf::Text::Bold);
     }
     else{

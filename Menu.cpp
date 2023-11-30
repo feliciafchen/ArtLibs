@@ -73,7 +73,8 @@ void Menu::update() {
     list.update();
     button.centerName();
     if(button.checkState(CLICKED)){
-        button.setFillColor(sf::Color::Blue);
+        sf::Color gray(217,217,217);
+        button.setFillColor(gray);
         list.toggleState(HIDDEN);
         button.disableState(CLICKED);
     }

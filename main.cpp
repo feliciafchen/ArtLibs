@@ -14,10 +14,13 @@ int main() {
 
     Logo logo;
     std::vector<std::string> words = {"watercolor", "painting", "sketch"};
-    DropdownMenu menu(words,25);
-    menu.setPosition({100,100});
-    menu.setFillColor(sf::Color::Black);
-    menu.setOutlineColor(sf::Color::Black);
+    DropdownMenu item(words,25);
+    item.setBoxSize({400,50});
+    item.setFillColor(sf::Color::Transparent);
+    item.setOutlineColor(sf::Color::Black);
+    item.setOutlineThickness(1);
+    item.setTextColor(sf::Color::Black);
+    item.setPosition({10,10});
 
     if (API::DownloadImageToFile(imageUrl, filePath)) {
         sf::Texture texture;
@@ -34,13 +37,13 @@ int main() {
                     if (event.type == sf::Event::Closed) {
                         window.close();
                     }
-                    menu.addEventHandler(window, event);
+                    item.addEventHandler(window, event);
                 }
-                menu.update();
+                item.update();
 
                 window.clear(sf::Color::White);
 //                window.draw(logo);
-                window.draw(menu);
+                window.draw(item);
                 window.display();
             }
         } else {

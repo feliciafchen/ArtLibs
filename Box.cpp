@@ -23,8 +23,10 @@ void Box::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 }
 
 void Box::update() {
-    if(checkState(HOVERED))
-        box.setFillColor(sf::Color::Blue);
+    if(checkState(HOVERED)){
+        sf::Color color(217,217,217);
+        box.setFillColor(color);
+    }
     else
         box.setFillColor(sf::Color::White);
 }
