@@ -8,9 +8,9 @@ void Artify::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(logo);
     window.draw(myArt);
     if(screen)
-        window.draw(promptScreen);
-    else
         window.draw(editScreen);
+    else
+        window.draw(promptScreen);
 }
 
 void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
@@ -20,9 +20,9 @@ void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 void Artify::update() {
     myArt.update();
     if(screen)
-        logo.enablePromptState();
-    else
         logo.enableEditState();
+    else
+        logo.enablePromptState();
 }
 
 Snapshot &Artify::getSnapshot() {
@@ -39,6 +39,6 @@ void Artify::setScreen(bool screen) {
     Artify::screen = screen;
 }
 
-Artify::Artify() : screen(true){
+Artify::Artify() : screen(false){
 
 }
