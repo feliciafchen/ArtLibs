@@ -6,8 +6,8 @@
 
 void EditScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(image);
-//    target.draw(save);
-//    target.draw(reartify);
+    target.draw(save);
+    target.draw(reartify);
 }
 
 void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
@@ -21,6 +21,9 @@ EditScreen::EditScreen() {
 
 }
 
-EditScreen::EditScreen(sf::Texture &image) {
-
+EditScreen::EditScreen(const sf::Texture& texture) {
+        this->image.setTexture(texture);
+        this->image.setScale(.4,.4);
+        this->image.setPosition(1325/2 - image.getGlobalBounds().width/2,
+                                745/2 - image.getGlobalBounds().height/2.2);
 }

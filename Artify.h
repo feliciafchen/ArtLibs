@@ -13,6 +13,7 @@
 
 class Artify : public GUIComponent {
 private:
+    sf::Texture texture;
     Logo logo;
     Files myArt;
     PromptScreen promptScreen;

@@ -7,6 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include "EventHandler.h"
 #include "Button.h"
+#include "API.h"
 
 class EditScreen : public sf::Drawable, public EventHandler {
 private:
@@ -15,7 +16,7 @@ private:
     Button reartify;
 public:
     EditScreen();
-    EditScreen(sf::Texture& image);
+    EditScreen(const sf::Texture& texture);
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;

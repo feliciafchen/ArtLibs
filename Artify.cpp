@@ -31,6 +31,18 @@ void Artify::update() {
         logo.enablePromptState();
         promptScreen.update();
     }
+    if(promptScreen.checkState(HIDDEN) && screen == false){
+        screen = true;
+//        std::string imageUrl = API::getImage(promptScreen.getFullPrompt());
+//        std::cout << imageUrl;
+        std::string filePath = "images/artified.png";
+
+        texture.loadFromFile(filePath);
+//        if (API::DownloadImageToFile(imageUrl, filePath)) {
+//            texture.loadFromFile(filePath);
+//        }
+        editScreen = EditScreen(texture);
+    }
 }
 
 Snapshot &Artify::getSnapshot() {
