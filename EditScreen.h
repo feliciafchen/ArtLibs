@@ -15,7 +15,10 @@ private:
     Button reartify;
 public:
     EditScreen();
-
+    EditScreen(sf::Texture& image);
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+    void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
+    void update() override;
 };
 
 
