@@ -34,11 +34,11 @@ void TextBox::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 
 void TextBox::update() {
     if(checkState(CLICKED)){
-        box.setOutlineColor(sf::Color::Blue);
+        box.setOutlineColor(sf::Color::Black);
         box.setOutlineThickness(2);
     }
     else{
-        box.setOutlineColor(sf::Color::Black);
+        box.setOutlineColor(sf::Color::White);
         box.setOutlineThickness(1);
     }
 }

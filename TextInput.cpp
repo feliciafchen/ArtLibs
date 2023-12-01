@@ -5,7 +5,7 @@
 #include "TextInput.h"
 
 TextInput::TextInput()
-: TextInput("First Name:", 20, {40,50}, 200, sf::Color::Black, sf::Color::Black, sf::Color::Transparent, sf::Color::Black, 1)
+: TextInput("First Name:", 20, {40,50}, 200, sf::Color::Black, sf::Color::Black, sf::Color(217,217,217), sf::Color::White, 1)
 {
 
 }
