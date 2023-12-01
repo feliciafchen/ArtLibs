@@ -43,27 +43,27 @@ sf::Vector2f FileItem::getPosition() const {
 void FileItem::setPosition(sf::Vector2f pos) {
     Item::box.setPosition(pos);
     icon.setPosition({pos.x+padding, pos.y+padding});
-    Item::text.setPosition({pos.x + icon.getGlobalBounds().width + padding*2, pos.y});
+    Item::text.setPosition({pos.x + icon.getGlobalBounds().width + padding*3, pos.y});
 }
 
 void FileItem::setIcon(imageEnum icon) {
     this->icon.setTexture(Images::getImage(icon));
     if(icon == FILE_ICON)
-        this->icon.setScale({0.075,0.075});
-    if(icon == FOLDER_ICON)
-        this->icon.setScale({0.035,0.045});
+        this->icon.setScale({0.18,0.18});
 }
 
 void FileItem::update() {
     centerNameY();
     centerIconY();
     if(checkState(CLICKED)){
-        setFillColor(sf::Color::Blue);
+        setFillColor(sf::Color(217,217,217));
         text.setStyle(sf::Text::Bold);
+        icon.setScale({.2,.2});
     }
     else{
         setFillColor(sf::Color::Transparent);
         text.setStyle(sf::Text::Regular);
+        icon.setScale({.18,.18});
     }
 }
 

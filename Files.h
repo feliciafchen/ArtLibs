@@ -7,9 +7,14 @@
 #include <SFML/Graphics.hpp>
 #include "FileTree.h"
 
-class Files : public FileTree {
+class Files : public EventHandler, public sf::Drawable {
+private:
+    FileTree files;
 public:
     Files();
+    void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
+    void update() override;
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };
 
 

@@ -8,9 +8,11 @@
 
 int main() {
 
-    std::string imageUrl = "https://oaidalleapiprodscus.blob.core.windows.net/private/org-4Ta4ceiC1Xg7z1Accpgokit9/user-iA6glXUGteYJBocksTorkhIs/img-PMRgNQT8aXQzGko22XL7lrIG.png?st=2023-11-30T22%3A30%3A05Z&se=2023-12-01T00%3A30%3A05Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-30T23%3A14%3A13Z&ske=2023-12-01T23%3A14%3A13Z&sks=b&skv=2021-08-06&sig=a3V3vMntAWMIVpE9iTakMd1NGN0MW4fSbgb6tIPEbhY%3D";
+    std::string imageUrl = "https://oaidalleapiprodscus.blob.core.windows.net/private/org-4Ta4ceiC1Xg7z1Accpgokit9/user-iA6glXUGteYJBocksTorkhIs/img-MMp0Fikx3EUXr3GZrJWFf2yQ.png?st=2023-12-01T00%3A22%3A24Z&se=2023-12-01T02%3A22%3A24Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-30T23%3A19%3A58Z&ske=2023-12-01T23%3A19%3A58Z&sks=b&skv=2021-08-06&sig=k/4tdjLCKZ7neiNz7v7MIsEYmsN0cOn5dtIvyjTZ7Bg%3D";
     std::cout << imageUrl;
     std::string filePath = "images/artified.png";
+
+    Files files;
 
     Logo logo;
     std::vector<std::string> words = {"pixar", "art deco", "abstract", "realistic", "anime", "minimalistic"};
@@ -40,12 +42,14 @@ int main() {
                         window.close();
                     }
                     item.addEventHandler(window, event);
+                    files.addEventHandler(window, event);
                 }
                 item.update();
+                files.update();
 
                 window.clear(sf::Color::White);
                 window.draw(logo);
-                window.draw(item);
+                window.draw(files);
                 window.display();
             }
         } else {

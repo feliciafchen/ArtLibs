@@ -14,9 +14,9 @@ Menu::Menu(const std::string& title, const std::vector<std::string> &words, unsi
     button = Item(title,s);
     setBoxSize({200,50});
     setFillColor(sf::Color::Transparent);
-    setOutlineColor(sf::Color::White);
+    setOutlineColor(sf::Color::Black);
     setOutlineThickness(1);
-    setTextColor(sf::Color::White);
+    setTextColor(sf::Color::Black);
     setPosition({100,100});
 }
 
