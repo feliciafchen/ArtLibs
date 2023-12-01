@@ -4,9 +4,17 @@
 
 #ifndef TEXTINPUT_EDITSCREEN_H
 #define TEXTINPUT_EDITSCREEN_H
+#include <SFML/Graphics.hpp>
+#include "EventHandler.h"
+#include "Button.h"
 
-
-class EditScreen {
+class EditScreen : public sf::Drawable, public EventHandler {
+private:
+    sf::Sprite image;
+    Button save;
+    Button reartify;
+public:
+    EditScreen();
 
 };
 

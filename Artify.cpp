@@ -24,3 +24,11 @@ Snapshot &Artify::getSnapshot() {
 
 void Artify::applySnapshot(const Snapshot &snapshot) {
 }
+
+bool Artify::getScreen() const {
+    return screen;
+}
+
+void Artify::setScreen(bool screen) {
+    Artify::screen = screen;
+}

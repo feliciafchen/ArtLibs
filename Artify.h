@@ -9,6 +9,7 @@
 #include "Files.h"
 #include "PromptScreen.h"
 #include "EditScreen.h"
+#include "Loading.h"
 
 class Artify : public GUIComponent {
 private:
@@ -16,9 +17,12 @@ private:
     Files myArt;
     PromptScreen promptScreen;
     EditScreen editScreen;
+    Loading loading;
     bool screen;
 public:
     Artify();
+    bool getScreen() const;
+    void setScreen(bool screen);
     //required functions
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;

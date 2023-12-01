@@ -287,6 +287,20 @@ build CMakeFiles/Artify.dir/EditScreen.cpp.o: CXX_COMPILER__Artify_unscanned_Deb
   OBJECT_DIR = CMakeFiles/Artify.dir
   OBJECT_FILE_DIR = CMakeFiles/Artify.dir
 
+build CMakeFiles/Artify.dir/Button.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Button.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Button.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
+
+build CMakeFiles/Artify.dir/Loading.cpp.o: CXX_COMPILER__Artify_unscanned_Debug /Users/feliciachen/CLionProjects/Fall23/Artify/Loading.cpp || cmake_object_order_depends_target_Artify
+  DEP_FILE = CMakeFiles/Artify.dir/Loading.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Artify.dir
+  OBJECT_FILE_DIR = CMakeFiles/Artify.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Artify
@@ -295,7 +309,7 @@ build CMakeFiles/Artify.dir/EditScreen.cpp.o: CXX_COMPILER__Artify_unscanned_Deb
 #############################################
 # Link the executable Artify
 
-build Artify: CXX_EXECUTABLE_LINKER__Artify_Debug CMakeFiles/Artify.dir/main.cpp.o CMakeFiles/Artify.dir/API.cpp.o CMakeFiles/Artify.dir/Fonts.cpp.o CMakeFiles/Artify.dir/Letter.cpp.o CMakeFiles/Artify.dir/MultiText.cpp.o CMakeFiles/Artify.dir/Typing.cpp.o CMakeFiles/Artify.dir/States.cpp.o CMakeFiles/Artify.dir/Box.cpp.o CMakeFiles/Artify.dir/SnapshotInterface.cpp.o CMakeFiles/Artify.dir/Application.cpp.o CMakeFiles/Artify.dir/GUIComponent.cpp.o CMakeFiles/Artify.dir/MouseEvents.cpp.o CMakeFiles/Artify.dir/History.cpp.o CMakeFiles/Artify.dir/TextInput.cpp.o CMakeFiles/Artify.dir/Snapshot.cpp.o CMakeFiles/Artify.dir/KeyShortcuts.cpp.o CMakeFiles/Artify.dir/TextBox.cpp.o CMakeFiles/Artify.dir/Cursor.cpp.o CMakeFiles/Artify.dir/Label.cpp.o CMakeFiles/Artify.dir/DropdownMenu.cpp.o CMakeFiles/Artify.dir/InputBox.cpp.o CMakeFiles/Artify.dir/ItemList.cpp.o CMakeFiles/Artify.dir/Item.cpp.o CMakeFiles/Artify.dir/Menu.cpp.o CMakeFiles/Artify.dir/MenuBar.cpp.o CMakeFiles/Artify.dir/FileItem.cpp.o CMakeFiles/Artify.dir/FileTree.cpp.o CMakeFiles/Artify.dir/Images.cpp.o CMakeFiles/Artify.dir/FileNode.cpp.o CMakeFiles/Artify.dir/Artify.cpp.o CMakeFiles/Artify.dir/Logo.cpp.o CMakeFiles/Artify.dir/Files.cpp.o CMakeFiles/Artify.dir/PromptScreen.cpp.o CMakeFiles/Artify.dir/EditScreen.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+build Artify: CXX_EXECUTABLE_LINKER__Artify_Debug CMakeFiles/Artify.dir/main.cpp.o CMakeFiles/Artify.dir/API.cpp.o CMakeFiles/Artify.dir/Fonts.cpp.o CMakeFiles/Artify.dir/Letter.cpp.o CMakeFiles/Artify.dir/MultiText.cpp.o CMakeFiles/Artify.dir/Typing.cpp.o CMakeFiles/Artify.dir/States.cpp.o CMakeFiles/Artify.dir/Box.cpp.o CMakeFiles/Artify.dir/SnapshotInterface.cpp.o CMakeFiles/Artify.dir/Application.cpp.o CMakeFiles/Artify.dir/GUIComponent.cpp.o CMakeFiles/Artify.dir/MouseEvents.cpp.o CMakeFiles/Artify.dir/History.cpp.o CMakeFiles/Artify.dir/TextInput.cpp.o CMakeFiles/Artify.dir/Snapshot.cpp.o CMakeFiles/Artify.dir/KeyShortcuts.cpp.o CMakeFiles/Artify.dir/TextBox.cpp.o CMakeFiles/Artify.dir/Cursor.cpp.o CMakeFiles/Artify.dir/Label.cpp.o CMakeFiles/Artify.dir/DropdownMenu.cpp.o CMakeFiles/Artify.dir/InputBox.cpp.o CMakeFiles/Artify.dir/ItemList.cpp.o CMakeFiles/Artify.dir/Item.cpp.o CMakeFiles/Artify.dir/Menu.cpp.o CMakeFiles/Artify.dir/MenuBar.cpp.o CMakeFiles/Artify.dir/FileItem.cpp.o CMakeFiles/Artify.dir/FileTree.cpp.o CMakeFiles/Artify.dir/Images.cpp.o CMakeFiles/Artify.dir/FileNode.cpp.o CMakeFiles/Artify.dir/Artify.cpp.o CMakeFiles/Artify.dir/Logo.cpp.o CMakeFiles/Artify.dir/Files.cpp.o CMakeFiles/Artify.dir/PromptScreen.cpp.o CMakeFiles/Artify.dir/EditScreen.cpp.o CMakeFiles/Artify.dir/Button.cpp.o CMakeFiles/Artify.dir/Loading.cpp.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libcurl.tbd  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   OBJECT_DIR = CMakeFiles/Artify.dir
