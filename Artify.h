@@ -16,6 +16,7 @@ private:
     Files myArt;
     PromptScreen promptScreen;
     EditScreen editScreen;
+    bool screen;
 public:
     Artify();
     //required functions

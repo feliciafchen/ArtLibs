@@ -5,7 +5,12 @@
 #include "Artify.h"
 
 void Artify::draw(sf::RenderTarget &window, sf::RenderStates states) const {
-
+    window.draw(logo);
+    window.draw(myArt);
+    if(screen)
+        window.draw(promptScreen);
+    else
+        window.draw(editScreen);
 }
 
 void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
