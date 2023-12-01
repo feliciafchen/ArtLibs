@@ -10,21 +10,35 @@ void EditScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(image);
     target.draw(save);
     target.draw(reartify);
+    target.draw(saveImage);
 }
 
 void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     if(checkState(HIDDEN))
         return;
-    save.addEventHandler(window, event);
+    if(!save.checkState(DISABLED))
+        save.addEventHandler(window, event);
     reartify.addEventHandler(window, event);
+    saveImage.addEventHandler(window,event);
 }
 
 void EditScreen::update() {
     save.update();
     reartify.update();
+    saveImage.update();
     if(reartify.checkState(CLICKED)){
         enableState(HIDDEN);
         reartify.disableState(CLICKED);
+    }
+    if(save.checkState(CLICKED) && !saveImage.checkState(SAVED)){
+        saveImage.disableState(HIDDEN);
+        save.disableState(CLICKED);
+    }
+    if(saveImage.checkState(SAVED)){
+        saveImage.disableState(SAVED);
+        save.setLabel("Saved!");
+        save.enableState(DISABLED);
+        image.getTexture()->copyToImage().saveToFile("my_art/" + saveImage.getFileName());
     }
 }
 

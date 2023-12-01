@@ -21,7 +21,10 @@ public:
               sf::Vector2f, sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
               float borderThickness);
     const std::string& getString();
+    void setFillColor(sf::Color);
+    sf::FloatRect getGlobalBounds();
     void setPosition(sf::Vector2f);
+    void setSize(sf::Vector2f);
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;

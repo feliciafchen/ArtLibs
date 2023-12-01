@@ -74,3 +74,15 @@ const std::string &TextInput::getString() {
 void TextInput::setPosition(sf::Vector2f pos) {
     textbox.setPosition(pos);
 }
+
+void TextInput::setFillColor(sf::Color color) {
+    textbox.setFillColor(color);
+}
+
+sf::FloatRect TextInput::getGlobalBounds() {
+    return textbox.getGlobalBounds();
+}
+
+void TextInput::setSize(sf::Vector2f size) {
+    textbox.setSize(size);
+}

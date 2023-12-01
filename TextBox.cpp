@@ -63,3 +63,15 @@ void TextBox::setPosition(sf::Vector2f pos) {
     box.setPosition(pos);
     position = pos;
 }
+
+void TextBox::setFillColor(sf::Color color) {
+    box.setFillColor(color);
+}
+
+sf::FloatRect TextBox::getGlobalBounds() {
+    box.getGlobalBounds();
+}
+
+void TextBox::setSize(sf::Vector2f size) {
+    box.setSize(size);
+}

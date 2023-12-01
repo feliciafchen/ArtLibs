@@ -18,6 +18,9 @@ public:
     TextBox(sf::Vector2f position, sf::Vector2f, unsigned int textSize,
             sf::Color fillColor, sf::Color textColor, sf::Color borderColor,
             float borderThickness);
+    void setFillColor(sf::Color color);
+    sf::FloatRect getGlobalBounds();
+    void setSize(sf::Vector2f size);
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;
     Snapshot &getSnapshot() override;

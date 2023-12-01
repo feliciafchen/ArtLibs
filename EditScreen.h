@@ -8,12 +8,14 @@
 #include "EventHandler.h"
 #include "Button.h"
 #include "API.h"
+#include "SaveImage.h"
 
 class EditScreen : public sf::Drawable, public EventHandler, public States {
 private:
     sf::Sprite image;
     Button save;
     Button reartify;
+    SaveImage saveImage;
 public:
     EditScreen();
     EditScreen(const sf::Texture& texture);
