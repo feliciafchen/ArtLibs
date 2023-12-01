@@ -11,6 +11,7 @@ Item::Item()
 }
 Item::Item(const std::string& text, unsigned int size) {
     this->text.setString(text);
+    this->name = text;
     this->text.setFillColor(sf::Color::Black);
     this->text.setFont(Fonts::getFont(KIRANG_HAERANG));
     this->text.setCharacterSize(size);
@@ -47,7 +48,7 @@ void Item::update() {
         text.setStyle(sf::Text::Bold);
     }
     else{
-        setFillColor(sf::Color::Transparent);
+        setFillColor(sf::Color::White);
         text.setStyle(sf::Text::Regular);
     }
 }
@@ -58,6 +59,7 @@ const sf::Text &Item::getName() const {
 
 void Item::setName(const std::string& name) {
     text.setString(name);
+    this->name = name;
 }
 
 void Item::setPosition(sf::Vector2f pos) {
@@ -89,9 +91,8 @@ void Item::setTextColor(sf::Color color) {
     text.setFillColor(color);
 }
 
-std::string &Item::getText() const {
-    std::string string = text.getString();
-    return string;
+const std::string &Item::getText() const {
+    return name;
 }
 
 const sf::Vector2f &Item::getPosition() {

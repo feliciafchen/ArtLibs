@@ -19,7 +19,7 @@ public:
     Typing();
     Typing(sf::Vector2f,const std::string& text, const sf::Font& font, const sf::Color& color, unsigned int size);
     void setString(const std::string& text);
-    std::string getString();
+    const std::string& getString();
     void setFillColor(const sf::Color& color);
     void setPosition(const sf::Vector2f& position);
     sf::Vector2f getLastPosition();

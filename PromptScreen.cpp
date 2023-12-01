@@ -9,14 +9,15 @@ void PromptScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const
         for (auto& word : words) {
             target.draw(word);
         }
-        target.draw(styleType);
-        target.draw(artType);
         target.draw(adjective);
         target.draw(noun);
         target.draw(place);
         target.draw(verb);
         target.draw(where);
         target.draw(pluralNoun);
+        target.draw(styleType);
+        target.draw(artType);
+
 //    target.draw(artify);
     }
 }
@@ -58,7 +59,7 @@ PromptScreen::PromptScreen() {
             word.setFillColor(sf::Color::Black);
         words[0].setPosition({497,311});
         words[1].setPosition({790, 311});
-        words[2].setPosition({543,373});
+        words[2].setPosition({543,370});
         words[3].setPosition({994, 437});
     }
     //initializing dropdowns
@@ -75,20 +76,20 @@ PromptScreen::PromptScreen() {
         artType.setPosition({570, 309});
 
         where = DropdownMenu(whereChoices,30);
-        where.setPosition({508, 438});
+        where.setPosition({550, 437});
     }
    //initializing textinputs
     {
-        adjective.setPosition({829, 308});
-        noun.setPosition({329, 371});
-        place.setPosition({741, 372});
-        verb.setPosition({329, 437});
-        pluralNoun.setPosition({741, 437});
+        adjective.setPosition({870, 310});
+        noun.setPosition({320, 371});
+        place.setPosition({815, 372});
+        verb.setPosition({315, 437});
+        pluralNoun.setPosition({790, 437});
     }
-
 }
 
 const std::string &PromptScreen::getFullPrompt() {
+    updatePrompt();
     return fullPrompt;
 }
 

@@ -60,7 +60,7 @@ sf::Vector2f Typing::getLastPosition() {
     return text.getLastPosition();
 }
 
-std::string Typing::getString() {
+const std::string& Typing::getString() {
     return text.getString();
 }
 

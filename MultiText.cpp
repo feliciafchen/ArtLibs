@@ -108,8 +108,8 @@ sf::Vector2f MultiText::getLastPosition() {
     }
 }
 
-std::string MultiText::getString() {
-    std::string string;
+const std::string& MultiText::getString() {
+    static std::string string;
     auto iter = multiText.begin();
     for (; iter != multiText.end(); ++iter) {
         string += ((*iter).getLetter());
