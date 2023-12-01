@@ -116,5 +116,4 @@ void DropdownMenu::takeSnapshot() {
     n.snapshot = Snapshot(list.getSelected());
     n.component = this;
     History::pushHistory(n);
-    std::cout << n.snapshot.getData();
 }
