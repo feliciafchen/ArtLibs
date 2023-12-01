@@ -21,5 +21,4 @@ PromptScreen::PromptScreen() {
 }
 
 const std::string &PromptScreen::getFullPrompt() {
-    return <#initializer#>;
 }

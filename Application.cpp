@@ -11,7 +11,7 @@ void Application::addComponent(GUIComponent &component) {
 
 void Application::run() {
 
-    sf::RenderWindow window({720, 420}, "Dropdown Menu");
+    sf::RenderWindow window({1325, 745}, "Art Libs");
     window.setFramerateLimit(60);
 
     while(window.isOpen()){
