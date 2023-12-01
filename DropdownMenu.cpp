@@ -11,7 +11,7 @@ DropdownMenu::DropdownMenu() {
 DropdownMenu::DropdownMenu(const std::vector<std::string> &words, unsigned int s) {
     list = ItemList(words,s);
     inputBox = InputBox(Item("select",s));
-    setBoxSize({400,50});
+    setBoxSize({200,35});
     setFillColor(sf::Color(217,217,217));
     setOutlineColor(sf::Color::White);
     setOutlineThickness(1);

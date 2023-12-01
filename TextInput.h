@@ -18,7 +18,7 @@ private:
 public:
     TextInput();
     TextInput(const std::string& label, unsigned int labelSize, sf::Vector2f position,
-              float length, sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
+              sf::Vector2f, sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
               float borderThickness);
     const std::string& getString();
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;

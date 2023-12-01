@@ -15,7 +15,7 @@ private:
     sf::Vector2f position;
 public:
     TextBox();
-    TextBox(sf::Vector2f position, float length, unsigned int textSize,
+    TextBox(sf::Vector2f position, sf::Vector2f, unsigned int textSize,
             sf::Color fillColor, sf::Color textColor, sf::Color borderColor,
             float borderThickness);
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;

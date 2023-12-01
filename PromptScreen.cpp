@@ -52,10 +52,19 @@ void PromptScreen::update() {
 
 PromptScreen::PromptScreen() {
     disableState(HIDDEN);
-    std::vector<std::string> styleChoices {"apples", "bananas", "strawberry"};
-    styleType = DropdownMenu(styleChoices, 25);
-    artType = DropdownMenu(styleChoices, 25);
-    where = DropdownMenu(styleChoices,25);
+    std::vector<std::string> styleChoices {"realism", "impressionism", "abstract","surrealism",
+                                           "pop art", "minimalism", "anime/manga", "pixar"};
+    std::vector<std::string> artChoices {"oil painting", "acrylic painting", "sketch", "charcoal drawing",
+                                           "sculpture", "photograph", "comic", "street art"};
+    std::vector<std::string> whereChoices {"next to", "in front of", "behind", "above", "below"};
+    styleType = DropdownMenu(styleChoices, 30);
+    styleType.setPosition({100,100});
+
+    artType = DropdownMenu(artChoices, 30);
+    artType.setPosition({600, 100});
+
+    where = DropdownMenu(whereChoices,30);
+    where.setPosition({300, 200});
 }
 
 const std::string &PromptScreen::getFullPrompt() {

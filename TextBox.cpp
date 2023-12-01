@@ -9,11 +9,11 @@ TextBox::TextBox()
 
 }
 
-TextBox::TextBox(sf::Vector2f position, float length, unsigned int textSize, sf::Color fillColor, sf::Color textColor,
+TextBox::TextBox(sf::Vector2f position, sf::Vector2f size, unsigned int textSize, sf::Color fillColor, sf::Color textColor,
                  sf::Color borderColor, float borderThickness) {
     this->position = position;
     box.setPosition(position);
-    box.setSize({length, static_cast<float>(textSize + textSize/3)});
+    box.setSize(size);
     box.setFillColor(fillColor);
     box.setOutlineThickness(borderThickness);
     box.setOutlineColor(borderColor);

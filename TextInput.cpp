@@ -5,17 +5,17 @@
 #include "TextInput.h"
 
 TextInput::TextInput()
-: TextInput("First Name:", 20, {40,50}, 200, sf::Color::Black, sf::Color::Black, sf::Color(217,217,217), sf::Color::White, 1)
+: TextInput("", 25, {40,50}, {200, 35}, sf::Color::Black, sf::Color::Black, sf::Color(217,217,217), sf::Color::White, 1)
 {
 
 }
 
-TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vector2f position, float boxLength,
+TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vector2f position, sf::Vector2f boxSize,
                      sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
                      float borderThickness) {
     setPosition(position);
-    textbox = TextBox(getPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);;
-    typing = Typing(getPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
+    textbox = TextBox(getPosition(), boxSize, labelSize, fillColor, textColor, borderColor, borderThickness);;
+    typing = Typing({getPosition().x+1, getPosition().y-1},"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
     typing.setPosition(getPosition());
     cursor = Cursor(labelSize,textColor,getPosition());
 }
@@ -50,11 +50,11 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 void TextInput::update() {
     textbox.update();
     typing.update();
-    typing.setPosition(getPosition());
+    typing.setPosition({getPosition().x+5, getPosition().y-5});
     if(!typing.getString().empty())
-        cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
+        cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y+2});
     else
-        cursor.setPosition({getPosition().x+1, getPosition().y-1});
+        cursor.setPosition({getPosition().x+1, getPosition().y-2});
     if(textbox.checkState(CLICKED))
         cursor.update();
 }
