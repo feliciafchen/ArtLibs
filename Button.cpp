@@ -37,7 +37,7 @@ void Button::update() {
     updatePositions();
 }
 
-Button::Button() : Button({100, 45}, {900,900},"button"){
+Button::Button() : Button({115, 45}, {900,900},"button"){
 
 }
 

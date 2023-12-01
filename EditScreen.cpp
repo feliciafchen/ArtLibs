@@ -41,5 +41,5 @@ EditScreen::EditScreen(const sf::Texture& texture) {
     save.setPosition({1325/2 - reartify.getGlobalBounds().width - 35, 620});
 
     reartify.setLabel("Reartify");
-    reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2, 620});
+    reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2 - 10, 620});
 }

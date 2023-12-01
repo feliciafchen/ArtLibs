@@ -60,8 +60,8 @@ PromptScreen::PromptScreen() {
     {
         for(auto& word : words)
             word.setFillColor(sf::Color::Black);
-        words[0].setPosition({497,311});
-        words[1].setPosition({790, 311});
+        words[0].setPosition({497,309});
+        words[1].setPosition({790, 309});
         words[2].setPosition({543,370});
         words[3].setPosition({994, 437});
     }
@@ -84,10 +84,20 @@ PromptScreen::PromptScreen() {
    //initializing textinputs
     {
         adjective.setPosition({870, 310});
+        words[4].setCharacterSize(20);
+        words[4].setPosition({930, 340});
         noun.setPosition({320, 371});
+        words[5].setCharacterSize(20);
+        words[5].setPosition({395, 401});
         place.setPosition({815, 372});
+        words[6].setCharacterSize(20);
+        words[6].setPosition({890, 401});
         verb.setPosition({315, 437});
+        words[7].setCharacterSize(20);
+        words[7].setPosition({385, 467});
         pluralNoun.setPosition({790, 437});
+        words[8].setCharacterSize(20);
+        words[8].setPosition({835, 467});
     }
 }
 
