@@ -19,6 +19,7 @@ private:
 public:
     Button();
     Button(sf::Vector2f size, sf::Vector2f pos, const std::string& label);
+    sf::FloatRect getGlobalBounds();
     void setSize(sf::Vector2f);
     void setPosition(sf::Vector2f);
     void setLabel(const std::string& label);

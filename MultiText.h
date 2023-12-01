@@ -13,6 +13,7 @@
 class MultiText : public sf::Drawable {
 private:
     std::list<Letter> multiText;
+    std::string string;
     sf::Vector2f position;
 public:
     typedef std::list<Letter>::iterator iterator;

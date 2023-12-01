@@ -38,7 +38,7 @@ void Button::update() {
     }
 }
 
-Button::Button() : Button({100, 55}, {900,900},"button"){
+Button::Button() : Button({100, 45}, {900,900},"button"){
 
 }
 
@@ -60,7 +60,7 @@ Button::Button(sf::Vector2f size, sf::Vector2f pos, const std::string &label) {
     button.setSize(size);
     button.setFillColor(sf::Color::White);
     button.setOutlineColor(sf::Color::Black);
-    button.setOutlineThickness(1);
+    button.setOutlineThickness(2);
     this->label.setString(label);
     this->label.setFillColor(sf::Color::Black);
     this->label.setFont(Fonts::getFont(KIRANG_HAERANG));
@@ -71,4 +71,8 @@ Button::Button(sf::Vector2f size, sf::Vector2f pos, const std::string &label) {
 void Button::updatePositions() {
     label.setPosition({button.getPosition().x + button.getGlobalBounds().width/2 - label.getGlobalBounds().width/2,
                        button.getPosition().y + button.getGlobalBounds().height/2 - label.getGlobalBounds().height});
+}
+
+sf::FloatRect Button::getGlobalBounds() {
+    return button.getGlobalBounds();
 }

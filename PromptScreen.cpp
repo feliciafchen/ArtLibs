@@ -9,6 +9,7 @@ void PromptScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const
         for (auto& word : words) {
             target.draw(word);
         }
+        target.draw(artify);
         target.draw(adjective);
         target.draw(noun);
         target.draw(place);
@@ -17,8 +18,6 @@ void PromptScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const
         target.draw(pluralNoun);
         target.draw(styleType);
         target.draw(artType);
-
-        target.draw(artify);
     }
 }
 
@@ -45,17 +44,18 @@ void PromptScreen::update() {
     verb.update();
     where.update();
     pluralNoun.update();
-    updatePrompt();
     artify.update();
     if(artify.checkState(CLICKED)){
+        std::cout << getFullPrompt();
         enableState(HIDDEN);
+        artify.disableState(CLICKED);
     }
 }
 
 PromptScreen::PromptScreen() {
     disableState(HIDDEN);
     artify.setLabel("Artify");
-    artify.setPosition({10,0});
+    artify.setPosition({1325/2 - artify.getGlobalBounds().width/2, 550});
     //initializing words
     {
         for(auto& word : words)
