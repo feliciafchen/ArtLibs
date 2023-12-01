@@ -16,7 +16,7 @@ Letter::Letter(char letter, sf::Vector2f position)
 Letter::Letter(char letter, sf::Color color, unsigned int size, sf::Vector2f position)
 {
     this->letter = letter;
-    setFont(Fonts::getFont(FREE_SANS));
+    setFont(Fonts::getFont(KIRANG_HAERANG));
     setString(std::string(1,letter));
     setCharacterSize(size);
     setFillColor(color);

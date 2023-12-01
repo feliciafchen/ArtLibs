@@ -52,7 +52,10 @@ void PromptScreen::update() {
 
 PromptScreen::PromptScreen() {
     disableState(HIDDEN);
-
+    std::vector<std::string> styleChoices {"apples", "bananas", "strawberry"};
+    styleType = DropdownMenu(styleChoices, 25);
+    artType = DropdownMenu(styleChoices, 25);
+    where = DropdownMenu(styleChoices,25);
 }
 
 const std::string &PromptScreen::getFullPrompt() {

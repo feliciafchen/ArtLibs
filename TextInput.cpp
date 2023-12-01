@@ -14,15 +14,13 @@ TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vecto
                      sf::Color labelColor, sf::Color textColor, sf::Color fillColor, sf::Color borderColor,
                      float borderThickness) {
     setPosition(position);
-    this->label = Label(label, labelSize, labelColor, position);;
-    textbox = TextBox(getBoxPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);;
-    typing = Typing(getBoxPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
-    typing.setPosition(getBoxPosition());
-    cursor = Cursor(labelSize,textColor,getBoxPosition());
+    textbox = TextBox(getPosition(), boxLength, labelSize, fillColor, textColor, borderColor, borderThickness);;
+    typing = Typing(getPosition(),"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
+    typing.setPosition(getPosition());
+    cursor = Cursor(labelSize,textColor,getPosition());
 }
 
 void TextInput::draw(sf::RenderTarget &window, sf::RenderStates states) const {
-    window.draw(label);
     window.draw(textbox);
     window.draw(typing);
     if(!cursor.checkState(HIDDEN))
@@ -52,11 +50,11 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 void TextInput::update() {
     textbox.update();
     typing.update();
-    typing.setPosition({getBoxPosition().x, getBoxPosition().y});
+    typing.setPosition(getPosition());
     if(!typing.getString().empty())
         cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y});
     else
-        cursor.setPosition({getBoxPosition().x+1, getBoxPosition().y-1});
+        cursor.setPosition({getPosition().x+1, getPosition().y-1});
     if(textbox.checkState(CLICKED))
         cursor.update();
 }
@@ -67,19 +65,6 @@ Snapshot &TextInput::getSnapshot() {
 
 void TextInput::applySnapshot(const Snapshot &snapshot) {
     typing.setString(snapshot.getData());
-}
-
-void TextInput::setLabel(const std::string& label) {
-    this->label.setString(label);
-}
-
-void TextInput::setLabelSize(unsigned int size) {
-    this->label.setCharacterSize(size);
-}
-
-sf::Vector2f TextInput::getBoxPosition() {
-    return {getPosition().x + label.getGlobalBounds().width + (label.getGlobalBounds().width/10),
-            getPosition().y};
 }
 
 const std::string &TextInput::getString() {
