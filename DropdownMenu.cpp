@@ -73,8 +73,12 @@ void DropdownMenu::draw(sf::RenderTarget &target, sf::RenderStates states) const
 }
 void DropdownMenu::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     inputBox.addEventHandler(window,event);
-    if(!list.checkState(HIDDEN))
+    if(!list.checkState(HIDDEN)){
         list.addEventHandler(window, event);
+        enableState(CLICKED);
+    }
+    else
+        disableState(CLICKED);
     if(KeyShortcuts::isUndo() && !History::empty()){
         std::cout << "undo";
         applySnapshot(History::topHistory().snapshot);

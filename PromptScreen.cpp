@@ -26,13 +26,15 @@ void PromptScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         return;
     styleType.addEventHandler(window,event);
     artType.addEventHandler(window, event);
-    adjective.addEventHandler(window, event);
-    noun.addEventHandler(window, event);
-    place.addEventHandler(window, event);
-    verb.addEventHandler(window, event);
     where.addEventHandler(window, event);
-    pluralNoun.addEventHandler(window, event);
-    artify.addEventHandler(window, event);
+    if(!styleType.checkState(CLICKED) && !artType.checkState(CLICKED) && !where.checkState(CLICKED)){
+        adjective.addEventHandler(window, event);
+        noun.addEventHandler(window, event);
+        place.addEventHandler(window, event);
+        verb.addEventHandler(window, event);
+        pluralNoun.addEventHandler(window, event);
+        artify.addEventHandler(window, event);
+    }
 }
 
 void PromptScreen::update() {
@@ -61,16 +63,16 @@ PromptScreen::PromptScreen() {
         for(auto& word : words)
             word.setFillColor(sf::Color::Black);
         words[0].setPosition({497,309});
-        words[1].setPosition({790, 309});
-        words[2].setPosition({543,370});
+        words[1].setPosition({780, 309});
+        words[2].setPosition({533,370});
         words[3].setPosition({994, 437});
     }
     //initializing dropdowns
     {
         std::vector<std::string> styleChoices {"realism", "impressionism", "abstract","surrealism",
                                                "pop art", "minimalism", "anime/manga", "pixar"};
-        std::vector<std::string> artChoices {"oil painting", "acrylic painting", "sketch", "charcoal drawing",
-                                             "sculpture", "photograph", "comic", "street art"};
+        std::vector<std::string> artChoices {"oil painting", "acrylic painting", "sketch", "charcoal art",
+                                             "sculpture", "photograph", "comic", "watercolor"};
         std::vector<std::string> whereChoices {"next to", "in front of", "behind", "above", "below"};
         styleType = DropdownMenu(styleChoices, 30);
         styleType.setPosition({280,310});
@@ -83,13 +85,13 @@ PromptScreen::PromptScreen() {
     }
    //initializing textinputs
     {
-        adjective.setPosition({870, 310});
+        adjective.setPosition({876, 310});
         words[4].setCharacterSize(20);
         words[4].setPosition({930, 340});
         noun.setPosition({320, 371});
         words[5].setCharacterSize(20);
         words[5].setPosition({395, 401});
-        place.setPosition({815, 372});
+        place.setPosition({825, 372});
         words[6].setCharacterSize(20);
         words[6].setPosition({890, 401});
         verb.setPosition({315, 437});

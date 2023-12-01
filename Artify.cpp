@@ -33,14 +33,14 @@ void Artify::update() {
     }
     if(promptScreen.checkState(HIDDEN) && !isEditScreen){
         isEditScreen = true;
-//        std::string imageUrl = API::getImage(promptScreen.getFullPrompt());
-//        std::cout << imageUrl;
+        std::string imageUrl = API::getImage(promptScreen.getFullPrompt());
+        std::cout << imageUrl;
         std::string filePath = "images/artified.png";
 
         texture.loadFromFile(filePath);
-//        if (API::DownloadImageToFile(imageUrl, filePath)) {
-//            texture.loadFromFile(filePath);
-//        }
+        if (API::DownloadImageToFile(imageUrl, filePath)) {
+            texture.loadFromFile(filePath);
+        }
         editScreen = EditScreen(texture);
     }
     if(editScreen.checkState(HIDDEN) && isEditScreen){
