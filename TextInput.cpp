@@ -81,3 +81,7 @@ sf::Vector2f TextInput::getBoxPosition() {
     return {getPosition().x + label.getGlobalBounds().width + (label.getGlobalBounds().width/10),
             getPosition().y};
 }
+
+const std::string &TextInput::getString() {
+    return typing.getString();
+}

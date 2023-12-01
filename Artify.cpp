@@ -15,14 +15,22 @@ void Artify::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 
 void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     myArt.addEventHandler(window, event);
+    if(screen)
+        editScreen.addEventHandler(window, event);
+    else
+        promptScreen.addEventHandler(window, event);
 }
 
 void Artify::update() {
     myArt.update();
-    if(screen)
+    if(screen){
         logo.enableEditState();
-    else
+        editScreen.update();
+    }
+    else{
         logo.enablePromptState();
+        promptScreen.update();
+    }
 }
 
 Snapshot &Artify::getSnapshot() {

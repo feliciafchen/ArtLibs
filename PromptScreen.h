@@ -10,7 +10,7 @@
 #include "TextInput.h"
 #include "Button.h"
 
-class PromptScreen : public sf::Drawable, public EventHandler {
+class PromptScreen : public sf::Drawable, public EventHandler, public States {
 private:
     std::vector<sf::Text> words;
     std::string fullPrompt;
@@ -18,11 +18,12 @@ private:
     DropdownMenu artType;
     TextInput adjective;
     TextInput noun;
-    TextInput event;
+    TextInput place;
     TextInput verb;
     DropdownMenu where;
     TextInput pluralNoun;
     Button artify;
+    void updatePrompt();
 public:
     PromptScreen();
     const std::string& getFullPrompt();
