@@ -19,11 +19,11 @@ private:
     PromptScreen promptScreen;
     EditScreen editScreen;
     Loading loading;
-    bool screen;
+    bool isEditScreen;
 public:
     Artify();
-    bool getScreen() const;
-    void setScreen(bool screen);
+    bool getEditScreen() const;
+    void setEditScreen(bool screen);
     //required functions
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;

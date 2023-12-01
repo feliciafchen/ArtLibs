@@ -29,13 +29,12 @@ void Button::update() {
     if(checkState(HOVERED)){
         button.setFillColor(sf::Color(217,217,217));
         label.setStyle(sf::Text::Bold);
-        updatePositions();
     }
     else{
         button.setFillColor(sf::Color::White);
         label.setStyle(sf::Text::Regular);
-        updatePositions();
     }
+    updatePositions();
 }
 
 Button::Button() : Button({100, 45}, {900,900},"button"){

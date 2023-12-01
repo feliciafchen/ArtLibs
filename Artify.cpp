@@ -7,7 +7,7 @@
 void Artify::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(logo);
     window.draw(myArt);
-    if(screen)
+    if(isEditScreen)
         window.draw(editScreen);
     else
         window.draw(promptScreen);
@@ -15,7 +15,7 @@ void Artify::draw(sf::RenderTarget &window, sf::RenderStates states) const {
 
 void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     myArt.addEventHandler(window, event);
-    if(screen)
+    if(isEditScreen)
         editScreen.addEventHandler(window, event);
     else
         promptScreen.addEventHandler(window, event);
@@ -23,7 +23,7 @@ void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 
 void Artify::update() {
     myArt.update();
-    if(screen){
+    if(isEditScreen){
         logo.enableEditState();
         editScreen.update();
     }
@@ -31,8 +31,8 @@ void Artify::update() {
         logo.enablePromptState();
         promptScreen.update();
     }
-    if(promptScreen.checkState(HIDDEN) && screen == false){
-        screen = true;
+    if(promptScreen.checkState(HIDDEN) && isEditScreen == false){
+        isEditScreen = true;
 //        std::string imageUrl = API::getImage(promptScreen.getFullPrompt());
 //        std::cout << imageUrl;
         std::string filePath = "images/artified.png";
@@ -51,14 +51,14 @@ Snapshot &Artify::getSnapshot() {
 void Artify::applySnapshot(const Snapshot &snapshot) {
 }
 
-bool Artify::getScreen() const {
-    return screen;
+bool Artify::getEditScreen() const {
+    return isEditScreen;
 }
 
-void Artify::setScreen(bool screen) {
-    Artify::screen = screen;
+void Artify::setEditScreen(bool screen) {
+    Artify::isEditScreen = screen;
 }
 
-Artify::Artify() : screen(false){
+Artify::Artify() : isEditScreen(false){
 
 }

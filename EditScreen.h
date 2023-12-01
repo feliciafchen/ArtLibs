@@ -9,7 +9,7 @@
 #include "Button.h"
 #include "API.h"
 
-class EditScreen : public sf::Drawable, public EventHandler {
+class EditScreen : public sf::Drawable, public EventHandler, public States {
 private:
     sf::Sprite image;
     Button save;
