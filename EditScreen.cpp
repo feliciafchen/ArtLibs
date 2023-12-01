@@ -57,3 +57,10 @@ EditScreen::EditScreen(const sf::Texture& texture) {
     reartify.setLabel("Reartify");
     reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2 - 10, 620});
 }
+
+void EditScreen::setImage(const sf::Texture &texture) {
+    this->image.setTexture(texture);
+    this->image.scale({.4,.4});
+    this->image.setPosition(1325/2 - image.getGlobalBounds().width/2,
+                            745/2 - image.getGlobalBounds().height/2.2);
+}

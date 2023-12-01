@@ -19,6 +19,7 @@ private:
 public:
     EditScreen();
     EditScreen(const sf::Texture& texture);
+    void setImage(const sf::Texture& texture);
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;

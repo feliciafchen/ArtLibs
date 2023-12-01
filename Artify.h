@@ -22,8 +22,7 @@ private:
     bool isEditScreen;
 public:
     Artify();
-    bool getEditScreen() const;
-    void setEditScreen(bool screen);
+    Files& getFiles();
     //required functions
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;

@@ -56,14 +56,10 @@ Snapshot &Artify::getSnapshot() {
 void Artify::applySnapshot(const Snapshot &snapshot) {
 }
 
-bool Artify::getEditScreen() const {
-    return isEditScreen;
-}
-
-void Artify::setEditScreen(bool screen) {
-    Artify::isEditScreen = screen;
-}
-
 Artify::Artify() : isEditScreen(false){
 
+}
+
+Files &Artify::getFiles() {
+    return myArt;
 }
