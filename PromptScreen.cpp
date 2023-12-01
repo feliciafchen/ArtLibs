@@ -18,7 +18,7 @@ void PromptScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const
         target.draw(styleType);
         target.draw(artType);
 
-//    target.draw(artify);
+        target.draw(artify);
     }
 }
 
@@ -33,7 +33,7 @@ void PromptScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     verb.addEventHandler(window, event);
     where.addEventHandler(window, event);
     pluralNoun.addEventHandler(window, event);
-//    artify.addEventHandler(window, event);
+    artify.addEventHandler(window, event);
 }
 
 void PromptScreen::update() {
@@ -46,13 +46,16 @@ void PromptScreen::update() {
     where.update();
     pluralNoun.update();
     updatePrompt();
-//    artify.update();
-//    if(artify.clicked())
-//        enableState(HIDDEN);
+    artify.update();
+    if(artify.checkState(CLICKED)){
+        enableState(HIDDEN);
+    }
 }
 
 PromptScreen::PromptScreen() {
     disableState(HIDDEN);
+    artify.setLabel("Artify");
+    artify.setPosition({10,0});
     //initializing words
     {
         for(auto& word : words)
