@@ -24,6 +24,7 @@ public:
     void applySnapshot(const Snapshot &snapshot) override;
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     sf::Vector2f& getPosition();
+    void setPosition(sf::Vector2f);
     bool contains(sf::Vector2f position);
 };
 

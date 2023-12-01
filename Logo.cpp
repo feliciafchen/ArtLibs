@@ -11,7 +11,7 @@ Logo::Logo() {
 
 void Logo::enablePromptState() {
     setScale(.4,.4);
-    setPosition(1325/2 - getGlobalBounds().width/2,745/3 - getGlobalBounds().height/3);
+    setPosition(1325/2 - getGlobalBounds().width/2,114);
 }
 
 void Logo::enableEditState() {

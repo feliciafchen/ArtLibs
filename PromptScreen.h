@@ -12,7 +12,10 @@
 
 class PromptScreen : public sf::Drawable, public EventHandler, public States {
 private:
-    std::vector<sf::Text> words;
+    std::vector<sf::Text> words = {sf::Text("style",Fonts::getFont(KIRANG_HAERANG)),
+                                   sf::Text("of a",Fonts::getFont(KIRANG_HAERANG)),
+                                   sf::Text("in the middle of a",Fonts::getFont(KIRANG_HAERANG)),
+                                   sf::Text(".",Fonts::getFont(KIRANG_HAERANG))};
     std::string fullPrompt;
     DropdownMenu styleType;
     DropdownMenu artType;

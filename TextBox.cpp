@@ -58,3 +58,8 @@ sf::Vector2f &TextBox::getPosition() {
 bool TextBox::contains(sf::Vector2f position) {
     return box.getGlobalBounds().contains(position);
 }
+
+void TextBox::setPosition(sf::Vector2f pos) {
+    box.setPosition(pos);
+    position = pos;
+}

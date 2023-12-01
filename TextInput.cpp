@@ -16,7 +16,7 @@ TextInput::TextInput(const std::string &label, unsigned int labelSize, sf::Vecto
     setPosition(position);
     textbox = TextBox(getPosition(), boxSize, labelSize, fillColor, textColor, borderColor, borderThickness);;
     typing = Typing({getPosition().x+1, getPosition().y-1},"",Fonts::getFont(FREE_SANS),sf::Color::Black,labelSize);;
-    typing.setPosition(getPosition());
+    typing.setPosition(textbox.getPosition());
     cursor = Cursor(labelSize,textColor,getPosition());
 }
 
@@ -50,11 +50,11 @@ void TextInput::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 void TextInput::update() {
     textbox.update();
     typing.update();
-    typing.setPosition({getPosition().x+5, getPosition().y-5});
+    typing.setPosition({textbox.getPosition().x+5, textbox.getPosition().y-5});
     if(!typing.getString().empty())
         cursor.setPosition({cursor.getPosition().x + typing.getLastPosition().x,typing.getLastPosition().y+2});
     else
-        cursor.setPosition({getPosition().x+1, getPosition().y-2});
+        cursor.setPosition({textbox.getPosition().x+1, textbox.getPosition().y-2});
     if(textbox.checkState(CLICKED))
         cursor.update();
 }
@@ -69,4 +69,8 @@ void TextInput::applySnapshot(const Snapshot &snapshot) {
 
 const std::string &TextInput::getString() {
     return typing.getString();
+}
+
+void TextInput::setPosition(sf::Vector2f pos) {
+    textbox.setPosition(pos);
 }
