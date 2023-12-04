@@ -10,8 +10,11 @@ Files::Files() {
     system(command.c_str());
     std::ifstream fin;
     fin.open("a.txt");
+    bool first = true;
     while(fin >> command)
     {
+        if(first)
+            files.push(command);
         files.push(command);
     }
     fin.close();

@@ -56,7 +56,7 @@ void FileItem::update() {
     centerNameY();
     centerIconY();
     if(checkState(CLICKED)){
-        setFillColor(sf::Color(217,217,217));
+//        setFillColor(sf::Color(217,217,217));
         text.setStyle(sf::Text::Bold);
         icon.setScale({.2,.2});
     }
