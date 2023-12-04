@@ -12,6 +12,7 @@
 
 class SaveImage : public sf::Drawable, public EventHandler, public States{
 private:
+    sf::RectangleShape back;
     sf::RectangleShape background;
     sf::Text name;
     std::string fileName;

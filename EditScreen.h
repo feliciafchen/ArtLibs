@@ -16,10 +16,12 @@ private:
     Button save;
     Button reartify;
     SaveImage saveImage;
+    std::string fileName;
 public:
     EditScreen();
     EditScreen(const sf::Texture& texture);
     void setImage(const sf::Texture& texture);
+    const std::string& getFileName();
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;
     void update() override;

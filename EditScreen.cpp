@@ -16,9 +16,11 @@ void EditScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
     if(checkState(HIDDEN))
         return;
-    if(!save.checkState(DISABLED))
-        save.addEventHandler(window, event);
-    reartify.addEventHandler(window, event);
+    if(saveImage.checkState(HIDDEN)){
+        reartify.addEventHandler(window, event);
+        if(!save.checkState(DISABLED))
+            save.addEventHandler(window, event);
+    }
     saveImage.addEventHandler(window,event);
 }
 
@@ -38,6 +40,8 @@ void EditScreen::update() {
         saveImage.disableState(SAVED);
         save.setLabel("Saved!");
         save.enableState(DISABLED);
+        fileName = saveImage.getFileName();
+        enableState(SAVED);
         image.getTexture()->copyToImage().saveToFile("my_art/" + saveImage.getFileName());
     }
 }
@@ -63,4 +67,8 @@ void EditScreen::setImage(const sf::Texture &texture) {
     this->image.scale({.4,.4});
     this->image.setPosition(1325/2 - image.getGlobalBounds().width/2,
                             745/2 - image.getGlobalBounds().height/2.2);
+}
+
+const std::string &EditScreen::getFileName() {
+    return fileName;
 }

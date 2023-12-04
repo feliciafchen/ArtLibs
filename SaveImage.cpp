@@ -7,11 +7,11 @@
 void SaveImage::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     if(checkState(HIDDEN))
         return;
+    target.draw(back);
     target.draw(background);
     target.draw(input);
     target.draw(button);
     target.draw(name);
-
 }
 
 void SaveImage::addEventHandler(sf::RenderWindow &window, sf::Event event) {
@@ -35,6 +35,10 @@ void SaveImage::update() {
 SaveImage::SaveImage() {
     enableState(HIDDEN);
     disableState(SAVED);
+    back.setFillColor(sf::Color(297,297,297, 128));
+    back.setSize({10000,10000});
+    back.setPosition({0,0});
+
     background.setFillColor(sf::Color(237,237,237));
     background.setSize({500,250});
     background.setPosition(1325/2 - 500/2, 745/2 - 250/2);

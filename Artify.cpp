@@ -6,11 +6,11 @@
 
 void Artify::draw(sf::RenderTarget &window, sf::RenderStates states) const {
     window.draw(logo);
-    window.draw(myArt);
     if(isEditScreen)
         window.draw(editScreen);
     else
         window.draw(promptScreen);
+    window.draw(myArt);
 }
 
 void Artify::addEventHandler(sf::RenderWindow &window, sf::Event event) {
@@ -47,6 +47,10 @@ void Artify::update() {
         isEditScreen = false;
         promptScreen = PromptScreen();
         promptScreen.disableState(HIDDEN);
+    }
+    if(editScreen.checkState(SAVED)){
+        editScreen.disableState(SAVED);
+        myArt.push(editScreen.getFileName());
     }
 }
 
