@@ -13,6 +13,7 @@ enum ObjectState {
     DISABLED,
     CHILDREN_SHOWING,
     SAVED,
+    DOUBLE_CLICKED,
     ///This should always be the last state
     LASTSTATE
 };

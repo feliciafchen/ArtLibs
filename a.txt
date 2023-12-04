@@ -1,12 +1,10 @@
 my_art
-my_art/coolbear.png
 my_art/davesoceanbed.png
-my_art/cosmicbear.png
 my_art/watercolorapple.png
+my_art/car.png
 my_art/cutecouple.png
-my_art/superhero.png
+my_art/guadalajarabird.png
 my_art/juliasgirl.png
 my_art/christmas.png
-my_art/bear.png
 my_art/image.png
 my_art/tammysbear.png

@@ -5,6 +5,7 @@
 #ifndef TEXTINPUT_MOUSEEVENTS_H
 #define TEXTINPUT_MOUSEEVENTS_H
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 template <class T>
 class MouseEvents {
@@ -22,7 +23,7 @@ public:
     static bool mouseClicked(T &object, sf::RenderWindow& window, sf::Event event);
 
     // returns true if the mouse has been double clicked
-    static bool mouseDoubleClicked();
+    static bool mouseDoubleClicked(T &object, sf::RenderWindow &window);
 
     //returns true if the mouse has been triple clicked
     static bool mouseTripleClicked();

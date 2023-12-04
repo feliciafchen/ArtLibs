@@ -9,13 +9,7 @@
 
 template<class T>
 void MouseEvents<T>::countClicks(sf::Event event) {
-    if(event.type == sf::Mouse::isButtonPressed(sf::Mouse::Left)){
-        if(clock.getElapsedTime().asMilliseconds() < 250)
-            clicks++;
-        else
-            clicks = 1;
-        clock.restart();
-    }
+
 }
 
 template<class T>
@@ -25,15 +19,28 @@ bool MouseEvents<T>::mouseClicked(T &object, sf::RenderWindow &window) {
 
 template<class T>
 bool MouseEvents<T>::mouseClicked(T &object, sf::RenderWindow &window, sf::Event event) {
-    countClicks(event);
-
     return !hovered(object, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left);
 }
 
 template<class T>
-bool MouseEvents<T>::mouseDoubleClicked() {
-    return clicks == 2;
-}
+bool MouseEvents<T>::mouseDoubleClicked(T &object, sf::RenderWindow &window) {
+    if (hovered(object, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+            sf::Time elapsed = clock.getElapsedTime();
+            if (clicks == 0 || elapsed.asMilliseconds() > 500) { // Adjust the time threshold as needed
+                clicks = 1;
+                clock.restart();
+            } else {
+                clicks++;
+                clock.restart();
+                if (clicks == 2) {
+                    std::cout << "Double-click detected" << std::endl;
+                    clicks = 0; // Reset the click count
+                    return true;
+                }
+            }
+        }
+    return false;
+    }
 
 template<class T>
 bool MouseEvents<T>::mouseTripleClicked() {

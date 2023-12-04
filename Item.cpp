@@ -16,6 +16,7 @@ Item::Item(const std::string& text, unsigned int size) {
     this->text.setFont(Fonts::getFont(KIRANG_HAERANG));
     this->text.setCharacterSize(size);
     disableState(CLICKED);
+    disableState(DOUBLE_CLICKED);
 }
 
 void Item::centerName() {
@@ -37,6 +38,9 @@ void Item::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         toggleState(CLICKED);
     if(!MouseEvents<sf::RectangleShape>::mouseClicked(box, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left)){
         disableState(CLICKED);
+    }
+    if(MouseEvents<sf::RectangleShape>::mouseDoubleClicked(box, window)){
+        enableState(DOUBLE_CLICKED);
     }
 }
 
