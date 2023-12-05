@@ -14,6 +14,7 @@ enum ObjectState {
     CHILDREN_SHOWING,
     SAVED,
     DOUBLE_CLICKED,
+    FIRST,
     ///This should always be the last state
     LASTSTATE
 };

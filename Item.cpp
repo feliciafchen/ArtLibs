@@ -38,6 +38,7 @@ void Item::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         toggleState(CLICKED);
     if(!MouseEvents<sf::RectangleShape>::mouseClicked(box, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left)){
         disableState(CLICKED);
+        disableState(DOUBLE_CLICKED);
     }
     if(MouseEvents<sf::RectangleShape>::mouseDoubleClicked(box, window)){
         enableState(DOUBLE_CLICKED);

@@ -11,6 +11,7 @@ class FileTree : public GUIComponent
 private:
     //the root node of the tree
     FileNode* root = nullptr;
+    FileNode* doubleClicked;
     FileNode* find(FileNode* parent, const std::string& data);
     FileNode* createNode(const std::string& data);
     std::vector<std::string> getDirectories(const std::string& path);

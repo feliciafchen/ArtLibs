@@ -18,11 +18,12 @@ void FileNode::reposition() const {
 }
 
 FileNode::FileNode() {
-
+    disableState(DOUBLE_CLICKED);
 }
 
 FileNode::FileNode(imageEnum icon, std::string text, sf::Vector2f size, sf::Vector2f position) {
     data = FileItem(icon, text, size, position);
+    disableState(DOUBLE_CLICKED);
 }
 
 void FileNode::draw(sf::RenderTarget &window, sf::RenderStates states) const {
@@ -98,4 +99,14 @@ void FileNode::addChild(FileNode *node) {
 
 void FileNode::setPosition(const sf::Vector2f &pos) {
     data.setPosition(pos);
+}
+
+FileItem *FileNode::getDoubleClicked() {
+    if(data.checkState(DOUBLE_CLICKED) && data.getText() != "my_art"){
+        data.disableState(DOUBLE_CLICKED);
+        std::cout << data.getText();
+        return &data;
+    }
+    for(auto& i : children)
+        i->getDoubleClicked();
 }

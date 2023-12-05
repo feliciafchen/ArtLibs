@@ -77,7 +77,7 @@ void FileTree::push(const std::string &path) {
 }
 
 FileTree::FileTree() {
-
+    enableState(FIRST);
 }
 
 void FileTree::draw(sf::RenderTarget &window, sf::RenderStates states) const {
@@ -94,6 +94,7 @@ void FileTree::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 
 void FileTree::update() {
     root->update();
+    root->getDoubleClicked();
 }
 
 Snapshot &FileTree::getSnapshot() {

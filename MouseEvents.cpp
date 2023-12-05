@@ -8,11 +8,6 @@
 #include "MouseEvents.h"
 
 template<class T>
-void MouseEvents<T>::countClicks(sf::Event event) {
-
-}
-
-template<class T>
 bool MouseEvents<T>::mouseClicked(T &object, sf::RenderWindow &window) {
     return hovered(object, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left);
 }
@@ -33,14 +28,13 @@ bool MouseEvents<T>::mouseDoubleClicked(T &object, sf::RenderWindow &window) {
                 clicks++;
                 clock.restart();
                 if (clicks == 2) {
-                    std::cout << "Double-click detected" << std::endl;
                     clicks = 0; // Reset the click count
                     return true;
                 }
             }
         }
     return false;
-    }
+}
 
 template<class T>
 bool MouseEvents<T>::mouseTripleClicked() {
