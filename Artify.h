@@ -18,11 +18,9 @@ private:
     Files myArt;
     PromptScreen promptScreen;
     EditScreen editScreen;
-    Loading loading;
     bool isEditScreen;
 public:
     Artify();
-    Files& getFiles();
     //required functions
     void draw(sf::RenderTarget &window, sf::RenderStates states) const override;
     void addEventHandler(sf::RenderWindow &window, sf::Event event) override;

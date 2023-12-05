@@ -63,7 +63,3 @@ void Artify::applySnapshot(const Snapshot &snapshot) {
 Artify::Artify() : isEditScreen(false){
 
 }
-
-Files &Artify::getFiles() {
-    return myArt;
-}

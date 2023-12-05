@@ -49,6 +49,9 @@ void FileNode::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         toggleChildren();
         reposition();
     }
+    if(data.checkState(DOUBLE_CLICKED)){
+        enableState(DOUBLE_CLICKED);
+    }
 }
 
 void FileNode::update() {

@@ -11,16 +11,10 @@ class FileTree : public GUIComponent
 private:
     //the root node of the tree
     FileNode* root = nullptr;
-
     FileNode* find(FileNode* parent, const std::string& data);
     FileNode* createNode(const std::string& data);
     std::vector<std::string> getDirectories(const std::string& path);
     void push(FileNode* parent, FileNode* child);
-    //finds the parent and add the item to the parent.
-    //traverses the tree ad adds the evenhandlers for each of the nodes
-    void traverse(FileNode* &root, sf::RenderWindow& window, sf::Event event);
-    void traverseUpdate(FileNode* &root);
-
     sf::Vector2f initPosition = {0, 0};
 public:
     //constructors
