@@ -24,9 +24,9 @@ bool MouseEvents<T>::mouseClicked(T &object, sf::RenderWindow &window, sf::Event
 
 template<class T>
 bool MouseEvents<T>::mouseDoubleClicked(T &object, sf::RenderWindow &window) {
+    sf::Time elapsed = clock.getElapsedTime();
     if (hovered(object, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left)){
-            sf::Time elapsed = clock.getElapsedTime();
-            if (clicks == 0 || elapsed.asMilliseconds() > 500) { // Adjust the time threshold as needed
+            if (clicks == 0 || elapsed.asMilliseconds() > 250) { // Adjust the time threshold as needed
                 clicks = 1;
                 clock.restart();
             } else {
