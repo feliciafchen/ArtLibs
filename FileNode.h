@@ -47,7 +47,7 @@ public:
     void setData(const FileItem &data);
     std::vector<FileNode*>& getChildren();
     void addChild(FileNode* node);
-    FileItem* getDoubleClicked();
+    FileItem* getDoubleClicked(std::string &s);
     void setPosition(const sf::Vector2f &pos);
     //iterators
     iterator begin();

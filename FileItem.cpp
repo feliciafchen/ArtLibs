@@ -78,3 +78,7 @@ void FileItem::centerNameY() {
 std::string &FileItem::getText() {
     return name;
 }
+
+std::string FileItem::getString() {
+    return name;
+}

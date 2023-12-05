@@ -94,7 +94,7 @@ void FileTree::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 
 void FileTree::update() {
     root->update();
-    root->getDoubleClicked();
+    root->getDoubleClicked(selectedText);
 }
 
 Snapshot &FileTree::getSnapshot() {

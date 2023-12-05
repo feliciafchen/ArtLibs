@@ -17,6 +17,7 @@ public:
     FileItem();
     FileItem(imageEnum icon, std::string text, sf::Vector2f size, sf::Vector2f position);
     std::string& getText();
+    std::string getString();
     //GUIComponent pure virtual functions, refer to the Artify Project for Info
     virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
     //I use this function to highlight the item when clicked, and unhighlight when something
