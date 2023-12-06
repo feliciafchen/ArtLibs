@@ -16,6 +16,7 @@ enum ObjectState {
     DOUBLE_CLICKED,
     FIRST,
     SELECTED,
+    REARTIFY,
     ///This should always be the last state
     LASTSTATE
 };

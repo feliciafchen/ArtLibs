@@ -81,6 +81,8 @@ add_executable(Artify main.cpp
         Loading.h
         SaveImage.cpp
         SaveImage.h
+        PromptDisplay.cpp
+        PromptDisplay.h
 )
 include_directories(/usr/local/include)
 

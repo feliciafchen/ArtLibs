@@ -11,6 +11,10 @@ void EditScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(save);
     target.draw(reartify);
     target.draw(saveImage);
+    if(checkState(REARTIFY)){
+        target.draw(regenerate);
+        target.draw(promptDisplay);
+    }
 }
 
 void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
@@ -20,6 +24,10 @@ void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
         reartify.addEventHandler(window, event);
         if(!save.checkState(DISABLED))
             save.addEventHandler(window, event);
+        if(checkState(REARTIFY)){
+            regenerate.addEventHandler(window, event);
+            promptDisplay.addEventHandler(window, event);
+        }
     }
     saveImage.addEventHandler(window,event);
 }
@@ -29,6 +37,8 @@ void EditScreen::update() {
         save.update();
     reartify.update();
     saveImage.update();
+    regenerate.update();
+    promptDisplay.update();
     if(reartify.checkState(CLICKED)){
         enableState(HIDDEN);
         reartify.disableState(CLICKED);
@@ -45,22 +55,48 @@ void EditScreen::update() {
         enableState(SAVED);
         image.getTexture()->copyToImage().saveToFile("my_art/" + saveImage.getFileName());
     }
+    if(regenerate.checkState(CLICKED)){
+        regenerate.disableState(CLICKED);
+        std::string imageUrl = API::getImage(request);
+        std::cout << std::endl << imageUrl;
+        std::string filePath = "images/artified.png";
+
+        if (API::DownloadImageToFile(imageUrl, filePath)) {
+            texture.loadFromFile(filePath);
+        }
+        this->image.setTexture(texture);
+        save.disableState(CLICKED);
+        save.disableState(DISABLED);
+        save.setLabel("Save");
+        disableState(SAVED);
+        saveImage = SaveImage();
+    }
 }
 
 EditScreen::EditScreen() {
 
 }
 
-EditScreen::EditScreen(const sf::Texture& texture) {
+EditScreen::EditScreen(const sf::Texture& texture, const std::string& request) {
+    this->texture = texture;
     this->image.setTexture(texture);
     this->image.scale({.4,.4});
     this->image.setPosition(1325/2 - image.getGlobalBounds().width/2,
                             745/2 - image.getGlobalBounds().height/2.2);
     save.setLabel("Save");
-    save.setPosition({1325/2 - reartify.getGlobalBounds().width - 35, 620});
+    save.setPosition({image.getPosition().x, 620});
 
-    reartify.setLabel("Reartify");
-    reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2 - 10, 620});
+    this -> request = request;
+    enableState(REARTIFY);
+
+    promptDisplay = PromptDisplay(request, {image.getGlobalBounds().width, image.getGlobalBounds().height}, {1325/2 - image.getGlobalBounds().width/2,
+                                  static_cast<float>(745/2 - image.getGlobalBounds().height/2.2)});
+
+    regenerate.setLabel("Reartify");
+    regenerate.setPosition({1325/2 - regenerate.getGlobalBounds().width/2, 620});
+
+    reartify.setLabel("New");
+    reartify.setPosition({image.getPosition().x + image.getGlobalBounds().width - reartify.getGlobalBounds().width, 620});
 }
 EditScreen::EditScreen(const sf::Texture& texture, bool) {
     this->image.setTexture(texture);
@@ -69,11 +105,12 @@ EditScreen::EditScreen(const sf::Texture& texture, bool) {
                             745/2 - image.getGlobalBounds().height/2.2);
 
     save.setPosition({1325/2 - reartify.getGlobalBounds().width - 35, 620});
-    save.setLabel("Saved!");
-    save.setFillColor(sf::Color(217, 217, 217));
+    save.setSaved();
     save.enableState(DISABLED);
 
-    reartify.setLabel("Reartify");
+    disableState(REARTIFY);
+
+    reartify.setLabel("New");
     reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2 - 10, 620});
 }
 

@@ -72,7 +72,7 @@ PromptScreen::PromptScreen() {
         std::vector<std::string> styleChoices {"realism", "impressionism", "abstract","surrealism",
                                                "pop art", "minimalism", "anime/manga", "pixar"};
         std::vector<std::string> artChoices {"oil painting", "acrylic painting", "sketch", "charcoal art",
-                                             "sculpture", "photograph", "comic", "watercolor"};
+                                             "movie poster", "photograph", "comic", "watercolor"};
         std::vector<std::string> whereChoices {"next to", "in front of", "behind", "above", "below"};
         styleType = DropdownMenu(styleChoices, 30);
         styleType.setPosition({280,310});
@@ -110,8 +110,8 @@ const std::string &PromptScreen::getFullPrompt() {
 
 void PromptScreen::updatePrompt() {
     fullPrompt = "A " + styleType.getSelected().getText() + " style "
-            + artType.getSelected().getText() + " of a " + adjective.getString()
-            + " " + noun.getString() + " in the middle of a " + place.getString()
+            + artType.getSelected().getText() + " of a(n) " + adjective.getString()
+            + " " + noun.getString() + " in the middle of a(n) " + place.getString()
             + " " + verb.getString() + " " + where.getSelected().getText() + " "
             + pluralNoun.getString();
 }

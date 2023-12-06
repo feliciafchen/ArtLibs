@@ -1,8 +1,13 @@
 my_art
-my_art/watercolorapple.png
+my_art/newmovie.png
+my_art/halloweenmove.png
+my_art/watercolor.png
+my_art/scary.png
 my_art/car.png
-my_art/guadalajarabird.png
+my_art/prettyland.png
 my_art/juliasgirl.png
+my_art/willywonka.png
 my_art/christmas.png
+my_art/cute.png
 my_art/image.png
 my_art/tammysbear.png

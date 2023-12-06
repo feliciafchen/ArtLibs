@@ -41,7 +41,7 @@ void Artify::update() {
         if (API::DownloadImageToFile(imageUrl, filePath)) {
             texture.loadFromFile(filePath);
         }
-        editScreen = EditScreen(texture);
+        editScreen = EditScreen(texture, promptScreen.getFullPrompt());
     }
     if(editScreen.checkState(HIDDEN) && isEditScreen){
         isEditScreen = false;

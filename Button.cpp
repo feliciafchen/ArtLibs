@@ -53,6 +53,7 @@ void Button::setPosition(sf::Vector2f pos) {
 
 void Button::setLabel(const std::string &label) {
     this -> label.setString(label);
+    updatePositions();
 }
 
 Button::Button(sf::Vector2f size, sf::Vector2f pos, const std::string &label) {
@@ -76,6 +77,8 @@ sf::FloatRect Button::getGlobalBounds() {
     return button.getGlobalBounds();
 }
 
-void Button::setFillColor(const sf::Color &color) {
-    button.setFillColor(color);
+void Button::setSaved() {
+    button.setFillColor(sf::Color(217,217,217));
+    label.setStyle(sf::Text::Style::Bold);
+    label.setString("Saved!");
 }

@@ -9,17 +9,22 @@
 #include "Button.h"
 #include "API.h"
 #include "SaveImage.h"
+#include "PromptDisplay.h"
 
 class EditScreen : public sf::Drawable, public EventHandler, public States {
 private:
+    PromptDisplay promptDisplay;
+    sf::Texture texture;
     sf::Sprite image;
+    std::string request;
     Button save;
     Button reartify;
+    Button regenerate;
     SaveImage saveImage;
     std::string fileName;
 public:
     EditScreen();
-    EditScreen(const sf::Texture& texture);
+    EditScreen(const sf::Texture& texture, const std::string&);
     EditScreen(const sf::Texture& texture, bool);
     void setImage(const sf::Texture& texture);
     const std::string& getFileName();
