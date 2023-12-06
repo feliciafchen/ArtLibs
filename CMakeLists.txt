@@ -80,7 +80,8 @@ add_executable(Artify main.cpp
         Loading.cpp
         Loading.h
         SaveImage.cpp
-        SaveImage.h)
+        SaveImage.h
+)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.6 COMPONENTS system window graphics network audio REQUIRED)

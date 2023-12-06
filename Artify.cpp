@@ -52,6 +52,13 @@ void Artify::update() {
         editScreen.disableState(SAVED);
         myArt.push(editScreen.getFileName());
     }
+    if(myArt.checkState(SELECTED)){
+        isEditScreen = true;
+        std::string filePath = "my_art/" + myArt.getSelectedText();
+        texture.loadFromFile(filePath);
+        editScreen = EditScreen(texture, true);
+        myArt.deselect();
+    }
 }
 
 Snapshot &Artify::getSnapshot() {

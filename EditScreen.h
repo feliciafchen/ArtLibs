@@ -20,6 +20,7 @@ private:
 public:
     EditScreen();
     EditScreen(const sf::Texture& texture);
+    EditScreen(const sf::Texture& texture, bool);
     void setImage(const sf::Texture& texture);
     const std::string& getFileName();
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;

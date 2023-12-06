@@ -15,6 +15,7 @@ enum ObjectState {
     SAVED,
     DOUBLE_CLICKED,
     FIRST,
+    SELECTED,
     ///This should always be the last state
     LASTSTATE
 };

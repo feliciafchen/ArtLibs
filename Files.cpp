@@ -26,6 +26,9 @@ void Files::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 
 void Files::update() {
     files.update();
+    if(files.checkState(SELECTED) && !checkState(SELECTED)){
+        enableState(SELECTED);
+    }
 }
 
 void Files::draw(sf::RenderTarget &target, sf::RenderStates states) const {
@@ -34,4 +37,13 @@ void Files::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 
 void Files::push(const std::string &filename) {
     files.push("My Art/" + filename);
+}
+
+std::string Files::getSelectedText() {
+    return files.getSelectedText();
+}
+
+void Files::deselect() {
+    files.deselect();
+    disableState(SELECTED);
 }

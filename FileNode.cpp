@@ -104,7 +104,6 @@ void FileNode::setPosition(const sf::Vector2f &pos) {
 FileItem *FileNode::getDoubleClicked(std::string &s) {
     if(data.checkState(DOUBLE_CLICKED) && data.getText() != "my_art"){
         data.disableState(DOUBLE_CLICKED);
-//        std::cout << data.getString();
         s = data.getString();
         return &data;
     }

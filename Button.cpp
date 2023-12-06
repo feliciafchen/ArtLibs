@@ -75,3 +75,7 @@ void Button::updatePositions() {
 sf::FloatRect Button::getGlobalBounds() {
     return button.getGlobalBounds();
 }
+
+void Button::setFillColor(const sf::Color &color) {
+    button.setFillColor(color);
+}

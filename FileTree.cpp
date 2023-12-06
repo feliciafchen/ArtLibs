@@ -94,7 +94,11 @@ void FileTree::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 
 void FileTree::update() {
     root->update();
-    root->getDoubleClicked(selectedText);
+    if(root->checkState(CHILDREN_SHOWING))
+        root->getDoubleClicked(selectedText);
+    if(!selectedText.empty() && !checkState(SELECTED)){
+        enableState(SELECTED);
+    }
 }
 
 Snapshot &FileTree::getSnapshot() {
@@ -103,4 +107,13 @@ Snapshot &FileTree::getSnapshot() {
 
 sf::FloatRect FileTree::getGlobalBounds() {
     return sf::FloatRect();
+}
+
+std::string FileTree::getSelectedText() {
+    return selectedText;
+}
+
+void FileTree::deselect() {
+    disableState(SELECTED);
+    selectedText.clear();
 }

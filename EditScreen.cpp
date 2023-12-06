@@ -25,7 +25,8 @@ void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
 }
 
 void EditScreen::update() {
-    save.update();
+    if(!save.checkState(DISABLED))
+        save.update();
     reartify.update();
     saveImage.update();
     if(reartify.checkState(CLICKED)){
@@ -61,6 +62,20 @@ EditScreen::EditScreen(const sf::Texture& texture) {
     reartify.setLabel("Reartify");
     reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2 - 10, 620});
 }
+EditScreen::EditScreen(const sf::Texture& texture, bool) {
+    this->image.setTexture(texture);
+    this->image.scale({.4,.4});
+    this->image.setPosition(1325/2 - image.getGlobalBounds().width/2,
+                            745/2 - image.getGlobalBounds().height/2.2);
+
+    save.setPosition({1325/2 - reartify.getGlobalBounds().width - 35, 620});
+    save.setLabel("Saved!");
+    save.setFillColor(sf::Color(217, 217, 217));
+    save.enableState(DISABLED);
+
+    reartify.setLabel("Reartify");
+    reartify.setPosition({1325/2 + reartify.getGlobalBounds().width/2 - 10, 620});
+}
 
 void EditScreen::setImage(const sf::Texture &texture) {
     this->image.setTexture(texture);
@@ -72,3 +87,4 @@ void EditScreen::setImage(const sf::Texture &texture) {
 const std::string &EditScreen::getFileName() {
     return fileName;
 }
+

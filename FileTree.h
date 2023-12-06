@@ -34,6 +34,8 @@ public:
     Snapshot& getSnapshot() override;
     //does nothing now
     virtual sf::FloatRect getGlobalBounds();
+    std::string getSelectedText();
+    void deselect();
 };
 
 

@@ -21,6 +21,7 @@ public:
     Button(sf::Vector2f size, sf::Vector2f pos, const std::string& label);
     sf::FloatRect getGlobalBounds();
     void setSize(sf::Vector2f);
+    void setFillColor(const sf::Color&);
     void setPosition(sf::Vector2f);
     void setLabel(const std::string& label);
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
