@@ -10,11 +10,11 @@ void EditScreen::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(image);
     target.draw(save);
     target.draw(reartify);
-    target.draw(saveImage);
     if(checkState(REARTIFY)){
         target.draw(regenerate);
         target.draw(promptDisplay);
     }
+    target.draw(saveImage);
 }
 
 void EditScreen::addEventHandler(sf::RenderWindow &window, sf::Event event) {
