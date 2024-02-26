@@ -1,8 +1,12 @@
 my_art
+my_art/dog.png
+my_art/bunny.png
 my_art/watercolor.png
+my_art/cutedog.png
 my_art/skippingdog.png
 my_art/prettyflower.png
 my_art/prettyland.png
 my_art/juliasgirl.png
+my_art/puppy.png
 my_art/christmas.png
 my_art/tammysbear.png

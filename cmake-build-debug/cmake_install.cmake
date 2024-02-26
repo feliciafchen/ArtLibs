@@ -1,4 +1,4 @@
-# Install script for directory: /Users/feliciachen/CLionProjects/Fall23/Artify
+# Install script for directory: /Users/feliciachen/SWE/CLionProjects/Fall23/Artify
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/feliciachen/CLionProjects/Fall23/Artify/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/feliciachen/SWE/CLionProjects/Fall23/Artify/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
